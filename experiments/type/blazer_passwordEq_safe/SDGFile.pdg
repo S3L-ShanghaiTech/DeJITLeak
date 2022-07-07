@@ -1,0 +1,1999 @@
+SDG "User.passwordsEqual_safe(java.lang.String,java.lang.String)" root 68 {
+ENTR 1 {
+O entry;
+V "User.passwordsEqual_safe(java.lang.String,java.lang.String)";
+P 4;
+S "User.java":0,0-0,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":-1;
+Z 0;
+C "Application";
+HE 2;
+HE 3;
+HE 4;
+HE 5;
+HE 6;
+HE 10;
+HE 14;
+HE 16;
+HE 21;
+HE 22;
+HE 23;
+HE 129;
+HE 130;
+HE 131;
+PS 2;
+PS 3;
+PS 4;
+PS 5;
+CF 129;
+CD 6;
+CD 10;
+CD 14;
+CD 15;
+CD 16;
+CD 21;
+CD 22;
+CD 23;
+CE 2;
+CE 3;
+CE 4;
+CE 5;
+CE 129;
+CE 130;
+CE 131;
+}
+EXIT 2 {
+O exit;
+V "User.passwordsEqual_safe(java.lang.String,java.lang.String)";
+T "Z";
+P 4;
+S "User.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 169;
+PO 84;
+}
+FRMO 3 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "User.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 129;
+PS 131;
+CF 131: "exc";
+PO 85;
+}
+FRMI 4 {
+O form-in;
+V "param 1 $a ";
+T "Ljava/lang/String";
+P 4;
+S "User.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["a"];
+PS 129;
+PS 130;
+PS 131;
+CF 5;
+DD 7;
+DD 25;
+}
+FRMI 5 {
+O form-in;
+V "param 2 $b ";
+T "Ljava/lang/String";
+P 4;
+S "User.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["b"];
+PS 129;
+PS 130;
+PS 131;
+CF 7;
+DD 11;
+DD 30;
+}
+CALL 6 {
+O call;
+V "v6 = p1 $a .length()";
+T "I";
+P 4;
+S "User.java":10,0-10,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":5;
+Z 0;
+HE 7;
+HE 8;
+HE 9;
+PS 7;
+PS 8;
+PS 9;
+CF 164;
+CE 7;
+CE 8;
+CE 9;
+CE 164;
+CL 107: "virtual";
+}
+ACTI 7 {
+O act-in;
+V "this [p1 $a ]";
+T "Ljava/lang/String";
+P 4;
+S "User.java":10,0-10,0;
+B "<param> 0":-2;
+Z 0;
+LU ["a"];
+CF 6;
+CD 6;
+SU 8;
+SU 9;
+PI 110;
+}
+ACTO 8 {
+O act-out;
+V "ret 0";
+T "I";
+P 4;
+S "User.java":10,0-10,0;
+B "<exit>":-2;
+Z 0;
+LD ["aLen"];
+CF 9;
+DD 14;
+DD 17;
+}
+ACTO 9 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "User.java":10,0-10,0;
+B "<exception>":-2;
+Z 0;
+HE 164;
+CF 11;
+CE 164;
+}
+CALL 10 {
+O call;
+V "v8 = p2 $b .length()";
+T "I";
+P 4;
+S "User.java":11,0-11,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":11;
+Z 0;
+HE 11;
+HE 12;
+HE 13;
+PS 11;
+PS 12;
+PS 13;
+CF 165;
+CE 11;
+CE 12;
+CE 13;
+CE 165;
+CL 107: "virtual";
+}
+ACTI 11 {
+O act-in;
+V "this [p2 $b ]";
+T "Ljava/lang/String";
+P 4;
+S "User.java":11,0-11,0;
+B "<param> 0":-2;
+Z 0;
+LU ["b"];
+CF 10;
+CD 10;
+SU 12;
+SU 13;
+PI 110;
+}
+ACTO 12 {
+O act-out;
+V "ret 0";
+T "I";
+P 4;
+S "User.java":11,0-11,0;
+B "<exit>":-2;
+Z 0;
+LD ["bLen"];
+CF 13;
+DD 14;
+DD 18;
+}
+ACTO 13 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "User.java":11,0-11,0;
+B "<exception>":-2;
+Z 0;
+HE 165;
+CF 14;
+CE 165;
+}
+PRED 14 {
+O IF;
+V "if (v6 == v8) goto 29";
+T "Z";
+P 4;
+S "User.java":12,0-12,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":20;
+Z 0;
+LU ["aLen", "bLen"];
+HE 15;
+CF 15;
+CD 15;
+}
+EXPR 15 {
+O assign;
+V "PHI v10 = #(1), #(0)";
+P 4;
+S "User.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["equal"];
+LU ["shmequal"];
+CF 17;
+DD 21;
+}
+CALL 16 {
+O call;
+V "v12 = min(v6, v8)";
+T "I";
+P 4;
+S "User.java":15,0-15,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":29;
+Z 0;
+HE 17;
+HE 18;
+HE 19;
+HE 20;
+PS 17;
+PS 18;
+PS 19;
+PS 20;
+CF 166;
+CE 17;
+CE 18;
+CE 19;
+CE 20;
+CE 166;
+CL 111: "virtual";
+}
+ACTI 17 {
+O act-in;
+V "param 1 [v6]";
+T "I";
+P 4;
+S "User.java":15,0-15,0;
+B "<param> 1":-2;
+Z 0;
+LU ["aLen"];
+CF 18;
+SU 19;
+PI 114;
+}
+ACTI 18 {
+O act-in;
+V "param 2 [v8]";
+T "I";
+P 4;
+S "User.java":15,0-15,0;
+B "<param> 2":-2;
+Z 0;
+LU ["bLen"];
+CF 16;
+SU 19;
+PI 115;
+}
+ACTO 19 {
+O act-out;
+V "ret 0";
+T "I";
+P 4;
+S "User.java":15,0-15,0;
+B "<exit>":-2;
+Z 0;
+LD ["min"];
+CF 20;
+DD 23;
+}
+ACTO 20 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "User.java":15,0-15,0;
+B "<exception>":-2;
+Z 0;
+HE 166;
+CF 21;
+CE 166;
+}
+EXPR 21 {
+O assign;
+V "PHI v19 = v17, v10";
+P 4;
+S "User.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["equal"];
+CF 22;
+DD 36;
+DD 39;
+}
+EXPR 22 {
+O assign;
+V "PHI v20 = v18, #(0)";
+P 4;
+S "User.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["i"];
+CF 23;
+DD 23;
+DD 26;
+DD 31;
+DD 37;
+}
+PRED 23 {
+O IF;
+V "if (v20 >= v12) goto 47";
+T "Z";
+P 4;
+S "User.java":16,0-16,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":41;
+Z 0;
+LU ["i", "min"];
+HE 24;
+HE 39;
+CF 25;
+CF 39;
+CD 24;
+CD 39;
+}
+CALL 24 {
+O call;
+V "v14 = p1 $a .charAt(v20)";
+T "C";
+P 4;
+S "User.java":17,0-17,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":47;
+Z 0;
+HE 25;
+HE 26;
+HE 27;
+HE 28;
+PS 25;
+PS 26;
+PS 27;
+PS 28;
+CF 167;
+CE 25;
+CE 26;
+CE 27;
+CE 28;
+CE 167;
+CL 124: "virtual";
+}
+ACTI 25 {
+O act-in;
+V "this [p1 $a ]";
+T "Ljava/lang/String";
+P 4;
+S "User.java":17,0-17,0;
+B "<param> 0":-2;
+Z 0;
+LU ["a"];
+CF 26;
+CD 24;
+SU 27;
+SU 28;
+PI 127;
+}
+ACTI 26 {
+O act-in;
+V "param 1 [v20]";
+T "I";
+P 4;
+S "User.java":17,0-17,0;
+B "<param> 1":-2;
+Z 0;
+LU ["i"];
+CF 24;
+SU 27;
+SU 28;
+PI 128;
+}
+ACTO 27 {
+O act-out;
+V "ret 0";
+T "C";
+P 4;
+S "User.java":17,0-17,0;
+B "<exit>":-2;
+Z 0;
+CF 28: "exc";
+CF 30;
+DD 34;
+}
+ACTO 28 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "User.java":17,0-17,0;
+B "<exception>":-2;
+Z 0;
+HE 167;
+CF 3: "exc";
+CE 167;
+DD 3;
+}
+CALL 29 {
+O call;
+V "v16 = p2 $b .charAt(v20)";
+T "C";
+P 4;
+S "User.java":17,0-17,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":53;
+Z 0;
+HE 30;
+HE 31;
+HE 32;
+HE 33;
+PS 30;
+PS 31;
+PS 32;
+PS 33;
+CF 168;
+CE 30;
+CE 31;
+CE 32;
+CE 33;
+CE 168;
+CL 124: "virtual";
+}
+ACTI 30 {
+O act-in;
+V "this [p2 $b ]";
+T "Ljava/lang/String";
+P 4;
+S "User.java":17,0-17,0;
+B "<param> 0":-2;
+Z 0;
+LU ["b"];
+CF 31;
+CD 29;
+SU 32;
+SU 33;
+PI 127;
+}
+ACTI 31 {
+O act-in;
+V "param 1 [v20]";
+T "I";
+P 4;
+S "User.java":17,0-17,0;
+B "<param> 1":-2;
+Z 0;
+LU ["i"];
+CF 29;
+SU 32;
+SU 33;
+PI 128;
+}
+ACTO 32 {
+O act-out;
+V "ret 0";
+T "C";
+P 4;
+S "User.java":17,0-17,0;
+B "<exit>":-2;
+Z 0;
+CF 33: "exc";
+CF 34;
+DD 34;
+}
+ACTO 33 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "User.java":17,0-17,0;
+B "<exception>":-2;
+Z 0;
+HE 168;
+CF 3: "exc";
+CE 168;
+DD 3;
+}
+PRED 34 {
+O IF;
+V "if (v14 == v16) goto 61";
+T "Z";
+P 4;
+S "User.java":17,0-17,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":56;
+Z 0;
+HE 35;
+HE 36;
+CF 35;
+CF 36;
+CD 35;
+CD 36;
+}
+NORM 35 {
+O compound;
+V "goto 66";
+T "Ljava/lang/Object";
+P 4;
+S "User.java":18,0-18,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":61;
+Z 0;
+CF 36;
+}
+EXPR 36 {
+O assign;
+V "PHI v17 = #(0), v19";
+P 4;
+S "User.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["equal"];
+CF 37;
+DD 21;
+}
+EXPR 37 {
+O assign;
+V "v18 = v20 + #(1)";
+T "Ljava/lang/Object";
+P 4;
+S "User.java":16,0-16,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":66;
+Z 0;
+LD ["i"];
+LU ["i", "shmequal"];
+CF 38;
+DD 22;
+}
+NORM 38 {
+O compound;
+V "goto 41";
+T "Ljava/lang/Object";
+P 4;
+S "User.java":16,0-16,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":69;
+Z 0;
+CF 21;
+}
+NORM 39 {
+O compound;
+V "return v19";
+T "Z";
+P 4;
+S "User.java":23,0-23,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":73;
+Z 0;
+LU ["equal"];
+CF 131;
+DD 2;
+}
+ENTR 68 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+C "Primordial";
+HE 69;
+HE 70;
+HE 71;
+HE 132;
+HE 133;
+HE 134;
+HE 135;
+PS 70;
+CF 132;
+CD 71;
+CE 69;
+CE 70;
+CE 132;
+CE 133;
+CE 134;
+CE 135;
+}
+EXIT 69 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+}
+FRMO 70 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 134;
+PS 135;
+CF 135: "exc";
+}
+CALL 71 {
+O call;
+V "fakeWorldClinit()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "com.ibm.wala.FakeRootClass.fakeWorldClinit()V";
+HE 72;
+HE 73;
+HE 74;
+HE 136;
+HE 137;
+HE 153;
+PS 72;
+CF 153;
+CD 73;
+CD 74;
+CE 72;
+CE 136;
+CE 137;
+CE 153;
+}
+ACTO 72 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 70: "exc";
+DD 70;
+}
+NORM 73 {
+O declaration;
+V "v3 = new java.lang.String";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 75;
+DD 75;
+DD 82;
+}
+CALL 74 {
+O call;
+V "v3.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.String.<init>()V";
+HE 75;
+HE 76;
+HE 77;
+HE 78;
+HE 138;
+HE 150;
+HE 154;
+PS 75;
+PS 76;
+CF 154;
+CD 77;
+CD 78;
+CE 75;
+CE 76;
+CE 138;
+CE 150;
+CE 154;
+}
+ACTI 75 {
+O act-in;
+V "this [v3]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 138;
+CF 74;
+CD 74;
+DD 154;
+}
+ACTO 76 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 138;
+CF 70: "exc";
+DD 70;
+DD 150;
+}
+NORM 77 {
+O declaration;
+V "v5 = new java.lang.String";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 79;
+DD 79;
+DD 83;
+}
+CALL 78 {
+O call;
+V "v5.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.String.<init>()V";
+HE 79;
+HE 80;
+HE 81;
+HE 139;
+HE 151;
+HE 155;
+PS 79;
+PS 80;
+CF 155;
+CD 81;
+CE 79;
+CE 80;
+CE 139;
+CE 151;
+CE 155;
+}
+ACTI 79 {
+O act-in;
+V "this [v5]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 139;
+CF 78;
+CD 78;
+DD 155;
+}
+ACTO 80 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 139;
+CF 70: "exc";
+DD 70;
+DD 151;
+}
+CALL 81 {
+O call;
+V "v7 = passwordsEqual_safe(v3, v5)";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 82;
+HE 83;
+HE 84;
+HE 85;
+HE 140;
+HE 141;
+HE 142;
+PS 82;
+PS 83;
+PS 84;
+PS 85;
+CF 169;
+CE 82;
+CE 83;
+CE 84;
+CE 85;
+CE 140;
+CE 141;
+CE 142;
+CE 169;
+CL 1: "virtual";
+}
+ACTI 82 {
+O act-in;
+V "param 1 [v3]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+PS 140;
+PS 141;
+PS 142;
+CF 83;
+SU 84;
+SU 85;
+PI 4;
+}
+ACTI 83 {
+O act-in;
+V "param 2 [v5]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+PS 140;
+PS 141;
+PS 142;
+CF 140;
+SU 84;
+SU 85;
+PI 5;
+}
+ACTO 84 {
+O act-out;
+V "ret 0";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+CF 85: "exc";
+CF 86;
+}
+ACTO 85 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 169;
+PS 140;
+PS 142;
+CF 70: "exc";
+CE 169;
+DD 70;
+}
+NORM 86 {
+O declaration;
+V "v9 = new java.io.FileInputStream";
+T "Ljava/io/FileInputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 88;
+DD 88;
+DD 91;
+}
+CALL 87 {
+O call;
+V "v9.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.InputStream.<init>()V";
+HE 88;
+HE 89;
+HE 90;
+HE 143;
+HE 156;
+PS 88;
+PS 89;
+CF 156;
+CD 90;
+CE 88;
+CE 89;
+CE 143;
+CE 156;
+}
+ACTI 88 {
+O act-in;
+V "this [v9]";
+T "Ljava/io/InputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 143;
+CF 87;
+CD 87;
+DD 156;
+}
+ACTO 89 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 143;
+CF 70: "exc";
+DD 70;
+}
+CALL 90 {
+O call;
+V "v9.finalize()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.FileInputStream.finalize()V";
+HE 91;
+HE 92;
+HE 93;
+HE 94;
+HE 144;
+HE 157;
+PS 91;
+PS 92;
+CF 92: "exc";
+CF 157;
+CD 93;
+CD 94;
+CE 91;
+CE 92;
+CE 144;
+CE 157;
+}
+ACTI 91 {
+O act-in;
+V "this [v9]";
+T "Ljava/io/FileInputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 144;
+CF 144;
+CD 90;
+DD 157;
+}
+ACTO 92 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 70: "exc";
+DD 70;
+}
+NORM 93 {
+O declaration;
+V "v12 = new java.io.FileOutputStream";
+T "Ljava/io/FileOutputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 95;
+DD 95;
+DD 98;
+}
+CALL 94 {
+O call;
+V "v12.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.OutputStream.<init>()V";
+HE 95;
+HE 96;
+HE 97;
+HE 145;
+HE 158;
+PS 95;
+PS 96;
+CF 158;
+CD 97;
+CE 95;
+CE 96;
+CE 145;
+CE 158;
+}
+ACTI 95 {
+O act-in;
+V "this [v12]";
+T "Ljava/io/OutputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 145;
+CF 94;
+CD 94;
+DD 158;
+}
+ACTO 96 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 145;
+CF 70: "exc";
+DD 70;
+}
+CALL 97 {
+O call;
+V "v12.finalize()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.io.FileOutputStream.finalize()V";
+HE 98;
+HE 99;
+HE 100;
+HE 101;
+HE 146;
+HE 159;
+PS 98;
+PS 99;
+CF 99: "exc";
+CF 159;
+CD 100;
+CD 101;
+CE 98;
+CE 99;
+CE 146;
+CE 159;
+}
+ACTI 98 {
+O act-in;
+V "this [v12]";
+T "Ljava/io/FileOutputStream";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 146;
+CF 146;
+CD 97;
+DD 159;
+}
+ACTO 99 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 70: "exc";
+DD 70;
+}
+NORM 100 {
+O declaration;
+V "v15 = new java.lang.ClassLoader$NativeLibrary";
+T "Ljava/lang/ClassLoader$NativeLibrary";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 102;
+DD 102;
+DD 105;
+}
+CALL 101 {
+O call;
+V "v15.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.Object.<init>()V";
+HE 102;
+HE 103;
+HE 104;
+HE 147;
+HE 152;
+HE 160;
+PS 102;
+PS 103;
+CF 160;
+CD 104;
+CE 102;
+CE 103;
+CE 147;
+CE 152;
+CE 160;
+}
+ACTI 102 {
+O act-in;
+V "this [v15]";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 147;
+CF 101;
+CD 101;
+DD 160;
+}
+ACTO 103 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 147;
+CF 70: "exc";
+DD 70;
+DD 152;
+}
+CALL 104 {
+O call;
+V "v15.finalize()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.ClassLoader$NativeLibrary.finalize()V";
+HE 105;
+HE 106;
+HE 148;
+HE 149;
+HE 161;
+PS 105;
+PS 106;
+CF 161;
+CE 105;
+CE 106;
+CE 148;
+CE 149;
+CE 161;
+}
+ACTI 105 {
+O act-in;
+V "this [v15]";
+T "Ljava/lang/ClassLoader$NativeLibrary";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 148;
+PS 149;
+CF 148;
+CD 104;
+DD 161;
+}
+ACTO 106 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 148;
+PS 149;
+CF 70: "exc";
+DD 70;
+}
+ENTR 107 {
+O entry;
+V "java.lang.String.length()";
+P 6;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.length()I":-1;
+Z 0;
+C "Primordial";
+HE 108;
+HE 109;
+HE 110;
+HE 162;
+PS 108;
+PS 109;
+PS 110;
+CF 110;
+CE 108;
+CE 109;
+CE 110;
+CE 162;
+}
+EXIT 108 {
+O exit;
+V "java.lang.String.length()";
+T "I";
+P 6;
+S "java/lang/String.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 164;
+RF 165;
+PO 8;
+PO 12;
+}
+FRMO 109 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "java/lang/String.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 108;
+PO 9;
+PO 13;
+}
+FRMI 110 {
+O form-in;
+V "this";
+T "Ljava/lang/String";
+P 6;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+CF 108;
+CF 162;
+DD 162;
+}
+ENTR 111 {
+O entry;
+V "java.lang.Math.min(int,int)";
+P 7;
+S "java/lang/Math.java":0,0-0,0;
+B "java.lang.Math.min(II)I":-1;
+Z 0;
+C "Primordial";
+HE 112;
+HE 113;
+HE 114;
+HE 115;
+HE 116;
+HE 118;
+PS 112;
+PS 113;
+PS 114;
+PS 115;
+CF 114;
+CD 116;
+CD 118;
+CD 119;
+CE 112;
+CE 113;
+CE 114;
+CE 115;
+}
+EXIT 112 {
+O exit;
+V "java.lang.Math.min(int,int)";
+T "I";
+P 7;
+S "java/lang/Math.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 166;
+PO 19;
+}
+FRMO 113 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 7;
+S "java/lang/Math.java":0,0-0,0;
+B "<exception>":-2;
+CF 112: "exc";
+PO 20;
+}
+FRMI 114 {
+O form-in;
+V "param 1 $a ";
+T "I";
+P 7;
+S "java/lang/Math.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["a"];
+CF 115;
+DD 116;
+DD 119;
+}
+FRMI 115 {
+O form-in;
+V "param 2 $b ";
+T "I";
+P 7;
+S "java/lang/Math.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["b"];
+CF 116;
+DD 116;
+DD 119;
+}
+PRED 116 {
+O IF;
+V "if (p1 $a  > p2 $b ) goto 6";
+T "Z";
+P 7;
+S "java/lang/Math.java":862,0-862,0;
+B "java.lang.Math.min(II)I":2;
+Z 0;
+LU ["a", "b"];
+HE 117;
+HE 119;
+CF 117;
+CF 119;
+CD 117;
+CD 119;
+}
+NORM 117 {
+O compound;
+V "goto 10";
+T "Ljava/lang/Object";
+P 7;
+S "java/lang/Math.java":862,0-862,0;
+B "java.lang.Math.min(II)I":6;
+Z 0;
+CF 119;
+}
+NORM 118 {
+O compound;
+V "return v4";
+T "I";
+P 7;
+S "java/lang/Math.java":862,0-862,0;
+B "java.lang.Math.min(II)I":10;
+Z 0;
+CF 112;
+DD 112;
+}
+EXPR 119 {
+O assign;
+V "PHI v4 = p1 $a , p2 $b ";
+P 7;
+S "java/lang/Math.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LU ["a", "b"];
+CF 118;
+DD 118;
+}
+ENTR 124 {
+O entry;
+V "java.lang.String.charAt(int)";
+P 8;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.charAt(I)C":-1;
+Z 0;
+C "Primordial";
+HE 125;
+HE 126;
+HE 127;
+HE 128;
+HE 163;
+PS 125;
+PS 126;
+PS 127;
+PS 128;
+CF 127;
+CE 125;
+CE 126;
+CE 127;
+CE 128;
+CE 163;
+}
+EXIT 125 {
+O exit;
+V "java.lang.String.charAt(int)";
+T "C";
+P 8;
+S "java/lang/String.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 167;
+RF 168;
+PO 27;
+PO 32;
+}
+FRMO 126 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/lang/String.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 125;
+PO 28;
+PO 33;
+}
+FRMI 127 {
+O form-in;
+V "this";
+T "Ljava/lang/String";
+P 8;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+CF 128;
+DD 163;
+}
+FRMI 128 {
+O form-in;
+V "param 1 $index ";
+T "I";
+P 8;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+CF 125;
+CF 163;
+DD 163;
+}
+FRMI 129 {
+O form-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 4;
+S "User.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 130;
+PS 131;
+PE 131;
+CF 130;
+DH 131;
+}
+FRMI 130 {
+O form-in;
+V "[R] |4|MERGE data";
+T "I";
+P 4;
+S "User.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 4;
+DH 131;
+}
+FRMO 131 {
+O form-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 4;
+S "User.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 129;
+PS 130;
+PE 129;
+CF 2;
+PO 142;
+}
+FRMI 132 {
+O form-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 133;
+DH 135;
+DH 136;
+DH 140;
+DH 141;
+DH 148;
+}
+FRMI 133 {
+O form-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 134;
+DH 135;
+DH 136;
+DH 140;
+DH 141;
+DH 148;
+}
+FRMI 134 {
+O form-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 132;
+PS 133;
+PS 135;
+PE 135;
+CF 136;
+DH 135;
+DH 136;
+DH 140;
+DH 141;
+DH 144;
+DH 146;
+DH 148;
+}
+FRMO 135 {
+O form-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 132;
+PS 133;
+PS 134;
+PE 134;
+CF 69;
+}
+ACTI 136 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 137;
+PE 137;
+CF 71;
+DD 153;
+}
+ACTO 137 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 136;
+PE 136;
+CF 72: "exc";
+CF 73;
+DH 135;
+DH 140;
+DH 141;
+DH 144;
+DH 146;
+DH 148;
+}
+ACTO 138 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 76: "exc";
+CF 77;
+DD 150;
+DH 135;
+DH 140;
+DH 141;
+DH 148;
+}
+ACTO 139 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 80: "exc";
+CF 82;
+DD 151;
+DH 135;
+DH 140;
+DH 141;
+DH 148;
+}
+ACTI 140 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 141;
+PS 142;
+PE 142;
+CF 141;
+SU 142;
+PI 129;
+}
+ACTI 141 {
+O act-in;
+V "[R] |4|MERGE data";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 81;
+SU 142;
+PI 130;
+}
+ACTO 142 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 140;
+PS 141;
+PE 140;
+CF 84;
+DH 135;
+DH 148;
+}
+ACTO 143 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 89: "exc";
+CF 91;
+DH 135;
+DH 148;
+}
+ACTI 144 {
+O act-in;
+V "[R] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 90;
+DD 157;
+}
+ACTO 145 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 96: "exc";
+CF 98;
+DH 135;
+DH 148;
+}
+ACTI 146 {
+O act-in;
+V "[R] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 97;
+DD 159;
+}
+ACTO 147 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 103: "exc";
+CF 105;
+DD 152;
+DH 135;
+DH 148;
+}
+ACTI 148 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 149;
+PE 149;
+CF 104;
+DD 161;
+}
+ACTO 149 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 148;
+PE 148;
+CF 106: "exc";
+CF 135;
+DH 135;
+}
+NORM 150 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 138;
+DD 73;
+}
+NORM 151 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 139;
+DD 77;
+}
+NORM 152 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 147;
+DD 100;
+}
+NORM 153 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 137;
+DD 72;
+DD 137;
+}
+NORM 154 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 150;
+DD 76;
+DD 138;
+}
+NORM 155 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 151;
+DD 80;
+DD 139;
+}
+NORM 156 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 143;
+DD 89;
+DD 143;
+}
+NORM 157 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 93;
+DD 92;
+}
+NORM 158 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 145;
+DD 96;
+DD 145;
+}
+NORM 159 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 100;
+DD 99;
+}
+NORM 160 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 152;
+DD 103;
+DD 147;
+}
+NORM 161 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 149;
+DD 106;
+DD 149;
+}
+NORM 162 {
+O compound;
+V "many2many";
+P 6;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.length()I":-1;
+Z 0;
+CF 109;
+DD 108;
+DD 109;
+}
+NORM 163 {
+O compound;
+V "many2many";
+P 8;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.charAt(I)C":-1;
+Z 0;
+CF 126;
+DD 125;
+DD 126;
+}
+NORM 164 {
+O compound;
+V "CALL_RET";
+P 4;
+S "User.java":10,0-10,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+CF 8;
+}
+NORM 165 {
+O compound;
+V "CALL_RET";
+P 4;
+S "User.java":11,0-11,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+CF 12;
+}
+NORM 166 {
+O compound;
+V "CALL_RET";
+P 4;
+S "User.java":15,0-15,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+CF 19;
+}
+NORM 167 {
+O compound;
+V "CALL_RET";
+P 4;
+S "User.java":17,0-17,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 29;
+CF 27;
+CD 29;
+}
+NORM 168 {
+O compound;
+V "CALL_RET";
+P 4;
+S "User.java":17,0-17,0;
+B "User.passwordsEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 34;
+HE 37;
+HE 38;
+CF 32;
+CD 21;
+CD 22;
+CD 23;
+CD 34;
+CD 36;
+CD 37;
+CD 38;
+}
+NORM 169 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+HE 86;
+HE 87;
+CF 142;
+CD 86;
+CD 87;
+}
+Thread 0 {
+Entry 68;
+Exit 69;
+Fork 0;
+Join 0;
+Context null;
+Dynamic false;
+}
+}

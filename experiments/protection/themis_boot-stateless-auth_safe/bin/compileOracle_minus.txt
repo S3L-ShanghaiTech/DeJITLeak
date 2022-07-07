@@ -1,0 +1,13 @@
+dontinline sun/util/calendar/BaseCalendar$Date.isNormalized
+dontinline java/util/Date.normalize
+dontinline TokenHandler.fromJSON
+dontinline java/util/Date.<init>
+dontinline java/util/Date.getTime
+dontinline com/jdriven/stateless/security/User.getExpires
+dontinline java/lang/System.currentTimeMillis
+dontinline java/util/Date.<init>
+dontinline java/util/Date.getTimeImpl
+dontinline java/lang/Object.<init>
+dontprune TokenHandler.isEqual, ([B[B)Z
+dontprune java/util/Date.getTimeImpl, ()J
+dontprune TokenHandler.parseUserFromToken_safe, (Ljava/lang/String;)Lcom/jdriven/stateless/security/User;

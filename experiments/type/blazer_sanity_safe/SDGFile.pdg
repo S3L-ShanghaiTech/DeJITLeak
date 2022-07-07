@@ -1,0 +1,404 @@
+SDG "Sanity.sanity_safe(int,int)" root 36 {
+ENTR 1 {
+O entry;
+V "Sanity.sanity_safe(int,int)";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "Sanity.sanity_safe(II)Z":-1;
+Z 0;
+C "Application";
+HE 2;
+HE 3;
+HE 4;
+HE 5;
+HE 6;
+PS 2;
+PS 3;
+PS 4;
+PS 5;
+CF 4;
+CD 6;
+CE 2;
+CE 3;
+CE 4;
+CE 5;
+}
+EXIT 2 {
+O exit;
+V "Sanity.sanity_safe(int,int)";
+T "Z";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 47;
+PO 44;
+}
+FRMO 3 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<exception>":-2;
+CF 2: "exc";
+PO 45;
+}
+FRMI 4 {
+O form-in;
+V "param 1 $a ";
+T "I";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["a"];
+CF 5;
+DD 8;
+}
+FRMI 5 {
+O form-in;
+V "param 2 $b ";
+T "I";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["b", "i", "j"];
+CF 6;
+DD 6;
+DD 9;
+DD 13;
+}
+PRED 6 {
+O IF;
+V "if (p2 $b  >= #(0)) goto 9";
+T "Z";
+P 4;
+S "Sanity.java":5,0-5,0;
+B "Sanity.sanity_safe(II)Z":5;
+Z 0;
+LU ["b", "i", "j"];
+HE 7;
+HE 8;
+HE 17;
+CF 7;
+CF 8;
+CD 7;
+CD 8;
+CD 9;
+CD 13;
+CD 17;
+}
+NORM 7 {
+O compound;
+V "return #(0)";
+T "Z";
+P 4;
+S "Sanity.java":5,0-5,0;
+B "Sanity.sanity_safe(II)Z":9;
+Z 0;
+CF 2;
+DD 2;
+}
+PRED 8 {
+O IF;
+V "if (p1 $a  <= #(0)) goto 15";
+T "Z";
+P 4;
+S "Sanity.java":7,0-7,0;
+B "Sanity.sanity_safe(II)Z":11;
+Z 0;
+LU ["a"];
+HE 9;
+HE 10;
+HE 13;
+HE 14;
+CF 9;
+CF 13;
+CD 9;
+CD 10;
+CD 13;
+CD 14;
+}
+EXPR 9 {
+O assign;
+V "PHI v9 = v8, p2 $b ";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["i"];
+LU ["b", "j"];
+CF 10;
+DD 10;
+DD 11;
+}
+PRED 10 {
+O IF;
+V "if (v9 <= #(0)) goto 18";
+T "Z";
+P 4;
+S "Sanity.java":8,0-8,0;
+B "Sanity.sanity_safe(II)Z":15;
+Z 0;
+LU ["i"];
+HE 11;
+HE 12;
+CF 11;
+CF 17;
+CD 9;
+CD 11;
+CD 12;
+}
+EXPR 11 {
+O assign;
+V "v8 = v9 + #(-1)";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":9,0-9,0;
+B "Sanity.sanity_safe(II)Z":18;
+Z 0;
+LD ["i"];
+LU ["i"];
+CF 12;
+DD 9;
+}
+NORM 12 {
+O compound;
+V "goto 15";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":9,0-9,0;
+B "Sanity.sanity_safe(II)Z":21;
+Z 0;
+CF 9;
+}
+EXPR 13 {
+O assign;
+V "PHI v7 = p2 $b , v6";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["j"];
+LU ["b", "i"];
+CF 14;
+DD 14;
+DD 15;
+}
+PRED 14 {
+O IF;
+V "if (v7 <= #(0)) goto 28";
+T "Z";
+P 4;
+S "Sanity.java":12,0-12,0;
+B "Sanity.sanity_safe(II)Z":25;
+Z 0;
+LU ["j"];
+HE 15;
+HE 16;
+CF 15;
+CF 17;
+CD 13;
+CD 15;
+CD 16;
+}
+EXPR 15 {
+O assign;
+V "v6 = v7 + #(-1)";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":13,0-13,0;
+B "Sanity.sanity_safe(II)Z":28;
+Z 0;
+LD ["j"];
+LU ["j"];
+CF 16;
+DD 13;
+}
+NORM 16 {
+O compound;
+V "goto 25";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":13,0-13,0;
+B "Sanity.sanity_safe(II)Z":31;
+Z 0;
+CF 13;
+}
+NORM 17 {
+O compound;
+V "return #(0)";
+T "Z";
+P 4;
+S "Sanity.java":17,0-17,0;
+B "Sanity.sanity_safe(II)Z":35;
+Z 0;
+CF 2;
+DD 2;
+}
+ENTR 36 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+C "Primordial";
+HE 37;
+HE 38;
+HE 39;
+PS 38;
+CF 39;
+CD 39;
+CE 37;
+CE 38;
+}
+EXIT 37 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+}
+FRMO 38 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 37: "exc";
+}
+CALL 39 {
+O call;
+V "fakeWorldClinit()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "com.ibm.wala.FakeRootClass.fakeWorldClinit()V";
+HE 40;
+HE 41;
+HE 46;
+PS 40;
+CF 40: "exc";
+CF 46;
+CD 41;
+CE 40;
+CE 46;
+}
+ACTO 40 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 38: "exc";
+DD 38;
+}
+CALL 41 {
+O call;
+V "v5 = sanity_safe(v3, v4)";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 42;
+HE 43;
+HE 44;
+HE 45;
+PS 42;
+PS 43;
+PS 44;
+PS 45;
+CF 47;
+CE 42;
+CE 43;
+CE 44;
+CE 45;
+CE 47;
+CL 1: "virtual";
+}
+ACTI 42 {
+O act-in;
+V "param 1 [v3]";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+CF 43;
+PI 4;
+}
+ACTI 43 {
+O act-in;
+V "param 2 [v4]";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+CF 41;
+SU 44;
+PI 5;
+}
+ACTO 44 {
+O act-out;
+V "ret 0";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+CF 37;
+CF 45: "exc";
+}
+ACTO 45 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 47;
+CF 38: "exc";
+CE 47;
+}
+NORM 46 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 42;
+DD 40;
+}
+NORM 47 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+CF 44;
+}
+Thread 0 {
+Entry 36;
+Exit 37;
+Fork 0;
+Join 0;
+Context null;
+Dynamic false;
+}
+}

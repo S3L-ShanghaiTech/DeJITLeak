@@ -1,0 +1,2 @@
+dontinline java/lang/String.charAt
+dontprune Credential.stringEquals_safe, (Ljava/lang/String;Ljava/lang/String;)Z

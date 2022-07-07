@@ -1,0 +1,4 @@
+exclude PasswordEncoderUtils.equals_safe, (Ljava/lang/String;Ljava/lang/String;)Z
+exclude PasswordEncoderUtils.bytesUtf8, (Ljava/lang/String;)[B
+exclude java/io/PrintStream.print, (Ljava/lang/String;)V
+exclude java/io/PrintStream.newLine, ()V

@@ -1,0 +1,13 @@
+java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;
+Timing.md5(Ljava/lang/String;)Ljava/lang/String;
+java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z
+java.util.HashMap.getForNullKey()Ljava/lang/Object;
+java.lang.String.hashCode()I
+java.util.HashMap.hash(I)I
+java.lang.String.equals(Ljava/lang/Object;)Z
+java.lang.Integer.toString(I)Ljava/lang/String;
+java.util.HashMap.newHash(I)I
+java.util.HashMap.oldHash(I)I
+java.util.HashMap.indexFor(II)I
+java.lang.String.length()I
+java.lang.Object.hashCode()I

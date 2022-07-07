@@ -1,0 +1,4 @@
+UsernamePasswordLoginModule.slowEquals(Ljava/lang/String;Ljava/lang/String;)Z
+java.lang.String.charAt(I)C
+java.lang.String.length()I
+java.lang.Math.min(II)I

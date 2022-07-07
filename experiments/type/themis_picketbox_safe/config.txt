@@ -1,0 +1,2 @@
+1
+UsernamePasswordLoginModule.validatePassword_safe(Ljava/lang/String;Ljava/lang/String;)Z->p1

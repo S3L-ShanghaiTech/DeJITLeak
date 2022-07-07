@@ -1,0 +1,1 @@
+exclude UsernamePasswordLoginModule.validatePassword_safe, (Ljava/lang/String;Ljava/lang/String;)Z

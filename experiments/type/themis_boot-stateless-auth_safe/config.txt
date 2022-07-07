@@ -1,0 +1,2 @@
+7
+TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;->p1

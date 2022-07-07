@@ -1,0 +1,1 @@
+exclude fr/xephi/authme/security/crypts/UnsaltedMethod.MessageDigestisEqual, ([B[B)Z

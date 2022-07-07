@@ -1,0 +1,78 @@
+if (v36 >= p4 $width ) goto 22
+ModPow2.modPow2_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+15
+if (v14 != #(0)) goto 35
+ModPow2.modPow2_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+28
+if (p1 $n  >= #(0)) goto 4
+java.math.BigInteger.testBit(I)Z
+1
+if (v12 == #(0)) goto 33
+java.math.BigInteger.testBit(I)Z
+29
+if (v4 == #(0)) goto 14
+java.math.BigInteger.multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+4
+if (v6 != #(0)) goto 14
+java.math.BigInteger.multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+11
+if (v4 > #(0)) goto 7
+java.math.BigInteger.mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+4
+if (v8 < #(0)) goto 31
+java.math.BigInteger.mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+27
+if (p1 $n  >= #(0)) goto 5
+java.math.BigInteger.getInt(I)I
+1
+if (p1 $n  < v6) goto 16
+java.math.BigInteger.getInt(I)I
+12
+if (v14 < #(0)) goto 43
+java.math.BigInteger.getInt(I)I
+39
+if (p1 $n  > v16) goto 55
+java.math.BigInteger.getInt(I)I
+51
+if (p5 $z  == #(null)) goto 18
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+13
+if (v12 >= v13) goto 44
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+23
+if (v37 < #(0)) goto 58
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+52
+if (v65 < #(0)) goto 132
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+119
+if (v60 < #(0)) goto 146
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+140
+if (v9 >= v5) goto 13
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+8
+if (v6 != #(0)) goto 17
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+14
+if (v9 <= #(0)) goto 28
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+24
+if (v18 >= v14) goto 53
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+43
+if (v8 != #(0)) goto 39
+java.math.BigInteger.<init>([II)V
+35
+if (v4 != #(0)) goto 8
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+4
+if (v7 != v8) goto 29
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+26
+if (v12 != #(0)) goto 68
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+65
+if (v12 <= #(0)) goto 77
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+73

@@ -1,0 +1,3 @@
+exclude K96.modular_exponentiation_safe, (Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+exclude java/math/BigInteger.multiply, (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+exclude java/math/BigInteger.multiplyToLen, ([II[II[I)[I

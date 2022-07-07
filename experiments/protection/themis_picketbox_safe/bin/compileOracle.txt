@@ -1,0 +1,9 @@
+dontinline UsernamePasswordLoginModule.slowEquals, (Ljava/lang/String;Ljava/lang/String;)Z
+exclude UsernamePasswordLoginModule.slowEquals, (Ljava/lang/String;Ljava/lang/String;)Z
+dontinline java/lang/String.charAt, (I)C
+exclude java/lang/String.charAt, (I)C
+dontinline java/lang/String.length, ()I
+exclude java/lang/String.length, ()I
+dontinline java/lang/Math.min, (II)I
+exclude java/lang/Math.min, (II)I
+dontprune UsernamePasswordLoginModule.validatePassword_safe, (Ljava/lang/String;Ljava/lang/String;)Z

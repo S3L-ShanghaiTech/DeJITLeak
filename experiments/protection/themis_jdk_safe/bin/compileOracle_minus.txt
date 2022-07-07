@@ -1,0 +1,1 @@
+dontprune MessageDigest.isEqual_safe, ([B[B)Z

@@ -1,0 +1,20 @@
+#! /usr/bin/octave -qf
+
+arg_list = argv ();
+
+
+addpath('./src/informationTheory');
+addpath('./src/visualization');
+addpath('./src/utils');
+
+visualize = false; 
+animate = false;
+stops = [];
+
+experiment1 = load(arg_list{1});
+[infogain avg_infogain observables] = analyzeNoisySideChannel(experiment1.data, visualize, animate, stops);
+
+%disp(['   Obs        ', 'Leakage']);
+%disp([observables(1:end-1)', infogain']);
+%disp(['Size(observables) = ',]);
+disp(['Expected Leakage = ', num2str(avg_infogain)]);

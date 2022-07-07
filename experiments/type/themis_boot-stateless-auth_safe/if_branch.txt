@@ -1,0 +1,30 @@
+if (v4 == v5) goto 8
+TokenHandler.isEqual([B[B)Z
+4
+if (v15 >= v7) goto 22
+TokenHandler.isEqual([B[B)Z
+16
+if (v14 != #(0)) goto 40
+TokenHandler.isEqual([B[B)Z
+36
+if (v3 == #(null)) goto 8
+java.util.Date.getTimeImpl()J
+4
+if (v7 != #(0)) goto 23
+java.util.Date.getTimeImpl()J
+14
+if (v7 != #(2)) goto 15
+TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;
+10
+if (v12 <= #(0)) goto 24
+TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;
+19
+if (v16 <= #(0)) goto 34
+TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;
+28
+if (v26 == #(0)) goto 97
+TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;
+62
+if (v38 >= #(0)) goto 93
+TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;
+88

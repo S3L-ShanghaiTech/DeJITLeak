@@ -1,0 +1,18 @@
+if (p1 $null  != p2 $null ) goto 6
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+2
+if (p1 $null  == #(null)) goto 12
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+8
+if (p2 $null  != #(null)) goto 16
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+12
+if (v5 == v6) goto 25
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+21
+if (v16 >= v8) goto 39
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+33
+if (v15 != #(0)) goto 57
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+53

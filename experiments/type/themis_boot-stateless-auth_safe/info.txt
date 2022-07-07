@@ -1,0 +1,70 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/themis_boot-stateless-auth_safe/bootauth.jar'...
+	found 'com.jdriven.stateless.security.UserRole.values()[Lcom/jdriven/stateless/security/UserRole;'
+	found 'com.jdriven.stateless.security.UserRole.valueOf(Ljava/lang/String;)Lcom/jdriven/stateless/security/UserRole;'
+	found 'com.jdriven.stateless.security.UserRole.<init>(Ljava/lang/String;I)V'
+	found 'com.jdriven.stateless.security.UserRole.asAuthorityFor(Lcom/jdriven/stateless/security/User;)Lcom/jdriven/stateless/security/UserAuthority;'
+	found 'com.jdriven.stateless.security.UserRole.valueOf(Lcom/jdriven/stateless/security/UserAuthority;)Lcom/jdriven/stateless/security/UserRole;'
+	found 'com.jdriven.stateless.security.UserRole.<clinit>()V'
+	found 'TokenHandler.<init>([BZ)V'
+	found 'TokenHandler.parseUserFromToken(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;'
+	found 'TokenHandler.parseUserFromToken_safe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;'
+	found 'TokenHandler.parseUserFromToken_unsafe(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;'
+	found 'TokenHandler.isEqual([B[B)Z'
+	found 'TokenHandler.unsafe_isEqual([B[B)Z'
+	found 'TokenHandler.createTokenForUser(Lcom/jdriven/stateless/security/User;)Ljava/lang/String;'
+	found 'TokenHandler.fromJSON([B)Lcom/jdriven/stateless/security/User;'
+	found 'TokenHandler.toJSON(Lcom/jdriven/stateless/security/User;)[B'
+	found 'TokenHandler.toBase64([B)Ljava/lang/String;'
+	found 'TokenHandler.fromBase64(Ljava/lang/String;)[B'
+	found 'TokenHandler.createHmac([B)[B'
+	found 'TokenHandler.<clinit>()V'
+	found 'com.jdriven.stateless.security.User.<init>()V'
+	found 'com.jdriven.stateless.security.User.<init>(Ljava/lang/String;)V'
+	found 'com.jdriven.stateless.security.User.<init>(Ljava/lang/String;Ljava/util/Date;)V'
+	found 'com.jdriven.stateless.security.User.getId()Ljava/lang/Long;'
+	found 'com.jdriven.stateless.security.User.setId(Ljava/lang/Long;)V'
+	found 'com.jdriven.stateless.security.User.getUsername()Ljava/lang/String;'
+	found 'com.jdriven.stateless.security.User.setUsername(Ljava/lang/String;)V'
+	found 'com.jdriven.stateless.security.User.getPassword()Ljava/lang/String;'
+	found 'com.jdriven.stateless.security.User.setPassword(Ljava/lang/String;)V'
+	found 'com.jdriven.stateless.security.User.getNewPassword()Ljava/lang/String;'
+	found 'com.jdriven.stateless.security.User.setNewPassword(Ljava/lang/String;)V'
+	found 'com.jdriven.stateless.security.User.getAuthorities()Ljava/util/Set;'
+	found 'com.jdriven.stateless.security.User.getRoles()Ljava/util/Set;'
+	found 'com.jdriven.stateless.security.User.setRoles(Ljava/util/Set;)V'
+	found 'com.jdriven.stateless.security.User.grantRole(Lcom/jdriven/stateless/security/UserRole;)V'
+	found 'com.jdriven.stateless.security.User.revokeRole(Lcom/jdriven/stateless/security/UserRole;)V'
+	found 'com.jdriven.stateless.security.User.hasRole(Lcom/jdriven/stateless/security/UserRole;)Z'
+	found 'com.jdriven.stateless.security.User.isAccountNonExpired()Z'
+	found 'com.jdriven.stateless.security.User.isAccountNonLocked()Z'
+	found 'com.jdriven.stateless.security.User.isCredentialsNonExpired()Z'
+	found 'com.jdriven.stateless.security.User.isEnabled()Z'
+	found 'com.jdriven.stateless.security.User.getExpires()J'
+	found 'com.jdriven.stateless.security.User.setExpires(J)V'
+	found 'com.jdriven.stateless.security.User.toString()Ljava/lang/String;'
+	found 'com.jdriven.stateless.security.User.getAuthorities()Ljava/util/Collection;'
+	found 'com.jdriven.stateless.security.UserAuthority.<init>()V'
+	found 'com.jdriven.stateless.security.UserAuthority.getUser()Lcom/jdriven/stateless/security/User;'
+	found 'com.jdriven.stateless.security.UserAuthority.setUser(Lcom/jdriven/stateless/security/User;)V'
+	found 'com.jdriven.stateless.security.UserAuthority.getAuthority()Ljava/lang/String;'
+	found 'com.jdriven.stateless.security.UserAuthority.setAuthority(Ljava/lang/String;)V'
+	found 'com.jdriven.stateless.security.UserAuthority.equals(Ljava/lang/Object;)Z'
+	found 'com.jdriven.stateless.security.UserAuthority.hashCode()I'
+	found 'com.jdriven.stateless.security.UserAuthority.toString()Ljava/lang/String;'
+done.
+Methods found: 52
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5030 classes) done.
+Setting up entrypoint TokenHandler.parseUserFromToken(Ljava/lang/String;)Lcom/jdriven/stateless/security/User;... done.
+Building system dependence graph... 
+	callgraph: 21 nodes and 34 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 3795ms - Memory: 344M used.
+
+######################################################
+
+Taint analysis takes: 25 ms.

@@ -1,0 +1,1 @@
+exclude ModPow1.modPow1_safe, (Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;

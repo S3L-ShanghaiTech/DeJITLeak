@@ -1,0 +1,45 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/apache_ftpserver_salted_safe/salted.jar'...
+	found 'org.apache.ftpserver.usermanager.PasswordEncryptor.encrypt(Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.usermanager.PasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'org.apache.ftpserver.util.EncryptUtils.<init>()V'
+	found 'org.apache.ftpserver.util.EncryptUtils.encrypt([BLjava/lang/String;)[B'
+	found 'org.apache.ftpserver.util.EncryptUtils.encrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.EncryptUtils.encryptMD5(Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.EncryptUtils.encryptSHA(Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.<init>()V'
+	found 'org.apache.ftpserver.util.StringUtils.replaceString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.replaceString(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.replaceString(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.formatHtml(Ljava/lang/String;ZZZ)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.pad(Ljava/lang/String;CZI)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.pad_unsafe(Ljava/lang/String;CZI)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.pad_safe(Ljava/lang/String;CZI)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.toHexString([B)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.toByteArray(Ljava/lang/String;)[B'
+	found 'org.apache.ftpserver.util.StringUtils.<clinit>()V'
+	found 'org.apache.ftpserver.usermanager.PasswordUtil.<init>()V'
+	found 'org.apache.ftpserver.usermanager.PasswordUtil.secureCompare(Ljava/lang/String;Ljava/lang/String;I)Z'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.<init>()V'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.<init>(Z)V'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.encrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.encrypt(Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.equalsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.regionMatches(Ljava/lang/String;ZILjava/lang/String;II)Z'
+done.
+Methods found: 27
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5031 classes) done.
+Setting up entrypoint org.apache.ftpserver.usermanager.SaltedPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z... done.
+Building system dependence graph... 
+	callgraph: 51 nodes and 82 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 2524ms - Memory: 258M used.
+
+######################################################
+
+Taint analysis takes: 25 ms.

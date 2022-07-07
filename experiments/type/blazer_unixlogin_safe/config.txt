@@ -1,0 +1,3 @@
+4
+Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z->p1
+Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z->p2

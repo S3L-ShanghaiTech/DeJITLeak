@@ -1,0 +1,2 @@
+2
+K96.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;->p2

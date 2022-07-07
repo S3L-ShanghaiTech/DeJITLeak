@@ -1,0 +1,336 @@
+if (v28 >= p4 $w ) goto 22
+K96.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+16
+if (v10 == #(0)) goto 35
+K96.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+25
+if (p1 $n  >= #(0)) goto 4
+java.math.BigInteger.testBit(I)Z
+1
+if (v12 == #(0)) goto 33
+java.math.BigInteger.testBit(I)Z
+29
+if (v18 >= v7) goto 16
+K96.standardMultiply(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+11
+if (v9 == #(0)) goto 32
+K96.standardMultiply(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+19
+if (v4 > #(0)) goto 7
+java.math.BigInteger.mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+4
+if (v8 < #(0)) goto 31
+java.math.BigInteger.mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+27
+if (v4 == #(0)) goto 14
+java.math.BigInteger.multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+4
+if (v6 != #(0)) goto 14
+java.math.BigInteger.multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+11
+if (p1 $n  >= #(0)) goto 5
+java.math.BigInteger.getInt(I)I
+1
+if (p1 $n  < v6) goto 16
+java.math.BigInteger.getInt(I)I
+12
+if (v14 < #(0)) goto 43
+java.math.BigInteger.getInt(I)I
+39
+if (p1 $n  > v16) goto 55
+java.math.BigInteger.getInt(I)I
+51
+if (v3 != #(-1)) goto 9
+java.math.BigInteger.bitLength()I
+5
+if (v5 != #(0)) goto 17
+java.math.BigInteger.bitLength()I
+12
+if (v18 >= #(0)) goto 51
+java.math.BigInteger.bitLength()I
+47
+if (v22 != #(1)) goto 64
+java.math.BigInteger.bitLength()I
+60
+if (v31 >= v25) goto 81
+java.math.BigInteger.bitLength()I
+77
+if (v30 == #(0)) goto 85
+java.math.BigInteger.bitLength()I
+81
+if (v27 != #(0)) goto 94
+java.math.BigInteger.bitLength()I
+90
+if (v30 == #(0)) goto 112
+java.math.BigInteger.bitLength()I
+107
+if (v4 != #(0)) goto 7
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+4
+if (p1 $n  != #(0)) goto 16
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+12
+if (p1 $n  >= #(0)) goto 23
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+18
+if (v9 != #(0)) goto 54
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+48
+if (v47 >= v11) goto 87
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+66
+if (v17 == #(0)) goto 118
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+112
+if (v38 >= v27) goto 162
+java.math.BigInteger.shiftLeft(I)Ljava/math/BigInteger;
+155
+if (v4 != #(0)) goto 8
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+4
+if (v6 != #(0)) goto 17
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+13
+if (v7 != v8) goto 29
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+26
+if (v12 != #(0)) goto 68
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+65
+if (v12 <= #(0)) goto 77
+java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+73
+if (p5 $z  == #(null)) goto 18
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+13
+if (v12 >= v13) goto 44
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+23
+if (v37 < #(0)) goto 58
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+52
+if (v65 < #(0)) goto 132
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+119
+if (v60 < #(0)) goto 146
+java.math.BigInteger.multiplyToLen([II[II[I)[I
+140
+if (v9 >= v5) goto 13
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+8
+if (v6 != #(0)) goto 17
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+14
+if (v9 <= #(0)) goto 28
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+24
+if (v18 >= v14) goto 53
+java.math.BigInteger.trustedStripLeadingZeroInts([I)[I
+43
+if (v8 != #(0)) goto 39
+java.math.BigInteger.<init>([II)V
+35
+if (p1 $w  >= #(32768)) goto 10
+java.math.BigInteger.bitLen(I)I
+3
+if (p1 $w  >= #(128)) goto 16
+java.math.BigInteger.bitLen(I)I
+10
+if (p1 $w  >= #(8)) goto 21
+java.math.BigInteger.bitLen(I)I
+16
+if (p1 $w  >= #(2)) goto 26
+java.math.BigInteger.bitLen(I)I
+21
+if (p1 $w  >= #(1)) goto 30
+java.math.BigInteger.bitLen(I)I
+26
+if (p1 $w  >= #(0)) goto 35
+java.math.BigInteger.bitLen(I)I
+30
+if (p1 $w  >= #(4)) goto 52
+java.math.BigInteger.bitLen(I)I
+48
+if (p1 $w  >= #(32)) goto 68
+java.math.BigInteger.bitLen(I)I
+62
+if (p1 $w  >= #(16)) goto 72
+java.math.BigInteger.bitLen(I)I
+68
+if (p1 $w  >= #(64)) goto 87
+java.math.BigInteger.bitLen(I)I
+82
+if (p1 $w  >= #(2048)) goto 106
+java.math.BigInteger.bitLen(I)I
+99
+if (p1 $w  >= #(512)) goto 113
+java.math.BigInteger.bitLen(I)I
+106
+if (p1 $w  >= #(256)) goto 118
+java.math.BigInteger.bitLen(I)I
+113
+if (p1 $w  >= #(1024)) goto 135
+java.math.BigInteger.bitLen(I)I
+130
+if (p1 $w  >= #(8192)) goto 154
+java.math.BigInteger.bitLen(I)I
+147
+if (p1 $w  >= #(4096)) goto 159
+java.math.BigInteger.bitLen(I)I
+154
+if (p1 $w  >= #(16384)) goto 176
+java.math.BigInteger.bitLen(I)I
+171
+if (p1 $w  >= #(8388608)) goto 193
+java.math.BigInteger.bitLen(I)I
+187
+if (p1 $w  >= #(524288)) goto 199
+java.math.BigInteger.bitLen(I)I
+193
+if (p1 $w  >= #(131072)) goto 205
+java.math.BigInteger.bitLen(I)I
+199
+if (p1 $w  >= #(65536)) goto 210
+java.math.BigInteger.bitLen(I)I
+205
+if (p1 $w  >= #(262144)) goto 226
+java.math.BigInteger.bitLen(I)I
+221
+if (p1 $w  >= #(2097152)) goto 243
+java.math.BigInteger.bitLen(I)I
+237
+if (p1 $w  >= #(1048576)) goto 248
+java.math.BigInteger.bitLen(I)I
+243
+if (p1 $w  >= #(4194304)) goto 264
+java.math.BigInteger.bitLen(I)I
+259
+if (p1 $w  >= #(134217728)) goto 281
+java.math.BigInteger.bitLen(I)I
+275
+if (p1 $w  >= #(33554432)) goto 287
+java.math.BigInteger.bitLen(I)I
+281
+if (p1 $w  >= #(16777216)) goto 292
+java.math.BigInteger.bitLen(I)I
+287
+if (p1 $w  >= #(67108864)) goto 308
+java.math.BigInteger.bitLen(I)I
+303
+if (p1 $w  >= #(536870912)) goto 325
+java.math.BigInteger.bitLen(I)I
+319
+if (p1 $w  >= #(268435456)) goto 330
+java.math.BigInteger.bitLen(I)I
+325
+if (p1 $w  >= #(1073741824)) goto 346
+java.math.BigInteger.bitLen(I)I
+341
+if (p1 $n  != #(0)) goto 5
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+1
+if (p1 $n  >= #(0)) goto 12
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+7
+if (v6 < v10) goto 43
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+39
+if (v76 < #(0)) goto 49
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+46
+if (v8 != #(0)) goto 68
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+62
+if (v44 >= v39) goto 105
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+84
+if (v14 == #(0)) goto 129
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+123
+if (v38 >= v27) goto 212
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+174
+if (v48 >= #(0)) goto 316
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+215
+if (v57 < v50) goto 242
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+237
+if (v56 != #(0)) goto 246
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+242
+if (v52 == #(0)) goto 256
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+252
+if (v56 != #(0)) goto 305
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+270
+if (v8 == #(0)) goto 305
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+274
+if (v63 == #(0)) goto 297
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+293
+if (v66 == #(0)) goto 316
+java.math.BigInteger.shiftRight(I)Ljava/math/BigInteger;
+305
+if (v4 >= v5) goto 14
+java.math.BigInteger.add([I[I)[I
+4
+if (v29 <= #(0)) goto 32
+java.math.BigInteger.add([I[I)[I
+28
+if (v32 == #(0)) goto 83
+java.math.BigInteger.add([I[I)[I
+79
+if (v39 <= #(0)) goto 125
+java.math.BigInteger.add([I[I)[I
+90
+if (v40 == #(0)) goto 125
+java.math.BigInteger.add([I[I)[I
+95
+if (v37 != #(0)) goto 115
+java.math.BigInteger.add([I[I)[I
+111
+if (v43 <= #(0)) goto 130
+java.math.BigInteger.add([I[I)[I
+125
+if (v40 == #(0)) goto 198
+java.math.BigInteger.add([I[I)[I
+143
+if (v50 >= v45) goto 178
+java.math.BigInteger.add([I[I)[I
+166
+if (v4 >= v5) goto 8
+java.math.BigInteger.intArrayCmp([I[I)I
+4
+if (v6 <= v7) goto 17
+java.math.BigInteger.intArrayCmp([I[I)I
+13
+if (v21 >= v9) goto 28
+java.math.BigInteger.intArrayCmp([I[I)I
+23
+if (v17 >= #(0)) goto 53
+java.math.BigInteger.intArrayCmp([I[I)I
+49
+if (v18 <= #(0)) goto 62
+java.math.BigInteger.intArrayCmp([I[I)I
+58
+if (v25 <= #(0)) goto 20
+java.math.BigInteger.subtract([I[I)[I
+16
+if (v28 == #(0)) goto 71
+java.math.BigInteger.subtract([I[I)[I
+67
+if (v35 <= #(0)) goto 113
+java.math.BigInteger.subtract([I[I)[I
+78
+if (v36 == #(0)) goto 113
+java.math.BigInteger.subtract([I[I)[I
+83
+if (v33 != #(-1)) goto 103
+java.math.BigInteger.subtract([I[I)[I
+99
+if (v39 <= #(0)) goto 117
+java.math.BigInteger.subtract([I[I)[I
+113

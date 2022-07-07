@@ -1,0 +1,2 @@
+1
+Credential.stringEquals_safe(Ljava/lang/String;Ljava/lang/String;)Z->p2

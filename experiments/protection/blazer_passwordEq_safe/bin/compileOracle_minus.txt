@@ -1,0 +1,3 @@
+dontinline java/lang/String.charAt
+dontprune User.passwordsEqual_safe, (Ljava/lang/String;Ljava/lang/String;)Z
+dontprune java/lang/Math.min, (II)I

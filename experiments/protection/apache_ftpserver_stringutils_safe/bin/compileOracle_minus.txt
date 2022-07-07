@@ -1,0 +1,16 @@
+dontinline java/lang/StringBuilder.append
+dontinline java/lang/StringBuilder.<init>
+dontinline java/lang/StringBuilder.append
+dontinline java/lang/StringBuilder.toString
+dontinline java/lang/AbstractStringBuilder.expandCapacity
+dontinline java/lang/String.getChars
+dontinline java/lang/AbstractStringBuilder.append
+dontinline java/lang/AbstractStringBuilder.<init>
+dontinline java/lang/AbstractStringBuilder.append
+dontinline java/lang/String.<init>
+dontinline java/lang/Object.<init>
+dontinline java/lang/String.length
+dontprune org/apache/ftpserver/util/StringUtils.pad_safe, (Ljava/lang/String;CZI)Ljava/lang/String;
+dontprune java/lang/Math.min, (II)I
+dontprune java/lang/AbstractStringBuilder.append, (C)Ljava/lang/AbstractStringBuilder;
+dontprune java/lang/AbstractStringBuilder.append, (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;

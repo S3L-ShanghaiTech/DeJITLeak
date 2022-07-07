@@ -1,0 +1,29 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/apache_ftpserver_stringutils_safe/stringutils.jar'...
+	found 'org.apache.ftpserver.util.StringUtils.<init>()V'
+	found 'org.apache.ftpserver.util.StringUtils.replaceString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.replaceString(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.replaceString(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.formatHtml(Ljava/lang/String;ZZZ)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.pad(Ljava/lang/String;CZI)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.pad_unsafe(Ljava/lang/String;CZI)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.pad_safe(Ljava/lang/String;CZI)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.toHexString([B)Ljava/lang/String;'
+	found 'org.apache.ftpserver.util.StringUtils.toByteArray(Ljava/lang/String;)[B'
+	found 'org.apache.ftpserver.util.StringUtils.<clinit>()V'
+done.
+Methods found: 11
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint org.apache.ftpserver.util.StringUtils.pad_safe(Ljava/lang/String;CZI)Ljava/lang/String;... done.
+Building system dependence graph... 
+	callgraph: 15 nodes and 25 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 1486ms - Memory: 245M used.
+
+######################################################
+
+Taint analysis takes: 19 ms.

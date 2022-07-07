@@ -1,0 +1,2 @@
+34
+fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z->p1

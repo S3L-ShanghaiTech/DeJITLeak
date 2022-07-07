@@ -1,0 +1,2 @@
+java.lang.String.getBytes(Ljava/lang/String;)[B
+java.io.OutputStream.flush()V

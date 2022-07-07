@@ -1,0 +1,6 @@
+if (p1 $a  <= #(0)) goto 9
+Sanity.straightline_safe(II)Z
+5
+if (p2 $b  <= #(0)) goto 14
+Sanity.straightline_safe(II)Z
+9

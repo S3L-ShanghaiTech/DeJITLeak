@@ -1,0 +1,3 @@
+[submodule "src/type/joana"]
+	path = src/type/joana
+	url = https://github.com/joana-team/joana

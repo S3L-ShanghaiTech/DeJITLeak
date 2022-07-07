@@ -1,0 +1,198 @@
+SDG "minCase.test(int)" root 6 {
+ENTR 1 {
+O entry;
+V "minCase.test(int)";
+P 4;
+S "minCase.java":0,0-0,0;
+B "minCase.test(I)V":-1;
+Z 0;
+C "Application";
+HE 2;
+HE 3;
+HE 4;
+HE 5;
+PS 3;
+PS 4;
+CF 4;
+CD 5;
+CE 2;
+CE 3;
+CE 4;
+}
+EXIT 2 {
+O exit;
+V "minCase.test(int)";
+T "V";
+P 4;
+S "minCase.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 15;
+}
+FRMO 3 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "minCase.java":0,0-0,0;
+B "<exception>":-2;
+CF 2: "exc";
+PO 13;
+}
+FRMI 4 {
+O form-in;
+V "param 1";
+T "I";
+P 4;
+S "minCase.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["null"];
+CF 5;
+}
+NORM 5 {
+O compound;
+V "return";
+T "V";
+P 4;
+S "minCase.java":4,0-4,0;
+B "minCase.test(I)V":0;
+Z 0;
+CF 2;
+}
+ENTR 6 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+C "Primordial";
+HE 7;
+HE 8;
+HE 9;
+PS 8;
+CF 9;
+CD 9;
+CE 7;
+CE 8;
+}
+EXIT 7 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+}
+FRMO 8 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 7: "exc";
+}
+CALL 9 {
+O call;
+V "fakeWorldClinit()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "com.ibm.wala.FakeRootClass.fakeWorldClinit()V";
+HE 10;
+HE 11;
+HE 14;
+PS 10;
+CF 10: "exc";
+CF 14;
+CD 11;
+CE 10;
+CE 14;
+}
+ACTO 10 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 8: "exc";
+DD 8;
+}
+CALL 11 {
+O call;
+V "test(v3)";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 12;
+HE 13;
+PS 12;
+PS 13;
+CF 13: "exc";
+CF 15;
+CE 12;
+CE 13;
+CE 15;
+CL 1: "virtual";
+}
+ACTI 12 {
+O act-in;
+V "param 1 [v3]";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+CF 11;
+PI 4;
+}
+ACTO 13 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 15;
+CF 8: "exc";
+CE 15;
+}
+NORM 14 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 12;
+DD 10;
+}
+NORM 15 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+CF 7;
+}
+Thread 0 {
+Entry 6;
+Exit 7;
+Fork 0;
+Join 0;
+Context null;
+Dynamic false;
+}
+}

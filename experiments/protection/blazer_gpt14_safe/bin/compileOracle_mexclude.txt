@@ -1,0 +1,3 @@
+exclude GPT14.modular_exponentiation_safe, (Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+exclude java/math/BigInteger.bitLength, ()I
+exclude java/math/BigInteger.bitLen, (I)I

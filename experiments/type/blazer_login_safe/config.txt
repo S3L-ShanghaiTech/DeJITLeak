@@ -1,0 +1,2 @@
+3
+PWCheck.pwcheck3_safe([B[B)Z->p2

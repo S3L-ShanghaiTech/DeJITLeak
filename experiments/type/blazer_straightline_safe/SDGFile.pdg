@@ -1,0 +1,1214 @@
+SDG "Sanity.straightline_safe(int,int)" root 259 {
+ENTR 1 {
+O entry;
+V "Sanity.straightline_safe(int,int)";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "Sanity.straightline_safe(II)Z":-1;
+Z 0;
+C "Application";
+HE 2;
+HE 3;
+HE 4;
+HE 5;
+HE 6;
+HE 69;
+PS 2;
+PS 3;
+PS 4;
+PS 5;
+CF 4;
+CD 6;
+CD 69;
+CE 2;
+CE 3;
+CE 4;
+CE 5;
+}
+EXIT 2 {
+O exit;
+V "Sanity.straightline_safe(int,int)";
+T "Z";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 270;
+PO 267;
+}
+FRMO 3 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<exception>":-2;
+CF 2: "exc";
+PO 268;
+}
+FRMI 4 {
+O form-in;
+V "param 1 $a ";
+T "I";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["a", "x"];
+CF 5;
+DD 6;
+}
+FRMI 5 {
+O form-in;
+V "param 2 $b ";
+T "I";
+P 4;
+S "Sanity.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["b", "y"];
+CF 6;
+DD 7;
+DD 8;
+DD 39;
+}
+PRED 6 {
+O IF;
+V "if (p1 $a  <= #(0)) goto 9";
+T "Z";
+P 4;
+S "Sanity.java":21,0-21,0;
+B "Sanity.straightline_safe(II)Z":5;
+Z 0;
+LU ["a", "x"];
+HE 7;
+CF 7;
+CF 39;
+CD 7;
+CD 39;
+CD 40;
+CD 41;
+CD 42;
+CD 43;
+CD 44;
+CD 45;
+CD 46;
+CD 47;
+CD 48;
+CD 49;
+CD 50;
+CD 51;
+CD 52;
+CD 53;
+CD 54;
+CD 55;
+CD 56;
+CD 57;
+CD 58;
+CD 59;
+CD 60;
+CD 61;
+CD 62;
+CD 63;
+CD 64;
+CD 65;
+CD 66;
+CD 67;
+CD 68;
+}
+PRED 7 {
+O IF;
+V "if (p2 $b  <= #(0)) goto 14";
+T "Z";
+P 4;
+S "Sanity.java":21,0-21,0;
+B "Sanity.straightline_safe(II)Z":9;
+Z 0;
+LU ["b", "y"];
+HE 8;
+HE 9;
+HE 10;
+HE 11;
+HE 12;
+HE 13;
+HE 14;
+HE 15;
+HE 16;
+HE 17;
+HE 18;
+HE 19;
+HE 20;
+HE 21;
+HE 22;
+HE 23;
+HE 24;
+HE 25;
+HE 26;
+HE 27;
+HE 28;
+HE 29;
+HE 30;
+HE 31;
+HE 32;
+HE 33;
+HE 34;
+HE 35;
+HE 36;
+HE 37;
+HE 38;
+HE 39;
+HE 40;
+HE 41;
+HE 42;
+HE 43;
+HE 44;
+HE 45;
+HE 46;
+HE 47;
+HE 48;
+HE 49;
+HE 50;
+HE 51;
+HE 52;
+HE 53;
+HE 54;
+HE 55;
+HE 56;
+HE 57;
+HE 58;
+HE 59;
+HE 60;
+HE 61;
+HE 62;
+HE 63;
+HE 64;
+HE 65;
+HE 66;
+HE 67;
+HE 68;
+CF 8;
+CF 39;
+CD 8;
+CD 9;
+CD 10;
+CD 11;
+CD 12;
+CD 13;
+CD 14;
+CD 15;
+CD 16;
+CD 17;
+CD 18;
+CD 19;
+CD 20;
+CD 21;
+CD 22;
+CD 23;
+CD 24;
+CD 25;
+CD 26;
+CD 27;
+CD 28;
+CD 29;
+CD 30;
+CD 31;
+CD 32;
+CD 33;
+CD 34;
+CD 35;
+CD 36;
+CD 37;
+CD 38;
+CD 39;
+CD 40;
+CD 41;
+CD 42;
+CD 43;
+CD 44;
+CD 45;
+CD 46;
+CD 47;
+CD 48;
+CD 49;
+CD 50;
+CD 51;
+CD 52;
+CD 53;
+CD 54;
+CD 55;
+CD 56;
+CD 57;
+CD 58;
+CD 59;
+CD 60;
+CD 61;
+CD 62;
+CD 63;
+CD 64;
+CD 65;
+CD 66;
+CD 67;
+CD 68;
+}
+EXPR 8 {
+O assign;
+V "v45 = #(1) + p2 $b ";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":14;
+Z 0;
+LD ["x"];
+LU ["b", "y"];
+CF 9;
+DD 9;
+}
+EXPR 9 {
+O assign;
+V "v46 = #(2) + v45";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":18;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 10;
+DD 10;
+}
+EXPR 10 {
+O assign;
+V "v47 = #(3) + v46";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":22;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 11;
+DD 11;
+}
+EXPR 11 {
+O assign;
+V "v48 = #(4) + v47";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":26;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 12;
+DD 12;
+}
+EXPR 12 {
+O assign;
+V "v49 = #(5) + v48";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":30;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 13;
+DD 13;
+}
+EXPR 13 {
+O assign;
+V "v50 = #(6) + v49";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":35;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 14;
+DD 14;
+}
+EXPR 14 {
+O assign;
+V "v51 = #(7) + v50";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":40;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 15;
+DD 15;
+}
+EXPR 15 {
+O assign;
+V "v52 = #(8) + v51";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":45;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 16;
+DD 16;
+}
+EXPR 16 {
+O assign;
+V "v53 = #(9) + v52";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":50;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 17;
+DD 17;
+}
+EXPR 17 {
+O assign;
+V "v54 = #(10) + v53";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":22,0-22,0;
+B "Sanity.straightline_safe(II)Z":55;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 18;
+DD 18;
+}
+EXPR 18 {
+O assign;
+V "v55 = #(1) + v54";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":59;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 19;
+DD 19;
+}
+EXPR 19 {
+O assign;
+V "v56 = #(2) + v55";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":63;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 20;
+DD 20;
+}
+EXPR 20 {
+O assign;
+V "v57 = #(3) + v56";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":67;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 21;
+DD 21;
+}
+EXPR 21 {
+O assign;
+V "v58 = #(4) + v57";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":71;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 22;
+DD 22;
+}
+EXPR 22 {
+O assign;
+V "v59 = #(5) + v58";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":75;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 23;
+DD 23;
+}
+EXPR 23 {
+O assign;
+V "v60 = #(6) + v59";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":80;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 24;
+DD 24;
+}
+EXPR 24 {
+O assign;
+V "v61 = #(7) + v60";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":85;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 25;
+DD 25;
+}
+EXPR 25 {
+O assign;
+V "v62 = #(8) + v61";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":90;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 26;
+DD 26;
+}
+EXPR 26 {
+O assign;
+V "v63 = #(9) + v62";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":95;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 27;
+DD 27;
+}
+EXPR 27 {
+O assign;
+V "v64 = #(10) + v63";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":23,0-23,0;
+B "Sanity.straightline_safe(II)Z":100;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 28;
+DD 28;
+}
+EXPR 28 {
+O assign;
+V "v65 = #(1) + v64";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":104;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 29;
+DD 29;
+}
+EXPR 29 {
+O assign;
+V "v66 = #(2) + v65";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":108;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 30;
+DD 30;
+}
+EXPR 30 {
+O assign;
+V "v67 = #(3) + v66";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":112;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 31;
+DD 31;
+}
+EXPR 31 {
+O assign;
+V "v68 = #(4) + v67";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":116;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 32;
+DD 32;
+}
+EXPR 32 {
+O assign;
+V "v69 = #(5) + v68";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":120;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 33;
+DD 33;
+}
+EXPR 33 {
+O assign;
+V "v70 = #(6) + v69";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":125;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 34;
+DD 34;
+}
+EXPR 34 {
+O assign;
+V "v71 = #(7) + v70";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":130;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 35;
+DD 35;
+}
+EXPR 35 {
+O assign;
+V "v72 = #(8) + v71";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":135;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 36;
+DD 36;
+}
+EXPR 36 {
+O assign;
+V "v73 = #(9) + v72";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":140;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 37;
+DD 37;
+}
+EXPR 37 {
+O assign;
+V "v74 = #(10) + v73";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":145;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 38;
+}
+NORM 38 {
+O compound;
+V "goto 286";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":24,0-24,0;
+B "Sanity.straightline_safe(II)Z":147;
+Z 0;
+CF 69;
+}
+EXPR 39 {
+O assign;
+V "v6 = #(1) + p2 $b ";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":152;
+Z 0;
+LD ["x"];
+LU ["b", "y"];
+CF 40;
+DD 40;
+}
+EXPR 40 {
+O assign;
+V "v8 = #(2) + v6";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":156;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 41;
+DD 41;
+}
+EXPR 41 {
+O assign;
+V "v10 = #(3) + v8";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":160;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 42;
+DD 42;
+}
+EXPR 42 {
+O assign;
+V "v12 = #(4) + v10";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":164;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 43;
+DD 43;
+}
+EXPR 43 {
+O assign;
+V "v14 = #(5) + v12";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":168;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 44;
+DD 44;
+}
+EXPR 44 {
+O assign;
+V "v16 = #(6) + v14";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":173;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 45;
+DD 45;
+}
+EXPR 45 {
+O assign;
+V "v18 = #(7) + v16";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":178;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 46;
+DD 46;
+}
+EXPR 46 {
+O assign;
+V "v20 = #(8) + v18";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":183;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 47;
+DD 47;
+}
+EXPR 47 {
+O assign;
+V "v22 = #(9) + v20";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":188;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 48;
+DD 48;
+}
+EXPR 48 {
+O assign;
+V "v24 = #(10) + v22";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":26,0-26,0;
+B "Sanity.straightline_safe(II)Z":193;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 49;
+DD 49;
+}
+EXPR 49 {
+O assign;
+V "v25 = #(1) + v24";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":197;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 50;
+DD 50;
+}
+EXPR 50 {
+O assign;
+V "v26 = #(2) + v25";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":201;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 51;
+DD 51;
+}
+EXPR 51 {
+O assign;
+V "v27 = #(3) + v26";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":205;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 52;
+DD 52;
+}
+EXPR 52 {
+O assign;
+V "v28 = #(4) + v27";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":209;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 53;
+DD 53;
+}
+EXPR 53 {
+O assign;
+V "v29 = #(5) + v28";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":213;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 54;
+DD 54;
+}
+EXPR 54 {
+O assign;
+V "v30 = #(6) + v29";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":218;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 55;
+DD 55;
+}
+EXPR 55 {
+O assign;
+V "v31 = #(7) + v30";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":223;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 56;
+DD 56;
+}
+EXPR 56 {
+O assign;
+V "v32 = #(8) + v31";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":228;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 57;
+DD 57;
+}
+EXPR 57 {
+O assign;
+V "v33 = #(9) + v32";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":233;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 58;
+DD 58;
+}
+EXPR 58 {
+O assign;
+V "v34 = #(10) + v33";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":27,0-27,0;
+B "Sanity.straightline_safe(II)Z":238;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 59;
+DD 59;
+}
+EXPR 59 {
+O assign;
+V "v35 = #(1) + v34";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":242;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 60;
+DD 60;
+}
+EXPR 60 {
+O assign;
+V "v36 = #(2) + v35";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":246;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 61;
+DD 61;
+}
+EXPR 61 {
+O assign;
+V "v37 = #(3) + v36";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":250;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 62;
+DD 62;
+}
+EXPR 62 {
+O assign;
+V "v38 = #(4) + v37";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":254;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 63;
+DD 63;
+}
+EXPR 63 {
+O assign;
+V "v39 = #(5) + v38";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":258;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 64;
+DD 64;
+}
+EXPR 64 {
+O assign;
+V "v40 = #(6) + v39";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":263;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 65;
+DD 65;
+}
+EXPR 65 {
+O assign;
+V "v41 = #(7) + v40";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":268;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 66;
+DD 66;
+}
+EXPR 66 {
+O assign;
+V "v42 = #(8) + v41";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":273;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 67;
+DD 67;
+}
+EXPR 67 {
+O assign;
+V "v43 = #(9) + v42";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":278;
+Z 0;
+LD ["x"];
+LU ["y"];
+CF 68;
+DD 68;
+}
+EXPR 68 {
+O assign;
+V "v44 = #(10) + v43";
+T "Ljava/lang/Object";
+P 4;
+S "Sanity.java":28,0-28,0;
+B "Sanity.straightline_safe(II)Z":283;
+Z 0;
+LD ["y"];
+LU ["x"];
+CF 69;
+}
+NORM 69 {
+O compound;
+V "return #(0)";
+T "Z";
+P 4;
+S "Sanity.java":30,0-30,0;
+B "Sanity.straightline_safe(II)Z":286;
+Z 0;
+CF 2;
+DD 2;
+}
+ENTR 259 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+C "Primordial";
+HE 260;
+HE 261;
+HE 262;
+PS 261;
+CF 262;
+CD 262;
+CE 260;
+CE 261;
+}
+EXIT 260 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+}
+FRMO 261 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 260: "exc";
+}
+CALL 262 {
+O call;
+V "fakeWorldClinit()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "com.ibm.wala.FakeRootClass.fakeWorldClinit()V";
+HE 263;
+HE 264;
+HE 269;
+PS 263;
+CF 263: "exc";
+CF 269;
+CD 264;
+CE 263;
+CE 269;
+}
+ACTO 263 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 261: "exc";
+DD 261;
+}
+CALL 264 {
+O call;
+V "v5 = straightline_safe(v3, v4)";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 265;
+HE 266;
+HE 267;
+HE 268;
+PS 265;
+PS 266;
+PS 267;
+PS 268;
+CF 270;
+CE 265;
+CE 266;
+CE 267;
+CE 268;
+CE 270;
+CL 1: "virtual";
+}
+ACTI 265 {
+O act-in;
+V "param 1 [v3]";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+CF 266;
+PI 4;
+}
+ACTI 266 {
+O act-in;
+V "param 2 [v4]";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+CF 264;
+PI 5;
+}
+ACTO 267 {
+O act-out;
+V "ret 0";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+CF 260;
+CF 268: "exc";
+}
+ACTO 268 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 270;
+CF 261: "exc";
+CE 270;
+}
+NORM 269 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 265;
+DD 263;
+}
+NORM 270 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+CF 267;
+}
+Thread 0 {
+Entry 259;
+Exit 260;
+Fork 0;
+Join 0;
+Context null;
+Dynamic false;
+}
+}

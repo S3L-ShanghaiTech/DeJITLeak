@@ -1,0 +1,36 @@
+if (p2 $null  != #(null)) goto 4
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z
+1
+if (p1 $null  != #(null)) goto 18
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z
+15
+if (v6 == #(0)) goto 40
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z
+32
+if (p3 $null  >= v6) goto 8
+org.apache.ftpserver.usermanager.PasswordUtil.secureCompare(Ljava/lang/String;Ljava/lang/String;I)Z
+5
+if (v8 != v10) goto 30
+org.apache.ftpserver.usermanager.PasswordUtil.secureCompare(Ljava/lang/String;Ljava/lang/String;I)Z
+26
+if (v28 >= p3 $null ) goto 49
+org.apache.ftpserver.usermanager.PasswordUtil.secureCompare(Ljava/lang/String;Ljava/lang/String;I)Z
+41
+if (v27 != #(0)) goto 81
+org.apache.ftpserver.usermanager.PasswordUtil.secureCompare(Ljava/lang/String;Ljava/lang/String;I)Z
+77
+if (p1 $null  != p2 $null ) goto 6
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+2
+if (v5 == #(0)) goto 15
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+11
+if (v9 != v11) goto 35
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+31
+if (v22 == #(0)) goto 61
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+54
+if (v18 == v19) goto 71
+org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+67

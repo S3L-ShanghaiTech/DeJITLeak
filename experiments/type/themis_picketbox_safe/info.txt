@@ -1,0 +1,23 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/themis_picketbox_safe/picketbox.jar'...
+	found 'UsernamePasswordLoginModule.<init>()V'
+	found 'UsernamePasswordLoginModule.validatePassword_safe(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'UsernamePasswordLoginModule.validatePassword_unsafe(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'UsernamePasswordLoginModule.slowEquals(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'UsernamePasswordLoginModule.equals(Ljava/lang/String;Ljava/lang/String;)Z'
+done.
+Methods found: 5
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint UsernamePasswordLoginModule.validatePassword_safe(Ljava/lang/String;Ljava/lang/String;)Z... done.
+Building system dependence graph... 
+	callgraph: 6 nodes and 7 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 1462ms - Memory: 235M used.
+
+######################################################
+
+Taint analysis takes: 17 ms.

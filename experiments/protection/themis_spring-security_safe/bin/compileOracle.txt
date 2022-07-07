@@ -1,0 +1,8 @@
+dontinline java/lang/String.getBytes, (Ljava/lang/String;)[B
+exclude java/lang/String.getBytes, (Ljava/lang/String;)[B
+dontinline java/io/OutputStream.flush, ()V
+exclude java/io/OutputStream.flush, ()V
+dontprune PasswordEncoderUtils.equals_safe, (Ljava/lang/String;Ljava/lang/String;)Z
+dontprune PasswordEncoderUtils.bytesUtf8, (Ljava/lang/String;)[B
+dontprune java/io/PrintStream.print, (Ljava/lang/String;)V
+dontprune java/io/PrintStream.newLine, ()V

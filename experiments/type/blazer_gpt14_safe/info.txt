@@ -1,0 +1,22 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/blazer_gpt14_safe/blazer_gpt14.jar'...
+	found 'GPT14.<init>()V'
+	found 'GPT14.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;'
+	found 'GPT14.sqr_basecase(Ljava/math/BigInteger;)Ljava/math/BigInteger;'
+	found 'GPT14.modular_exponentiation_inline_unsafe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;'
+done.
+Methods found: 4
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint GPT14.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;... done.
+Building system dependence graph... 
+	callgraph: 17 nodes and 22 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 1910ms - Memory: 315M used.
+
+######################################################
+
+Taint analysis takes: 35 ms.

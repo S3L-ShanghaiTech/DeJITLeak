@@ -1,0 +1,1 @@
+dontprune PWCheck.pwcheck3_safe, ([B[B)Z

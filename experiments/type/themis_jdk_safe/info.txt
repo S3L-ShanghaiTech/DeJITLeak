@@ -1,0 +1,21 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/themis_jdk_safe/jdk.jar'...
+	found 'MessageDigest.<init>()V'
+	found 'MessageDigest.isEqual_unsafe([B[B)Z'
+	found 'MessageDigest.isEqual_safe([B[B)Z'
+done.
+Methods found: 3
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint MessageDigest.isEqual_safe([B[B)Z... done.
+Building system dependence graph... 
+	callgraph: 2 nodes and 1 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 932ms - Memory: 160M used.
+
+######################################################
+
+Taint analysis takes: 15 ms.

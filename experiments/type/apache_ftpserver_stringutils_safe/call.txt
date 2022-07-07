@@ -1,0 +1,12 @@
+java.lang.StringBuilder.append(C)Ljava/lang/StringBuilder;
+java.lang.StringBuilder.<init>()V
+java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+java.lang.StringBuilder.toString()Ljava/lang/String;
+java.lang.AbstractStringBuilder.expandCapacity(I)V
+java.lang.String.getChars(II[CI)V
+java.lang.AbstractStringBuilder.append(C)Ljava/lang/AbstractStringBuilder;
+java.lang.AbstractStringBuilder.<init>(I)V
+java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+java.lang.String.<init>([CII)V
+java.lang.Object.<init>()V
+java.lang.String.length()I

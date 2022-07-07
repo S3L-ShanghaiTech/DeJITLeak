@@ -1,0 +1,21 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/blazer_straightline_safe/blazer_straightline.jar'...
+	found 'Sanity.<init>()V'
+	found 'Sanity.straightline_unsafe(II)Z'
+	found 'Sanity.straightline_safe(II)Z'
+done.
+Methods found: 3
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint Sanity.straightline_safe(II)Z... done.
+Building system dependence graph... 
+	callgraph: 2 nodes and 1 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 965ms - Memory: 163M used.
+
+######################################################
+
+Taint analysis takes: 15 ms.

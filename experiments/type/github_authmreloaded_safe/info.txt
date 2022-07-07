@@ -1,0 +1,65 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/github_authmreloaded_safe/github.jar'...
+	found 'fr.xephi.authme.security.HashUtils.<init>()V'
+	found 'fr.xephi.authme.security.HashUtils.sha1(Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.HashUtils.sha256(Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.HashUtils.sha512(Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.HashUtils.md5(Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.HashUtils.getDigest(Lfr/xephi/authme/security/MessageDigestAlgorithm;)Ljava/security/MessageDigest;'
+	found 'fr.xephi.authme.security.HashUtils.isValidBcryptHash(Ljava/lang/String;)Z'
+	found 'fr.xephi.authme.security.HashUtils.hash(Ljava/lang/String;Ljava/security/MessageDigest;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.HashUtils.hash(Ljava/lang/String;Lfr/xephi/authme/security/MessageDigestAlgorithm;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.description.Usage.values()[Lfr/xephi/authme/security/crypts/description/Usage;'
+	found 'fr.xephi.authme.security.crypts.description.Usage.valueOf(Ljava/lang/String;)Lfr/xephi/authme/security/crypts/description/Usage;'
+	found 'fr.xephi.authme.security.crypts.description.Usage.<init>(Ljava/lang/String;I)V'
+	found 'fr.xephi.authme.security.crypts.description.Usage.<clinit>()V'
+	found 'fr.xephi.authme.security.crypts.HashedPassword.<init>(Ljava/lang/String;Ljava/lang/String;)V'
+	found 'fr.xephi.authme.security.crypts.HashedPassword.<init>(Ljava/lang/String;)V'
+	found 'fr.xephi.authme.security.crypts.HashedPassword.getHash()Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.HashedPassword.getSalt()Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.description.HasSalt.value()Lfr/xephi/authme/security/crypts/description/SaltType;'
+	found 'fr.xephi.authme.security.crypts.description.HasSalt.length()I'
+	found 'fr.xephi.authme.security.crypts.EncryptionMethod.computeHash(Ljava/lang/String;Ljava/lang/String;)Lfr/xephi/authme/security/crypts/HashedPassword;'
+	found 'fr.xephi.authme.security.crypts.EncryptionMethod.computeHash(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.EncryptionMethod.comparePassword(Ljava/lang/String;Lfr/xephi/authme/security/crypts/HashedPassword;Ljava/lang/String;)Z'
+	found 'fr.xephi.authme.security.crypts.EncryptionMethod.generateSalt()Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.EncryptionMethod.hasSeparateSalt()Z'
+	found 'fr.xephi.authme.security.crypts.description.Recommendation.value()Lfr/xephi/authme/security/crypts/description/Usage;'
+	found 'fr.xephi.authme.security.MessageDigestAlgorithm.values()[Lfr/xephi/authme/security/MessageDigestAlgorithm;'
+	found 'fr.xephi.authme.security.MessageDigestAlgorithm.valueOf(Ljava/lang/String;)Lfr/xephi/authme/security/MessageDigestAlgorithm;'
+	found 'fr.xephi.authme.security.MessageDigestAlgorithm.<init>(Ljava/lang/String;ILjava/lang/String;)V'
+	found 'fr.xephi.authme.security.MessageDigestAlgorithm.getKey()Ljava/lang/String;'
+	found 'fr.xephi.authme.security.MessageDigestAlgorithm.<clinit>()V'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.<init>()V'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.computeHash(Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.computeHash(Ljava/lang/String;Ljava/lang/String;)Lfr/xephi/authme/security/crypts/HashedPassword;'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.computeHash(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.comparePassword(Ljava/lang/String;Lfr/xephi/authme/security/crypts/HashedPassword;Ljava/lang/String;)Z'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.generateSalt()Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.hasSeparateSalt()Z'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z'
+	found 'fr.xephi.authme.security.crypts.RoyalAuth.<init>()V'
+	found 'fr.xephi.authme.security.crypts.RoyalAuth.<init>(Z)V'
+	found 'fr.xephi.authme.security.crypts.RoyalAuth.computeHash(Ljava/lang/String;)Ljava/lang/String;'
+	found 'fr.xephi.authme.security.crypts.description.SaltType.values()[Lfr/xephi/authme/security/crypts/description/SaltType;'
+	found 'fr.xephi.authme.security.crypts.description.SaltType.valueOf(Ljava/lang/String;)Lfr/xephi/authme/security/crypts/description/SaltType;'
+	found 'fr.xephi.authme.security.crypts.description.SaltType.<init>(Ljava/lang/String;I)V'
+	found 'fr.xephi.authme.security.crypts.description.SaltType.<clinit>()V'
+done.
+Methods found: 47
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5036 classes) done.
+Setting up entrypoint fr.xephi.authme.security.crypts.UnsaltedMethod.comparePassword(Ljava/lang/String;Lfr/xephi/authme/security/crypts/HashedPassword;Ljava/lang/String;)Z... done.
+Building system dependence graph... 
+	callgraph: 45 nodes and 62 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 3830ms - Memory: 408M used.
+
+######################################################
+
+Taint analysis takes: 21 ms.

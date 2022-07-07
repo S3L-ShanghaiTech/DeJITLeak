@@ -1,0 +1,5 @@
+dontinline java/lang/IllegalArgumentException.<init>
+dontinline java/lang/String.length
+dontinline java/lang/RuntimeException.<init>
+dontinline java/lang/Exception.<init>
+dontprune org/apache/ftpserver/usermanager/PasswordUtil.secureCompare, (Ljava/lang/String;Ljava/lang/String;I)Z

@@ -1,0 +1,9 @@
+dontinline java/lang/IllegalArgumentException.<init>, (Ljava/lang/String;)V
+exclude java/lang/IllegalArgumentException.<init>, (Ljava/lang/String;)V
+dontinline java/lang/String.length, ()I
+exclude java/lang/String.length, ()I
+dontinline java/lang/RuntimeException.<init>, (Ljava/lang/String;)V
+exclude java/lang/RuntimeException.<init>, (Ljava/lang/String;)V
+dontinline java/lang/Exception.<init>, (Ljava/lang/String;)V
+exclude java/lang/Exception.<init>, (Ljava/lang/String;)V
+dontprune org/apache/ftpserver/usermanager/PasswordUtil.secureCompare, (Ljava/lang/String;Ljava/lang/String;I)Z

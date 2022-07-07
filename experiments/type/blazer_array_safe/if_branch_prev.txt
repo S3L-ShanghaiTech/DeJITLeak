@@ -1,0 +1,9 @@
+if (p2 $taint  >= #(0)) goto 5
+MoreSanity.array_safe([II)Z
+1
+if (v17 < #(0)) goto 23
+MoreSanity.array_safe([II)Z
+10
+if (v11 >= v5) goto 36
+MoreSanity.array_safe([II)Z
+31

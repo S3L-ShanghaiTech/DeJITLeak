@@ -1,0 +1,9 @@
+if (v13 >= v6) goto 13
+PWCheck.pwcheck3_safe([B[B)Z
+8
+if (v13 >= v7) goto 19
+PWCheck.pwcheck3_safe([B[B)Z
+14
+if (v8 == v9) goto 29
+PWCheck.pwcheck3_safe([B[B)Z
+23

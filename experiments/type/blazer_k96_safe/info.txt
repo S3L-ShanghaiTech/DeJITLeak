@@ -1,0 +1,22 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/blazer_k96_safe/blazer_k96.jar'...
+	found 'K96.<init>()V'
+	found 'K96.modular_exponentiation_unsafe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;'
+	found 'K96.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;'
+	found 'K96.standardMultiply(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;'
+done.
+Methods found: 4
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint K96.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;... done.
+Building system dependence graph... 
+	callgraph: 21 nodes and 33 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 2018ms - Memory: 332M used.
+
+######################################################
+
+Taint analysis takes: 53 ms.

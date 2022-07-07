@@ -1,0 +1,28 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/apache_ftpserver_clear_safe/clear.jar'...
+	found 'org.apache.ftpserver.usermanager.PasswordEncryptor.encrypt(Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.usermanager.PasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'org.apache.ftpserver.usermanager.PasswordUtil.<init>()V'
+	found 'org.apache.ftpserver.usermanager.PasswordUtil.secureCompare(Ljava/lang/String;Ljava/lang/String;I)Z'
+	found 'org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.<init>()V'
+	found 'org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.<init>(Z)V'
+	found 'org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.encrypt(Ljava/lang/String;)Ljava/lang/String;'
+	found 'org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z'
+	found 'org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.isEqual_safe(Ljava/lang/String;Ljava/lang/String;)Z'
+done.
+Methods found: 10
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5029 classes) done.
+Setting up entrypoint org.apache.ftpserver.usermanager.ClearTextPasswordEncryptor.matches(Ljava/lang/String;Ljava/lang/String;)Z... done.
+Building system dependence graph... 
+	callgraph: 11 nodes and 20 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 1484ms - Memory: 240M used.
+
+######################################################
+
+Taint analysis takes: 18 ms.

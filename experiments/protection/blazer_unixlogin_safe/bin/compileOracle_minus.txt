@@ -1,0 +1,21 @@
+dontinline java/util/HashMap.get
+dontinline Timing.md5
+dontinline java/util/HashMap.eq
+dontinline java/util/HashMap.getForNullKey
+dontinline java/lang/String.hashCode
+dontinline java/util/HashMap.hash
+dontinline java/lang/String.equals
+dontinline java/lang/Integer.toString
+dontinline java/util/HashMap.newHash
+dontinline java/util/HashMap.oldHash
+dontinline java/util/HashMap.indexFor
+dontinline java/lang/String.length
+dontinline java/lang/Object.hashCode
+dontprune Timing.login_safe, (Ljava/lang/String;Ljava/lang/String;)Z
+dontprune java/util/HashMap.containsKey, (Ljava/lang/Object;)Z
+dontprune java/util/HashMap.get, (Ljava/lang/Object;)Ljava/lang/Object;
+dontprune Timing.md5, (Ljava/lang/String;)Ljava/lang/String;
+dontprune java/util/HashMap.maskNull, (Ljava/lang/Object;)Ljava/lang/Object;
+dontprune java/util/HashMap.hash, (I)I
+dontprune java/util/HashMap.eq, (Ljava/lang/Object;Ljava/lang/Object;)Z
+dontprune java/util/HashMap.getForNullKey, ()Ljava/lang/Object;

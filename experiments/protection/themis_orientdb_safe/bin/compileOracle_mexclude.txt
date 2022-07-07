@@ -1,0 +1,11 @@
+exclude OSecurityManager.digestSHA256, (Ljava/lang/String;)[B
+exclude OSecurityManager.isEqual_inline, ([B[B)Z
+exclude OSecurityManager.byteArrayToHexStr, ([B)Ljava/lang/String;
+exclude OSecurityManager.getPbkdf2, (Ljava/lang/String;[BIILjava/lang/String;)[B
+exclude java/security/MessageDigest.isEqual, ([B[B)Z
+exclude javax/crypto/spec/PBEKeySpec.<init>, ([C[BII)V
+exclude javax/crypto/SecretKeyFactory.getInstance, (Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;
+exclude javax/crypto/SecretKeyFactory.generateSecret, (Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;
+exclude javax/crypto/SecretKeyFactory.a, (Ljavax/crypto/SecretKeyFactorySpi;)Ljavax/crypto/SecretKeyFactorySpi;
+exclude OSecurityManager.checkPasswordWithSalt, (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+exclude OSecurityManager.hexToByteArray, (Ljava/lang/String;)[B

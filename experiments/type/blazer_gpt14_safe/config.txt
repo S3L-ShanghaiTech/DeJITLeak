@@ -1,0 +1,2 @@
+1
+GPT14.modular_exponentiation_safe(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger)Ljava/math/BigInteger;->p2

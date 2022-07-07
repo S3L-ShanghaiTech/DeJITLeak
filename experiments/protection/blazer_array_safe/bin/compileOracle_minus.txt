@@ -1,0 +1,1 @@
+dontprune MoreSanity.array_safe, ([II)Z

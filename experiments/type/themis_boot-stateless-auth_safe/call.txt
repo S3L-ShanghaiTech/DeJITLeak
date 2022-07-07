@@ -1,0 +1,10 @@
+sun.util.calendar.BaseCalendar$Date.isNormalized()Z
+java.util.Date.normalize()Lsun/util/calendar/BaseCalendar$Date;
+TokenHandler.fromJSON([B)Lcom/jdriven/stateless/security/User;
+java.util.Date.<init>()V
+java.util.Date.getTime()J
+com.jdriven.stateless.security.User.getExpires()J
+java.lang.System.currentTimeMillis()J
+java.util.Date.<init>(J)V
+java.util.Date.getTimeImpl()J
+java.lang.Object.<init>()V

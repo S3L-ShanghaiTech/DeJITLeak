@@ -1,0 +1,30 @@
+dontinline java/math/BigInteger.testBit
+dontinline java/math/BigInteger.multiply
+dontinline java/math/BigInteger.mod
+dontinline java/lang/ArithmeticException.<init>
+dontinline java/math/BigInteger.remainder
+dontinline java/math/BigInteger.add
+dontinline java/math/BigInteger.signInt
+dontinline java/math/BigInteger.firstNonzeroIntNum
+dontinline java/math/BigInteger.add
+dontinline java/math/BigInteger.intArrayCmp
+dontinline java/math/BigInteger.subtract
+dontinline java/math/BigInteger.getInt
+dontinline java/math/BigInteger.multiplyToLen
+dontinline java/math/BigInteger.trustedStripLeadingZeroInts
+dontinline java/math/BigInteger.<init>
+dontinline java/lang/RuntimeException.<init>
+dontinline java/lang/Number.<init>
+dontinline java/math/MutableBigInteger.<init>
+dontinline java/math/MutableBigInteger.<init>
+dontinline java/math/MutableBigInteger.divide
+dontinline java/math/BigInteger.<init>
+dontprune ModPow2.modPow2_safe, (Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+dontprune java/math/BigInteger.testBit, (I)Z
+dontprune java/math/BigInteger.multiply, (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+dontprune java/math/BigInteger.mod, (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+dontprune java/math/BigInteger.getInt, (I)I
+dontprune java/math/BigInteger.multiplyToLen, ([II[II[I)[I
+dontprune java/math/BigInteger.trustedStripLeadingZeroInts, ([I)[I
+dontprune java/math/BigInteger.<init>, ([II)V
+dontprune java/math/BigInteger.add, (Ljava/math/BigInteger;)Ljava/math/BigInteger;

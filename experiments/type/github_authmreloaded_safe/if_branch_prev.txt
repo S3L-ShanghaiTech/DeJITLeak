@@ -1,0 +1,87 @@
+if (v6 == #(0)) goto 8
+fr.xephi.authme.security.crypts.UnsaltedMethod.comparePassword(Ljava/lang/String;Lfr/xephi/authme/security/crypts/HashedPassword;Ljava/lang/String;)Z
+4
+if (v13 >= #(1)) goto 16
+fr.xephi.authme.security.crypts.RoyalAuth.computeHash(Ljava/lang/String;)Ljava/lang/String;
+11
+if (p1 $null  != p2 $null ) goto 6
+fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+2
+if (v5 == #(0)) goto 15
+fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+11
+if (v9 != v11) goto 35
+fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+31
+if (v22 == #(0)) goto 61
+fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+54
+if (v18 == v19) goto 71
+fr.xephi.authme.security.crypts.UnsaltedMethod.isEqual_unsafe(Ljava/lang/String;Ljava/lang/Object;)Z
+67
+if (p1 $null  != p2 $null ) goto 6
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+2
+if (p1 $null  == #(null)) goto 12
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+8
+if (p2 $null  != #(null)) goto 16
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+12
+if (v5 == v6) goto 25
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+21
+if (v16 >= v8) goto 39
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+33
+if (v15 != #(0)) goto 57
+fr.xephi.authme.security.crypts.UnsaltedMethod.MessageDigestisEqual([B[B)Z
+53
+if (v22 == #(0)) goto 39
+java.security.MessageDigest.getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+17
+if (p1 $signum  < #(-1)) goto 50
+java.math.BigInteger.<init>(I[B)V
+42
+if (p1 $signum  <= #(1)) goto 50
+java.math.BigInteger.<init>(I[B)V
+47
+if (v12 != #(0)) goto 70
+java.math.BigInteger.<init>(I[B)V
+65
+if (p1 $signum  != #(0)) goto 80
+java.math.BigInteger.<init>(I[B)V
+77
+if (p3 $provider  != #(null)) goto 6
+java.security.Security.getImpl(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+1
+if (p1 $str  != #(null)) goto 8
+java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+1
+if (v8 != #(0)) goto 17
+java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+13
+if (v11 <= v13) goto 36
+java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+31
+if (p1 $i  != #(-2147483648)) goto 9
+java.lang.AbstractStringBuilder.append(I)Ljava/lang/AbstractStringBuilder;
+3
+if (p1 $i  >= #(0)) goto 20
+java.lang.AbstractStringBuilder.append(I)Ljava/lang/AbstractStringBuilder;
+16
+if (v15 <= v17) goto 52
+java.lang.AbstractStringBuilder.append(I)Ljava/lang/AbstractStringBuilder;
+47
+if (v9 >= v5) goto 13
+java.math.BigInteger.stripLeadingZeroBytes([B)[I
+8
+if (v6 != #(0)) goto 17
+java.math.BigInteger.stripLeadingZeroBytes([B)[I
+14
+if (v40 < #(0)) goto 58
+java.math.BigInteger.stripLeadingZeroBytes([B)[I
+48
+if (v37 > v28) goto 102
+java.math.BigInteger.stripLeadingZeroBytes([B)[I
+94

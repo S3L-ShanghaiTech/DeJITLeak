@@ -1,0 +1,8664 @@
+SDG "Timing.login_safe(java.lang.String,java.lang.String)" root 74 {
+ENTR 1 {
+O entry;
+V "Timing.login_safe(java.lang.String,java.lang.String)";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-1;
+Z 0;
+C "Application";
+HE 2;
+HE 3;
+HE 4;
+HE 5;
+HE 6;
+HE 8;
+HE 54;
+HE 537;
+HE 538;
+HE 613;
+HE 614;
+HE 615;
+HE 616;
+HE 617;
+HE 618;
+PS 2;
+PS 3;
+PS 4;
+PS 5;
+PS 54;
+PS 537;
+PS 538;
+CF 613;
+CD 6;
+CD 8;
+CE 2;
+CE 3;
+CE 4;
+CE 5;
+CE 54;
+CE 537;
+CE 538;
+CE 613;
+CE 614;
+CE 615;
+CE 616;
+CE 617;
+CE 618;
+}
+EXIT 2 {
+O exit;
+V "Timing.login_safe(java.lang.String,java.lang.String)";
+T "Z";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 715;
+PO 90;
+}
+FRMO 3 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 617;
+PS 618;
+CF 618: "exc";
+PO 91;
+}
+FRMI 4 {
+O form-in;
+V "param 1 $u ";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["u"];
+PS 616;
+PS 617;
+PS 618;
+CF 5;
+DD 10;
+DD 18;
+}
+FRMI 5 {
+O form-in;
+V "param 2 $p ";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["p"];
+PS 613;
+PS 617;
+PS 618;
+CF 54;
+DD 23;
+DD 34;
+}
+EXPR 6 {
+O reference;
+V "v5 = Timing.map";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":2;
+Z 0;
+HE 7;
+CF 9;
+CE 7;
+DD 9;
+}
+NORM 7 {
+O compound;
+V "field map";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":47,0-47,0;
+B "LTiming.map":-3;
+Z 0;
+CF 6;
+DD 6;
+}
+CALL 8 {
+O call;
+V "v7 = v5.containsKey(p1 $u )";
+T "Z";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":6;
+Z 0;
+HE 9;
+HE 10;
+HE 11;
+HE 12;
+HE 549;
+HE 550;
+HE 619;
+HE 620;
+HE 621;
+HE 622;
+PS 9;
+PS 10;
+PS 11;
+PS 12;
+PS 549;
+PS 550;
+CF 708;
+CE 9;
+CE 10;
+CE 11;
+CE 12;
+CE 549;
+CE 550;
+CE 619;
+CE 620;
+CE 621;
+CE 622;
+CE 708;
+CL 121: "virtual";
+}
+ACTI 9 {
+O act-in;
+V "this [v5]";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":47,0-47,0;
+B "<param> 0":-2;
+Z 0;
+PS 619;
+CF 10;
+CD 8;
+SU 11;
+SU 12;
+PI 124;
+}
+ACTI 10 {
+O act-in;
+V "param 1 [p1 $u ]";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":47,0-47,0;
+B "<param> 1":-2;
+Z 0;
+LU ["u"];
+PS 621;
+PS 622;
+CF 549;
+SU 11;
+SU 12;
+PI 125;
+}
+ACTO 11 {
+O act-out;
+V "ret 0";
+T "Z";
+P 4;
+S "Timing.java":47,0-47,0;
+B "<exit>":-2;
+Z 0;
+CF 12: "exc";
+CF 13;
+DD 13;
+}
+ACTO 12 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":47,0-47,0;
+B "<exception>":-2;
+Z 0;
+HE 708;
+CF 3: "exc";
+CE 708;
+DD 3;
+}
+PRED 13 {
+O IF;
+V "if (v7 == #(0)) goto 12";
+T "Z";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":9;
+Z 0;
+LU ["outcome"];
+HE 14;
+HE 16;
+HE 33;
+CF 15;
+CF 34;
+CD 14;
+CD 16;
+CD 33;
+}
+EXPR 14 {
+O reference;
+V "v14 = Timing.map";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":12;
+Z 0;
+HE 15;
+CF 17;
+CE 15;
+DD 17;
+}
+NORM 15 {
+O compound;
+V "field map";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":48,0-48,0;
+B "LTiming.map":-3;
+Z 0;
+CF 14;
+DD 14;
+}
+CALL 16 {
+O call;
+V "v16 = v14.get(p1 $u )";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":16;
+Z 0;
+HE 17;
+HE 18;
+HE 19;
+HE 20;
+HE 551;
+HE 552;
+HE 623;
+HE 624;
+HE 625;
+HE 626;
+PS 17;
+PS 18;
+PS 19;
+PS 20;
+PS 551;
+PS 552;
+CF 709;
+CE 17;
+CE 18;
+CE 19;
+CE 20;
+CE 551;
+CE 552;
+CE 623;
+CE 624;
+CE 625;
+CE 626;
+CE 709;
+CL 195: "virtual";
+}
+ACTI 17 {
+O act-in;
+V "this [v14]";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<param> 0":-2;
+Z 0;
+PS 623;
+CF 18;
+CD 16;
+SU 19;
+SU 20;
+PI 198;
+}
+ACTI 18 {
+O act-in;
+V "param 1 [p1 $u ]";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<param> 1":-2;
+Z 0;
+LU ["u"];
+PS 625;
+PS 626;
+CF 551;
+SU 19;
+SU 20;
+PI 199;
+}
+ACTO 19 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<exit>":-2;
+Z 0;
+CF 20: "exc";
+CF 21;
+DD 21;
+}
+ACTO 20 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<exception>":-2;
+Z 0;
+HE 709;
+CF 3: "exc";
+CE 709;
+DD 3;
+}
+EXPR 21 {
+O assign;
+V "v17 = CHECKCAST v16";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":19;
+Z 0;
+HE 22;
+CF 3: "exc";
+CF 23;
+CD 3;
+CD 22;
+DD 27;
+}
+CALL 22 {
+O call;
+V "v19 = md5(p2 $p )";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":23;
+Z 0;
+HE 23;
+HE 24;
+HE 25;
+HE 627;
+HE 628;
+HE 629;
+PS 23;
+PS 24;
+PS 25;
+CF 710;
+CE 23;
+CE 24;
+CE 25;
+CE 627;
+CE 628;
+CE 629;
+CE 710;
+CL 278: "virtual";
+}
+ACTI 23 {
+O act-in;
+V "param 1 [p2 $p ]";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<param> 1":-2;
+Z 0;
+LU ["p"];
+PS 627;
+PS 629;
+CF 627;
+SU 24;
+SU 25;
+PI 281;
+}
+ACTO 24 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<exit>":-2;
+Z 0;
+PS 628;
+PS 629;
+CF 25: "exc";
+CF 27;
+DD 28;
+}
+ACTO 25 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<exception>":-2;
+Z 0;
+HE 710;
+PS 629;
+CF 3: "exc";
+CE 710;
+DD 3;
+}
+CALL 26 {
+O call;
+V "v21 = v17.equals(v19)";
+T "Z";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":26;
+Z 0;
+U "java.lang.String.equals(Ljava/lang/Object;)Z";
+HE 27;
+HE 28;
+HE 29;
+HE 30;
+HE 31;
+HE 49;
+HE 50;
+HE 51;
+HE 690;
+PS 27;
+PS 28;
+PS 29;
+PS 30;
+CF 690;
+CD 31;
+CD 49;
+CD 50;
+CD 51;
+CD 52;
+CE 27;
+CE 28;
+CE 29;
+CE 30;
+CE 690;
+}
+ACTI 27 {
+O act-in;
+V "this [v17]";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<param> 0":-2;
+Z 0;
+CF 28;
+CD 26;
+DD 690;
+}
+ACTI 28 {
+O act-in;
+V "param 1 [v19]";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<param> 1":-2;
+Z 0;
+CF 26;
+DD 690;
+}
+ACTO 29 {
+O act-out;
+V "ret 0";
+T "Z";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<exit>":-2;
+Z 0;
+CF 30: "exc";
+CF 31;
+DD 31;
+}
+ACTO 30 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<exception>":-2;
+Z 0;
+CF 3: "exc";
+DD 3;
+}
+PRED 31 {
+O IF;
+V "if (v21 == #(0)) goto 67";
+T "Z";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":29;
+Z 0;
+LU ["outcome"];
+HE 32;
+HE 52;
+CF 32;
+CF 52;
+CD 32;
+CD 52;
+}
+NORM 32 {
+O compound;
+V "goto 67";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":49,0-49,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":34;
+Z 0;
+CF 52;
+}
+CALL 33 {
+O call;
+V "v9 = md5(p2 $p )";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":56,0-56,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":38;
+Z 0;
+HE 34;
+HE 35;
+HE 36;
+HE 630;
+HE 631;
+HE 632;
+PS 34;
+PS 35;
+PS 36;
+CF 711;
+CE 34;
+CE 35;
+CE 36;
+CE 630;
+CE 631;
+CE 632;
+CE 711;
+CL 278: "virtual";
+}
+ACTI 34 {
+O act-in;
+V "param 1 [p2 $p ]";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":56,0-56,0;
+B "<param> 1":-2;
+Z 0;
+LU ["p"];
+PS 630;
+PS 632;
+CF 630;
+SU 35;
+SU 36;
+PI 281;
+}
+ACTO 35 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":56,0-56,0;
+B "<exit>":-2;
+Z 0;
+LD ["md5_str"];
+PS 631;
+PS 632;
+CF 36: "exc";
+CF 37;
+DD 40;
+DD 43;
+}
+ACTO 36 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":56,0-56,0;
+B "<exception>":-2;
+Z 0;
+HE 711;
+PS 632;
+CF 3: "exc";
+CE 711;
+DD 3;
+}
+NORM 37 {
+O declaration;
+V "v10 = new java.lang.String";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":57,0-57,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":43;
+Z 0;
+LD ["md5_str2"];
+CF 39;
+DD 39;
+DD 44;
+}
+CALL 38 {
+O call;
+V "v10.<init>(v9)";
+T "V";
+P 4;
+S "Timing.java":57,0-57,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":49;
+Z 0;
+HE 39;
+HE 40;
+HE 41;
+HE 633;
+HE 634;
+HE 686;
+PS 39;
+PS 40;
+PS 41;
+CF 712;
+CE 39;
+CE 40;
+CE 41;
+CE 633;
+CE 634;
+CE 686;
+CE 712;
+CL 323: "virtual";
+}
+ACTI 39 {
+O act-in;
+V "this [v10]";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":57,0-57,0;
+B "<param> 0":-2;
+Z 0;
+PS 633;
+PS 634;
+CF 40;
+CD 38;
+SU 41;
+SU 634;
+PI 326;
+}
+ACTI 40 {
+O act-in;
+V "param 1 [v9]";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":57,0-57,0;
+B "<param> 1":-2;
+Z 0;
+LU ["md5_str"];
+PS 633;
+PS 634;
+CF 633;
+SU 41;
+SU 634;
+PI 327;
+}
+ACTO 41 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":57,0-57,0;
+B "<exception>":-2;
+Z 0;
+HE 712;
+PS 633;
+PS 634;
+CF 3: "exc";
+CE 712;
+DD 3;
+DD 686;
+}
+CALL 42 {
+O call;
+V "v13 = v9.equals(v10)";
+T "Z";
+P 4;
+S "Timing.java":58,0-58,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":58;
+Z 0;
+HE 43;
+HE 44;
+HE 45;
+HE 46;
+HE 635;
+PS 43;
+PS 44;
+PS 45;
+PS 46;
+CF 713;
+CE 43;
+CE 44;
+CE 45;
+CE 46;
+CE 635;
+CE 713;
+CL 328: "virtual";
+}
+ACTI 43 {
+O act-in;
+V "this [v9]";
+T "Ljava/lang/String";
+P 4;
+S "Timing.java":58,0-58,0;
+B "<param> 0":-2;
+Z 0;
+LU ["md5_str"];
+CF 44;
+CD 42;
+SU 45;
+SU 46;
+PI 331;
+}
+ACTI 44 {
+O act-in;
+V "param 1 [v10]";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":58,0-58,0;
+B "<param> 1":-2;
+Z 0;
+LU ["md5_str2"];
+PS 635;
+CF 635;
+SU 45;
+SU 46;
+PI 332;
+}
+ACTO 45 {
+O act-out;
+V "ret 0";
+T "Z";
+P 4;
+S "Timing.java":58,0-58,0;
+B "<exit>":-2;
+Z 0;
+CF 46: "exc";
+CF 47;
+DD 47;
+}
+ACTO 46 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 4;
+S "Timing.java":58,0-58,0;
+B "<exception>":-2;
+Z 0;
+HE 713;
+CF 3: "exc";
+CE 713;
+DD 3;
+}
+PRED 47 {
+O IF;
+V "if (v13 == #(0)) goto 67";
+T "Z";
+P 4;
+S "Timing.java":58,0-58,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":61;
+Z 0;
+LU ["outcome"];
+HE 48;
+CF 48;
+CF 53;
+CD 48;
+}
+NORM 48 {
+O compound;
+V "goto 67";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":59,0-59,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":65;
+Z 0;
+CF 53;
+}
+EXPR 49 {
+O assign;
+V "PHI v24 = v23, #(0)";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["outcome"];
+CF 50;
+DD 50;
+}
+NORM 50 {
+O compound;
+V "return v24";
+T "Z";
+P 4;
+S "Timing.java":64,0-64,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":67;
+Z 0;
+LU ["outcome"];
+CF 618;
+DD 2;
+}
+NORM 51 {
+O compound;
+V "goto 67";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":45,0-45,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":0;
+Z 0;
+CF 49;
+}
+EXPR 52 {
+O assign;
+V "PHI v23 = #(0), #(1)";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+CF 51;
+DD 49;
+}
+NORM 53 {
+O compound;
+V "goto 67";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":45,0-45,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":0;
+Z 0;
+CF 49;
+}
+FRMI 54 {
+O form-in;
+V "map";
+T "Ljava/util/HashMap";
+P 4;
+S "Timing.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 614;
+PS 617;
+PS 618;
+CF 7;
+DD 7;
+DD 15;
+}
+ENTR 74 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+C "Primordial";
+HE 75;
+HE 76;
+HE 77;
+HE 539;
+HE 540;
+HE 541;
+HE 542;
+HE 574;
+HE 575;
+HE 576;
+HE 577;
+HE 578;
+HE 579;
+HE 580;
+HE 581;
+HE 582;
+HE 583;
+PS 76;
+PS 539;
+PS 540;
+PS 541;
+PS 542;
+CF 574;
+CD 77;
+CE 75;
+CE 76;
+CE 539;
+CE 540;
+CE 541;
+CE 542;
+CE 574;
+CE 575;
+CE 576;
+CE 577;
+CE 578;
+CE 579;
+CE 580;
+CE 581;
+CE 582;
+CE 583;
+}
+EXIT 75 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeRootMethod()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+}
+FRMO 76 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 576;
+PS 583;
+CF 540: "exc";
+}
+CALL 77 {
+O call;
+V "fakeWorldClinit()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 78;
+HE 553;
+HE 584;
+HE 585;
+HE 586;
+HE 587;
+HE 588;
+HE 589;
+HE 590;
+PS 78;
+PS 553;
+CF 714;
+CE 78;
+CE 553;
+CE 584;
+CE 585;
+CE 586;
+CE 587;
+CE 588;
+CE 589;
+CE 590;
+CE 714;
+CL 92: "virtual";
+}
+ACTO 78 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 714;
+CF 76: "exc";
+CE 714;
+DD 76;
+}
+NORM 79 {
+O declaration;
+V "v3 = new java.lang.String";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 81;
+DD 81;
+DD 88;
+}
+CALL 80 {
+O call;
+V "v3.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.String.<init>()V";
+HE 81;
+HE 82;
+HE 83;
+HE 84;
+HE 591;
+HE 687;
+HE 691;
+PS 81;
+PS 82;
+CF 691;
+CD 83;
+CD 84;
+CE 81;
+CE 82;
+CE 591;
+CE 687;
+CE 691;
+}
+ACTI 81 {
+O act-in;
+V "this [v3]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 591;
+CF 80;
+CD 80;
+DD 691;
+}
+ACTO 82 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 591;
+CF 76: "exc";
+DD 76;
+DD 687;
+}
+NORM 83 {
+O declaration;
+V "v5 = new java.lang.String";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 85;
+DD 85;
+DD 89;
+}
+CALL 84 {
+O call;
+V "v5.<init>()";
+T "V";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+U "java.lang.String.<init>()V";
+HE 85;
+HE 86;
+HE 87;
+HE 592;
+HE 688;
+HE 692;
+PS 85;
+PS 86;
+CF 692;
+CD 87;
+CE 85;
+CE 86;
+CE 592;
+CE 688;
+CE 692;
+}
+ACTI 85 {
+O act-in;
+V "this [v5]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 592;
+CF 84;
+CD 84;
+DD 692;
+}
+ACTO 86 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 592;
+CF 76: "exc";
+DD 76;
+DD 688;
+}
+CALL 87 {
+O call;
+V "v7 = login_safe(v3, v5)";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+HE 88;
+HE 89;
+HE 90;
+HE 91;
+HE 554;
+HE 555;
+HE 556;
+HE 593;
+HE 594;
+HE 595;
+HE 596;
+HE 597;
+HE 598;
+PS 88;
+PS 89;
+PS 90;
+PS 91;
+PS 554;
+PS 555;
+PS 556;
+CF 715;
+CE 88;
+CE 89;
+CE 90;
+CE 91;
+CE 554;
+CE 555;
+CE 556;
+CE 593;
+CE 594;
+CE 595;
+CE 596;
+CE 597;
+CE 598;
+CE 715;
+CL 1: "virtual";
+}
+ACTI 88 {
+O act-in;
+V "param 1 [v3]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+PS 596;
+PS 597;
+PS 598;
+CF 89;
+SU 90;
+SU 91;
+SU 598;
+PI 4;
+}
+ACTI 89 {
+O act-in;
+V "param 2 [v5]";
+T "Ljava/lang/String";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+PS 593;
+PS 597;
+PS 598;
+CF 554;
+SU 90;
+SU 91;
+SU 598;
+PI 5;
+}
+ACTO 90 {
+O act-out;
+V "ret 0";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+CF 91: "exc";
+CF 540;
+}
+ACTO 91 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 715;
+PS 597;
+PS 598;
+CF 76: "exc";
+CE 715;
+DD 76;
+}
+ENTR 92 {
+O entry;
+V "com.ibm.wala.FakeRootClass.fakeWorldClinit()";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+C "Primordial";
+HE 93;
+HE 94;
+HE 95;
+HE 543;
+HE 636;
+HE 637;
+HE 638;
+HE 639;
+HE 640;
+HE 641;
+HE 642;
+PS 94;
+PS 543;
+CF 95;
+CD 95;
+CE 93;
+CE 94;
+CE 543;
+CE 636;
+CE 637;
+CE 638;
+CE 639;
+CE 640;
+CE 641;
+CE 642;
+}
+EXIT 93 {
+O exit;
+V "com.ibm.wala.FakeRootClass.fakeWorldClinit()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 714;
+}
+FRMO 94 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 543: "exc";
+PO 78;
+}
+CALL 95 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+U "java.lang.String.<clinit>()V";
+HE 96;
+HE 97;
+HE 643;
+HE 693;
+PS 96;
+CF 693;
+CD 97;
+CE 96;
+CE 643;
+CE 693;
+}
+ACTO 96 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 643;
+CF 94: "exc";
+DD 94;
+}
+CALL 97 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+U "java.lang.Object.<clinit>()V";
+HE 98;
+HE 99;
+HE 694;
+PS 98;
+CF 98: "exc";
+CF 694;
+CD 99;
+CE 98;
+CE 694;
+}
+ACTO 98 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 94: "exc";
+DD 94;
+}
+CALL 99 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+HE 100;
+HE 557;
+HE 644;
+HE 645;
+HE 646;
+HE 647;
+HE 648;
+HE 649;
+HE 650;
+PS 100;
+PS 557;
+CF 716;
+CE 100;
+CE 557;
+CE 644;
+CE 645;
+CE 646;
+CE 647;
+CE 648;
+CE 649;
+CE 650;
+CE 716;
+CL 109: "virtual";
+}
+ACTO 100 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+HE 716;
+PS 644;
+CF 94: "exc";
+CE 716;
+DD 94;
+}
+CALL 101 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+U "java.util.HashMap.<clinit>()V";
+HE 102;
+HE 103;
+HE 651;
+HE 695;
+PS 102;
+CF 695;
+CD 103;
+CE 102;
+CE 651;
+CE 695;
+}
+ACTO 102 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 651;
+CF 94: "exc";
+DD 94;
+}
+CALL 103 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+U "java.lang.Integer.<clinit>()V";
+HE 104;
+HE 105;
+HE 652;
+HE 653;
+HE 696;
+PS 104;
+CF 696;
+CD 105;
+CE 104;
+CE 652;
+CE 653;
+CE 696;
+}
+ACTO 104 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 652;
+PS 653;
+CF 94: "exc";
+DD 94;
+}
+CALL 105 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+U "java.lang.Class.<clinit>()V";
+HE 106;
+HE 107;
+HE 697;
+PS 106;
+CF 106: "exc";
+CF 697;
+CD 107;
+CE 106;
+CE 697;
+}
+ACTO 106 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 94: "exc";
+DD 94;
+}
+CALL 107 {
+O call;
+V "<clinit>()";
+T "V";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+U "java.io.ObjectStreamClass.<clinit>()V";
+HE 108;
+HE 654;
+HE 698;
+PS 108;
+CF 698;
+CE 108;
+CE 654;
+CE 698;
+}
+ACTO 108 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 654;
+CF 94: "exc";
+DD 94;
+}
+ENTR 109 {
+O entry;
+V "Timing.<clinit>()";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Timing.<clinit>()V":-1;
+Z 0;
+C "Application";
+HE 110;
+HE 111;
+HE 112;
+HE 113;
+HE 119;
+HE 599;
+HE 600;
+HE 601;
+HE 602;
+HE 603;
+HE 604;
+HE 605;
+PS 111;
+PS 119;
+CF 112;
+CD 112;
+CD 113;
+CE 110;
+CE 111;
+CE 119;
+CE 599;
+CE 600;
+CE 601;
+CE 602;
+CE 603;
+CE 604;
+CE 605;
+}
+EXIT 110 {
+O exit;
+V "Timing.<clinit>()";
+T "V";
+P 7;
+S "Timing.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 716;
+}
+FRMO 111 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 7;
+S "Timing.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 599;
+CF 119: "exc";
+PO 100;
+}
+NORM 112 {
+O declaration;
+V "v2 = new java.util.HashMap";
+T "Ljava/util/HashMap";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Timing.<clinit>()V":0;
+Z 0;
+CF 114;
+DD 114;
+DD 116;
+}
+CALL 113 {
+O call;
+V "v2.<init>()";
+T "V";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Timing.<clinit>()V":4;
+Z 0;
+HE 114;
+HE 115;
+HE 606;
+HE 607;
+HE 608;
+HE 609;
+HE 610;
+HE 611;
+HE 612;
+PS 114;
+PS 115;
+CF 717;
+CE 114;
+CE 115;
+CE 606;
+CE 607;
+CE 608;
+CE 609;
+CE 610;
+CE 611;
+CE 612;
+CE 717;
+CL 333: "virtual";
+}
+ACTI 114 {
+O act-in;
+V "this [v2]";
+T "Ljava/util/HashMap";
+P 7;
+S "Timing.java":7,0-7,0;
+B "<param> 0":-2;
+Z 0;
+PS 606;
+PS 607;
+PS 608;
+PS 609;
+PS 610;
+PS 611;
+PS 612;
+CF 113;
+CD 113;
+SU 115;
+SU 606;
+SU 607;
+SU 608;
+SU 609;
+SU 610;
+SU 611;
+SU 612;
+PI 336;
+}
+ACTO 115 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 7;
+S "Timing.java":7,0-7,0;
+B "<exception>":-2;
+Z 0;
+HE 717;
+PS 610;
+CF 111: "exc";
+CE 717;
+DD 111;
+}
+EXPR 116 {
+O modify;
+V "Timing.map = v2";
+T "Ljava/util/HashMap";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Timing.<clinit>()V":7;
+Z 0;
+HE 117;
+CF 117;
+CE 117;
+DD 117;
+}
+NORM 117 {
+O compound;
+V "field map";
+T "Ljava/util/HashMap";
+P 7;
+S "Timing.java":7,0-7,0;
+B "LTiming.map":-3;
+Z 0;
+CF 118;
+DD 119;
+}
+NORM 118 {
+O compound;
+V "return";
+T "V";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Timing.<clinit>()V":10;
+Z 0;
+CF 119;
+}
+FRMO 119 {
+O form-out;
+V "map";
+T "Ljava/util/HashMap";
+P 7;
+S "Timing.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 599;
+PS 600;
+PS 601;
+PS 602;
+PS 603;
+PS 604;
+PS 605;
+CF 599;
+PO 557;
+}
+ENTR 121 {
+O entry;
+V "java.util.HashMap.containsKey(java.lang.Object)";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":-1;
+Z 0;
+C "Primordial";
+HE 122;
+HE 123;
+HE 124;
+HE 125;
+HE 126;
+HE 130;
+HE 544;
+HE 545;
+HE 568;
+HE 569;
+HE 570;
+HE 571;
+PS 122;
+PS 123;
+PS 124;
+PS 125;
+PS 544;
+PS 545;
+CF 568;
+CD 126;
+CD 130;
+CE 122;
+CE 123;
+CE 124;
+CE 125;
+CE 544;
+CE 545;
+CE 568;
+CE 569;
+CE 570;
+CE 571;
+}
+EXIT 122 {
+O exit;
+V "java.util.HashMap.containsKey(java.lang.Object)";
+T "Z";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 708;
+PO 11;
+}
+FRMO 123 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 122: "exc";
+PO 12;
+}
+FRMI 124 {
+O form-in;
+V "this";
+T "Ljava/util/HashMap";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+PS 568;
+CF 125;
+DD 139;
+DD 148;
+}
+FRMI 125 {
+O form-in;
+V "param 1 $key ";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["key"];
+PS 570;
+PS 571;
+CF 127;
+DD 127;
+}
+CALL 126 {
+O call;
+V "v5 = maskNull(p1 $key )";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":376,0-376,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":1;
+Z 0;
+HE 127;
+HE 128;
+HE 129;
+HE 558;
+PS 127;
+PS 128;
+PS 129;
+PS 558;
+CF 718;
+CE 127;
+CE 128;
+CE 129;
+CE 558;
+CE 718;
+CL 367: "virtual";
+}
+ACTI 127 {
+O act-in;
+V "param 1 [p1 $key ]";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":376,0-376,0;
+B "<param> 1":-2;
+Z 0;
+LU ["key"];
+CF 558;
+SU 128;
+PI 370;
+}
+ACTO 128 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":376,0-376,0;
+B "<exit>":-2;
+Z 0;
+LD ["k"];
+CF 129;
+DD 131;
+DD 164;
+}
+ACTO 129 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/util/HashMap.java":376,0-376,0;
+B "<exception>":-2;
+Z 0;
+HE 718;
+CF 131;
+CE 718;
+}
+CALL 130 {
+O call;
+V "v7 = v5.hashCode()";
+T "I";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":6;
+Z 0;
+HE 131;
+HE 132;
+HE 133;
+HE 572;
+PS 131;
+PS 132;
+PS 133;
+CF 719;
+CE 131;
+CE 132;
+CE 133;
+CE 572;
+CE 719;
+CL 381: "virtual";
+CL 385: "virtual";
+}
+ACTI 131 {
+O act-in;
+V "this [v5]";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "<param> 0":-2;
+Z 0;
+LU ["k"];
+PS 572;
+CF 572;
+CD 130;
+SU 132;
+SU 133;
+PI 384;
+PI 388;
+}
+ACTO 132 {
+O act-out;
+V "ret 0";
+T "I";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "<exit>":-2;
+Z 0;
+CF 133: "exc";
+CF 135;
+DD 135;
+}
+ACTO 133 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "<exception>":-2;
+Z 0;
+HE 719;
+CF 123: "exc";
+CE 719;
+}
+CALL 134 {
+O call;
+V "v9 = hash(v7)";
+T "I";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":9;
+Z 0;
+HE 135;
+HE 136;
+HE 137;
+HE 559;
+PS 135;
+PS 136;
+PS 137;
+PS 559;
+CF 720;
+CE 135;
+CE 136;
+CE 137;
+CE 559;
+CE 720;
+CL 389: "virtual";
+}
+ACTI 135 {
+O act-in;
+V "param 1 [v7]";
+T "I";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "<param> 1":-2;
+Z 0;
+CF 559;
+SU 136;
+PI 392;
+}
+ACTO 136 {
+O act-out;
+V "ret 0";
+T "I";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "<exit>":-2;
+Z 0;
+LD ["hash"];
+CF 137;
+DD 143;
+DD 159;
+}
+ACTO 137 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "<exception>":-2;
+Z 0;
+HE 720;
+CF 139;
+CE 720;
+}
+EXPR 138 {
+O reference;
+V "v10 = p0 $this .table";
+T "[Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":15;
+Z 0;
+LU ["this"];
+HE 140;
+CF 139;
+CE 140;
+DD 141;
+}
+NORM 139 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "<base>":-6;
+Z 0;
+HE 138;
+PS 140;
+CF 140;
+CF 141;
+CE 138;
+DD 138;
+}
+NORM 140 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 138;
+DD 138;
+}
+EXPR 141 {
+O assign;
+V "v11 = v10.length";
+T "I";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":18;
+Z 0;
+HE 142;
+HE 148;
+HE 151;
+CF 123: "exc";
+CF 143;
+CD 123;
+CD 142;
+CD 148;
+CD 151;
+DD 144;
+}
+CALL 142 {
+O call;
+V "v13 = indexFor(v9, v11)";
+T "I";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":19;
+Z 0;
+HE 143;
+HE 144;
+HE 145;
+HE 146;
+PS 143;
+PS 144;
+PS 145;
+PS 146;
+CF 721;
+CE 143;
+CE 144;
+CE 145;
+CE 146;
+CE 721;
+CL 411: "virtual";
+}
+ACTI 143 {
+O act-in;
+V "param 1 [v9]";
+T "I";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "<param> 1":-2;
+Z 0;
+LU ["hash"];
+CF 144;
+SU 145;
+PI 414;
+}
+ACTI 144 {
+O act-in;
+V "param 2 [v11]";
+T "I";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "<param> 2":-2;
+Z 0;
+CF 142;
+SU 145;
+PI 415;
+}
+ACTO 145 {
+O act-out;
+V "ret 0";
+T "I";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "<exit>":-2;
+Z 0;
+LD ["i"];
+CF 146;
+DD 153;
+}
+ACTO 146 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "<exception>":-2;
+Z 0;
+HE 721;
+CF 148;
+CE 721;
+}
+EXPR 147 {
+O reference;
+V "v14 = p0 $this .table";
+T "[Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":25;
+Z 0;
+LU ["this"];
+HE 149;
+CF 148;
+CE 149;
+DD 151;
+}
+NORM 148 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "<base>":-6;
+Z 0;
+HE 147;
+PS 149;
+CF 149;
+CF 151;
+CE 147;
+DD 147;
+}
+NORM 149 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 147;
+DD 147;
+}
+EXPR 150 {
+O reference;
+V "v15 = v14[v13]";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":30;
+Z 0;
+LD ["e"];
+LU ["i"];
+HE 152;
+CF 151;
+CE 152;
+DD 154;
+}
+NORM 151 {
+O compound;
+V "base";
+T "[Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "<base>":-6;
+Z 0;
+HE 153;
+HE 154;
+HE 155;
+PS 152;
+CF 123: "exc";
+CF 153;
+CF 154;
+CD 123;
+CD 154;
+CD 155;
+CE 153;
+DD 150;
+}
+NORM 152 {
+O compound;
+V "field [java.lang.Object]";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "<[]>":-5;
+Z 0;
+CF 150;
+DD 150;
+}
+NORM 153 {
+O compound;
+V "index";
+T "I";
+P 8;
+S "java/util/HashMap.java":379,0-379,0;
+B "<index>":-7;
+Z 0;
+HE 150;
+CF 152;
+CE 150;
+CE 151;
+DD 150;
+}
+EXPR 154 {
+O assign;
+V "PHI v23 = v22, v15";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["e"];
+CF 155;
+DD 155;
+DD 157;
+DD 161;
+DD 171;
+}
+PRED 155 {
+O IF;
+V "if (v23 == #(null)) goto 40";
+T "Z";
+P 8;
+S "java/util/HashMap.java":380,0-380,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":35;
+Z 0;
+LU ["e"];
+HE 157;
+HE 159;
+HE 174;
+CF 157;
+CF 174;
+CD 157;
+CD 159;
+CD 174;
+}
+EXPR 156 {
+O reference;
+V "v17 = v23.hash";
+T "I";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":40;
+Z 0;
+LU ["e"];
+HE 158;
+CF 157;
+CE 158;
+DD 159;
+}
+NORM 157 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "<base>":-6;
+Z 0;
+HE 156;
+PS 158;
+CF 158;
+CF 159;
+CE 156;
+DD 156;
+}
+NORM 158 {
+O compound;
+V "field hash";
+T "I";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "Ljava/util/HashMap$Entry.hash":-4;
+Z 0;
+CF 156;
+DD 156;
+}
+PRED 159 {
+O IF;
+V "if (v17 != v9) goto 50";
+T "Z";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":44;
+Z 0;
+LU ["hash"];
+HE 161;
+HE 163;
+CF 161;
+CF 171;
+CD 154;
+CD 155;
+CD 161;
+CD 163;
+CD 171;
+CD 173;
+}
+EXPR 160 {
+O reference;
+V "v18 = v23.key";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":50;
+Z 0;
+LU ["e"];
+HE 162;
+CF 161;
+CE 162;
+DD 165;
+}
+NORM 161 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "<base>":-6;
+Z 0;
+HE 160;
+PS 162;
+CF 162;
+CF 164;
+CE 160;
+DD 160;
+}
+NORM 162 {
+O compound;
+V "field key";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "Ljava/util/HashMap$Entry.key":-4;
+Z 0;
+CF 160;
+DD 160;
+}
+CALL 163 {
+O call;
+V "v20 = eq(v5, v18)";
+T "Z";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":53;
+Z 0;
+HE 164;
+HE 165;
+HE 166;
+HE 167;
+HE 573;
+PS 164;
+PS 165;
+PS 166;
+PS 167;
+CF 722;
+CE 164;
+CE 165;
+CE 166;
+CE 167;
+CE 573;
+CE 722;
+CL 422: "virtual";
+}
+ACTI 164 {
+O act-in;
+V "param 1 [v5]";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "<param> 1":-2;
+Z 0;
+LU ["k"];
+PS 573;
+CF 165;
+SU 166;
+SU 167;
+PI 425;
+}
+ACTI 165 {
+O act-in;
+V "param 2 [v18]";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "<param> 2":-2;
+Z 0;
+CF 573;
+SU 166;
+SU 167;
+PI 426;
+}
+ACTO 166 {
+O act-out;
+V "ret 0";
+T "Z";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "<exit>":-2;
+Z 0;
+CF 167: "exc";
+CF 168;
+DD 168;
+}
+ACTO 167 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "<exception>":-2;
+Z 0;
+HE 722;
+CF 123: "exc";
+CE 722;
+DD 123;
+}
+PRED 168 {
+O IF;
+V "if (v20 == #(0)) goto 60";
+T "Z";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":56;
+Z 0;
+HE 169;
+HE 171;
+HE 173;
+CF 169;
+CF 171;
+CD 154;
+CD 155;
+CD 169;
+CD 171;
+CD 173;
+}
+NORM 169 {
+O compound;
+V "return #(1)";
+T "Z";
+P 8;
+S "java/util/HashMap.java":382,0-382,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":60;
+Z 0;
+CF 122;
+DD 122;
+}
+EXPR 170 {
+O reference;
+V "v22 = v23.next";
+T "Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":383,0-383,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":63;
+Z 0;
+LD ["e"];
+LU ["e"];
+HE 172;
+CF 171;
+CE 172;
+DD 154;
+}
+NORM 171 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":383,0-383,0;
+B "<base>":-6;
+Z 0;
+HE 170;
+PS 172;
+CF 172;
+CF 173;
+CE 170;
+DD 170;
+}
+NORM 172 {
+O compound;
+V "field next";
+T "Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":383,0-383,0;
+B "Ljava/util/HashMap$Entry.next":-4;
+Z 0;
+CF 170;
+DD 170;
+}
+NORM 173 {
+O compound;
+V "goto 35";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":383,0-383,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":68;
+Z 0;
+CF 154;
+}
+NORM 174 {
+O compound;
+V "return #(0)";
+T "Z";
+P 8;
+S "java/util/HashMap.java":385,0-385,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":72;
+Z 0;
+CF 122;
+DD 122;
+}
+ENTR 195 {
+O entry;
+V "java.util.HashMap.get(java.lang.Object)";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":-1;
+Z 0;
+C "Primordial";
+HE 196;
+HE 197;
+HE 198;
+HE 199;
+HE 200;
+HE 546;
+HE 547;
+HE 673;
+HE 674;
+HE 675;
+HE 676;
+PS 196;
+PS 197;
+PS 198;
+PS 199;
+PS 546;
+PS 547;
+CF 673;
+CD 200;
+CE 196;
+CE 197;
+CE 198;
+CE 199;
+CE 546;
+CE 547;
+CE 673;
+CE 674;
+CE 675;
+CE 676;
+}
+EXIT 196 {
+O exit;
+V "java.util.HashMap.get(java.lang.Object)";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 709;
+PO 19;
+}
+FRMO 197 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 196: "exc";
+PO 20;
+}
+FRMI 198 {
+O form-in;
+V "this";
+T "Ljava/util/HashMap";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+PS 673;
+CF 199;
+DD 202;
+DD 215;
+DD 218;
+}
+FRMI 199 {
+O form-in;
+V "param 1 $key ";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["key"];
+PS 675;
+PS 676;
+CF 200;
+DD 200;
+DD 207;
+DD 239;
+DD 241;
+}
+PRED 200 {
+O IF;
+V "if (p1 $key  != #(null)) goto 5";
+T "Z";
+P 9;
+S "java/util/HashMap.java":341,0-341,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":1;
+Z 0;
+LU ["key"];
+HE 201;
+HE 206;
+HE 210;
+HE 215;
+HE 218;
+HE 220;
+CF 202;
+CF 207;
+CD 201;
+CD 206;
+CD 210;
+CD 215;
+CD 218;
+CD 220;
+}
+CALL 201 {
+O call;
+V "v24 = p0 $this .getForNullKey()";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":5;
+Z 0;
+HE 202;
+HE 203;
+HE 204;
+HE 560;
+HE 561;
+HE 677;
+HE 678;
+HE 679;
+PS 202;
+PS 203;
+PS 204;
+PS 560;
+PS 561;
+CF 723;
+CE 202;
+CE 203;
+CE 204;
+CE 560;
+CE 561;
+CE 677;
+CE 678;
+CE 679;
+CE 723;
+CL 444: "virtual";
+}
+ACTI 202 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/util/HashMap";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this"];
+PS 677;
+CF 560;
+CD 201;
+SU 203;
+SU 204;
+PI 447;
+}
+ACTO 203 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "<exit>":-2;
+Z 0;
+CF 204: "exc";
+CF 205;
+DD 205;
+}
+ACTO 204 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "<exception>":-2;
+Z 0;
+HE 723;
+CF 197: "exc";
+CE 723;
+DD 197;
+}
+NORM 205 {
+O compound;
+V "return v24";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":8;
+Z 0;
+CF 196;
+DD 196;
+}
+CALL 206 {
+O call;
+V "v6 = p1 $key .hashCode()";
+T "I";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":10;
+Z 0;
+HE 207;
+HE 208;
+HE 209;
+PS 207;
+PS 208;
+PS 209;
+CF 724;
+CE 207;
+CE 208;
+CE 209;
+CE 724;
+CL 381: "virtual";
+}
+ACTI 207 {
+O act-in;
+V "this [p1 $key ]";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "<param> 0":-2;
+Z 0;
+LU ["key"];
+CF 206;
+CD 206;
+SU 208;
+SU 209;
+PI 384;
+}
+ACTO 208 {
+O act-out;
+V "ret 0";
+T "I";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "<exit>":-2;
+Z 0;
+CF 209;
+DD 211;
+}
+ACTO 209 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "<exception>":-2;
+Z 0;
+HE 724;
+CF 211;
+CE 724;
+}
+CALL 210 {
+O call;
+V "v8 = hash(v6)";
+T "I";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":13;
+Z 0;
+HE 211;
+HE 212;
+HE 213;
+HE 562;
+PS 211;
+PS 212;
+PS 213;
+PS 562;
+CF 725;
+CE 211;
+CE 212;
+CE 213;
+CE 562;
+CE 725;
+CL 389: "virtual";
+}
+ACTI 211 {
+O act-in;
+V "param 1 [v6]";
+T "I";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "<param> 1":-2;
+Z 0;
+CF 562;
+SU 212;
+PI 392;
+}
+ACTO 212 {
+O act-out;
+V "ret 0";
+T "I";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "<exit>":-2;
+Z 0;
+LD ["hash"];
+CF 213;
+DD 222;
+DD 235;
+}
+ACTO 213 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "<exception>":-2;
+Z 0;
+HE 725;
+CF 215;
+CE 725;
+}
+EXPR 214 {
+O reference;
+V "v9 = p0 $this .table";
+T "[Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":18;
+Z 0;
+LU ["this"];
+HE 216;
+CF 215;
+CE 216;
+DD 227;
+}
+NORM 215 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<base>":-6;
+Z 0;
+HE 214;
+PS 216;
+CF 216;
+CF 218;
+CE 214;
+DD 214;
+}
+NORM 216 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 214;
+DD 214;
+}
+EXPR 217 {
+O reference;
+V "v10 = p0 $this .table";
+T "[Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":23;
+Z 0;
+LU ["this"];
+HE 219;
+CF 218;
+CE 219;
+DD 220;
+}
+NORM 218 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<base>":-6;
+Z 0;
+HE 217;
+PS 219;
+CF 219;
+CF 220;
+CE 217;
+DD 217;
+}
+NORM 219 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 217;
+DD 217;
+}
+EXPR 220 {
+O assign;
+V "v11 = v10.length";
+T "I";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":26;
+Z 0;
+HE 221;
+HE 227;
+CF 197: "exc";
+CF 222;
+CD 197;
+CD 221;
+CD 227;
+DD 223;
+}
+CALL 221 {
+O call;
+V "v13 = indexFor(v8, v11)";
+T "I";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":27;
+Z 0;
+HE 222;
+HE 223;
+HE 224;
+HE 225;
+PS 222;
+PS 223;
+PS 224;
+PS 225;
+CF 726;
+CE 222;
+CE 223;
+CE 224;
+CE 225;
+CE 726;
+CL 411: "virtual";
+}
+ACTI 222 {
+O act-in;
+V "param 1 [v8]";
+T "I";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<param> 1":-2;
+Z 0;
+LU ["hash"];
+CF 223;
+SU 224;
+PI 414;
+}
+ACTI 223 {
+O act-in;
+V "param 2 [v11]";
+T "I";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<param> 2":-2;
+Z 0;
+CF 221;
+SU 224;
+PI 415;
+}
+ACTO 224 {
+O act-out;
+V "ret 0";
+T "I";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<exit>":-2;
+Z 0;
+CF 225;
+DD 229;
+}
+ACTO 225 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<exception>":-2;
+Z 0;
+HE 726;
+CF 227;
+CE 726;
+}
+EXPR 226 {
+O reference;
+V "v14 = v9[v13]";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":30;
+Z 0;
+LD ["e"];
+HE 228;
+CF 227;
+CE 228;
+DD 230;
+}
+NORM 227 {
+O compound;
+V "base";
+T "[Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<base>":-6;
+Z 0;
+HE 229;
+HE 230;
+HE 231;
+PS 228;
+CF 197: "exc";
+CF 229;
+CF 230;
+CD 197;
+CD 230;
+CD 231;
+CE 229;
+DD 226;
+}
+NORM 228 {
+O compound;
+V "field [java.lang.Object]";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<[]>":-5;
+Z 0;
+CF 226;
+DD 226;
+}
+NORM 229 {
+O compound;
+V "index";
+T "I";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "<index>":-7;
+Z 0;
+HE 226;
+CF 228;
+CE 226;
+CE 227;
+DD 226;
+}
+EXPR 230 {
+O assign;
+V "PHI v21 = v20, v14";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["e"];
+CF 231;
+DD 231;
+DD 233;
+DD 237;
+DD 247;
+DD 251;
+}
+PRED 231 {
+O IF;
+V "if (v21 == #(null)) goto 37";
+T "Z";
+P 9;
+S "java/util/HashMap.java":345,0-345,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":33;
+Z 0;
+LU ["e"];
+HE 233;
+HE 235;
+HE 254;
+CF 233;
+CF 254;
+CD 233;
+CD 235;
+CD 254;
+}
+EXPR 232 {
+O reference;
+V "v15 = v21.hash";
+T "I";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":37;
+Z 0;
+LU ["e"];
+HE 234;
+CF 233;
+CE 234;
+DD 235;
+}
+NORM 233 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "<base>":-6;
+Z 0;
+HE 232;
+PS 234;
+CF 234;
+CF 235;
+CE 232;
+DD 232;
+}
+NORM 234 {
+O compound;
+V "field hash";
+T "I";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "Ljava/util/HashMap$Entry.hash":-4;
+Z 0;
+CF 232;
+DD 232;
+}
+PRED 235 {
+O IF;
+V "if (v15 != v8) goto 45";
+T "Z";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":41;
+Z 0;
+LU ["hash"];
+HE 237;
+HE 239;
+CF 237;
+CF 251;
+CD 230;
+CD 231;
+CD 237;
+CD 239;
+CD 251;
+CD 253;
+}
+EXPR 236 {
+O reference;
+V "v16 = v21.key";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":45;
+Z 0;
+LD ["k"];
+LU ["e"];
+HE 238;
+CF 237;
+CE 238;
+DD 239;
+DD 242;
+}
+NORM 237 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "<base>":-6;
+Z 0;
+HE 236;
+PS 238;
+CF 238;
+CF 239;
+CE 236;
+DD 236;
+}
+NORM 238 {
+O compound;
+V "field key";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "Ljava/util/HashMap$Entry.key":-4;
+Z 0;
+CF 236;
+DD 236;
+}
+PRED 239 {
+O IF;
+V "if (v16 == p1 $key ) goto 58";
+T "Z";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":52;
+Z 0;
+LU ["k", "key"];
+HE 240;
+CF 241;
+CF 247;
+CD 240;
+CD 247;
+CD 249;
+}
+CALL 240 {
+O call;
+V "v18 = p1 $key .equals(v16)";
+T "Z";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":58;
+Z 0;
+HE 241;
+HE 242;
+HE 243;
+HE 244;
+HE 680;
+PS 241;
+PS 242;
+PS 243;
+PS 244;
+CF 727;
+CE 241;
+CE 242;
+CE 243;
+CE 244;
+CE 680;
+CE 727;
+CL 328: "virtual";
+}
+ACTI 241 {
+O act-in;
+V "this [p1 $key ]";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "<param> 0":-2;
+Z 0;
+LU ["key"];
+CF 242;
+CD 240;
+SU 243;
+SU 244;
+PI 331;
+}
+ACTI 242 {
+O act-in;
+V "param 1 [v16]";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "<param> 1":-2;
+Z 0;
+LU ["k"];
+CF 680;
+SU 243;
+SU 244;
+PI 332;
+}
+ACTO 243 {
+O act-out;
+V "ret 0";
+T "Z";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "<exit>":-2;
+Z 0;
+CF 244: "exc";
+CF 245;
+DD 245;
+}
+ACTO 244 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "<exception>":-2;
+Z 0;
+HE 727;
+CF 197: "exc";
+CE 727;
+DD 197;
+}
+PRED 245 {
+O IF;
+V "if (v18 == #(0)) goto 65";
+T "Z";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":61;
+Z 0;
+HE 247;
+HE 249;
+HE 251;
+HE 253;
+CF 247;
+CF 251;
+CD 230;
+CD 231;
+CD 247;
+CD 249;
+CD 251;
+CD 253;
+}
+EXPR 246 {
+O reference;
+V "v22 = v21.value";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":349,0-349,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":65;
+Z 0;
+LU ["e"];
+HE 248;
+CF 247;
+CE 248;
+DD 249;
+}
+NORM 247 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":349,0-349,0;
+B "<base>":-6;
+Z 0;
+HE 246;
+PS 248;
+CF 248;
+CF 249;
+CE 246;
+DD 246;
+}
+NORM 248 {
+O compound;
+V "field value";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":349,0-349,0;
+B "Ljava/util/HashMap$Entry.value":-4;
+Z 0;
+CF 246;
+DD 246;
+}
+NORM 249 {
+O compound;
+V "return v22";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":349,0-349,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":68;
+Z 0;
+CF 196;
+DD 196;
+}
+EXPR 250 {
+O reference;
+V "v20 = v21.next";
+T "Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":346,0-346,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":70;
+Z 0;
+LD ["e"];
+LU ["e"];
+HE 252;
+CF 251;
+CE 252;
+DD 230;
+}
+NORM 251 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":346,0-346,0;
+B "<base>":-6;
+Z 0;
+HE 250;
+PS 252;
+CF 252;
+CF 253;
+CE 250;
+DD 250;
+}
+NORM 252 {
+O compound;
+V "field next";
+T "Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":346,0-346,0;
+B "Ljava/util/HashMap$Entry.next":-4;
+Z 0;
+CF 250;
+DD 250;
+}
+NORM 253 {
+O compound;
+V "goto 33";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":346,0-346,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":74;
+Z 0;
+CF 230;
+}
+NORM 254 {
+O compound;
+V "return #(null)";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":351,0-351,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":78;
+Z 0;
+CF 196;
+DD 196;
+}
+ENTR 278 {
+O entry;
+V "Timing.md5(java.lang.String)";
+P 10;
+S "Timing.java":0,0-0,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":-1;
+Z 0;
+C "Application";
+HE 279;
+HE 280;
+HE 281;
+HE 282;
+HE 286;
+HE 287;
+HE 288;
+HE 289;
+HE 564;
+HE 565;
+HE 566;
+PS 279;
+PS 280;
+PS 281;
+CF 564;
+CD 282;
+CD 286;
+CD 287;
+CD 288;
+CD 289;
+CE 279;
+CE 280;
+CE 281;
+CE 564;
+CE 565;
+CE 566;
+}
+EXIT 279 {
+O exit;
+V "Timing.md5(java.lang.String)";
+T "Ljava/lang/String";
+P 10;
+S "Timing.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+PS 565;
+PS 566;
+RF 710;
+RF 711;
+PO 24;
+PO 35;
+}
+FRMO 280 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 10;
+S "Timing.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 566;
+CF 565: "exc";
+PO 25;
+PO 36;
+}
+FRMI 281 {
+O form-in;
+V "param 1 $s ";
+T "Ljava/lang/String";
+P 10;
+S "Timing.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["s"];
+PS 564;
+PS 566;
+CF 283;
+DD 283;
+}
+CALL 282 {
+O call;
+V "v5 = p1 $s .length()";
+T "I";
+P 10;
+S "Timing.java":16,0-16,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":3;
+Z 0;
+HE 283;
+HE 284;
+HE 285;
+PS 283;
+PS 284;
+PS 285;
+CF 728;
+CE 283;
+CE 284;
+CE 285;
+CE 728;
+CL 505: "virtual";
+}
+ACTI 283 {
+O act-in;
+V "this [p1 $s ]";
+T "Ljava/lang/String";
+P 10;
+S "Timing.java":16,0-16,0;
+B "<param> 0":-2;
+Z 0;
+LU ["s"];
+CF 282;
+CD 282;
+SU 284;
+SU 285;
+PI 508;
+}
+ACTO 284 {
+O act-out;
+V "ret 0";
+T "I";
+P 10;
+S "Timing.java":16,0-16,0;
+B "<exit>":-2;
+Z 0;
+CF 285;
+DD 286;
+}
+ACTO 285 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 10;
+S "Timing.java":16,0-16,0;
+B "<exception>":-2;
+Z 0;
+HE 728;
+CF 286;
+CE 728;
+}
+EXPR 286 {
+O assign;
+V "v6 = #(100000000) * v5";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":16,0-16,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":6;
+Z 0;
+LD ["lim"];
+CF 287;
+DD 289;
+}
+EXPR 287 {
+O assign;
+V "PHI v16 = v14, #(0)";
+P 10;
+S "Timing.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["k"];
+CF 288;
+DD 290;
+DD 292;
+DD 294;
+DD 299;
+}
+EXPR 288 {
+O assign;
+V "PHI v17 = v15, #(0)";
+P 10;
+S "Timing.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["i"];
+CF 289;
+DD 289;
+DD 296;
+}
+PRED 289 {
+O IF;
+V "if (v17 >= v6) goto 19";
+T "Z";
+P 10;
+S "Timing.java":20,0-20,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":14;
+Z 0;
+LU ["i", "lim"];
+HE 290;
+HE 298;
+CF 290;
+CF 299;
+CD 290;
+CD 298;
+}
+EXPR 290 {
+O assign;
+V "v9 = v16 % #(3)";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":21,0-21,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":19;
+Z 0;
+LU ["k"];
+HE 291;
+HE 296;
+HE 297;
+CF 280: "exc";
+CF 291;
+CD 280;
+CD 287;
+CD 288;
+CD 289;
+CD 291;
+CD 295;
+CD 296;
+CD 297;
+DD 291;
+}
+PRED 291 {
+O IF;
+V "if (v9 != #(0)) goto 23";
+T "Z";
+P 10;
+S "Timing.java":21,0-21,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":20;
+Z 0;
+HE 292;
+HE 293;
+HE 294;
+HE 295;
+CF 292;
+CF 294;
+CD 292;
+CD 293;
+CD 294;
+CD 295;
+}
+EXPR 292 {
+O assign;
+V "v11 = v16 + #(-1)";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":22,0-22,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":23;
+Z 0;
+LD ["k"];
+LU ["k"];
+CF 293;
+DD 295;
+}
+NORM 293 {
+O compound;
+V "goto 32";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":22,0-22,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":26;
+Z 0;
+CF 295;
+}
+EXPR 294 {
+O assign;
+V "v13 = v16 + #(1)";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":24,0-24,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":29;
+Z 0;
+LD ["k"];
+LU ["k"];
+CF 295;
+DD 295;
+}
+EXPR 295 {
+O assign;
+V "PHI v14 = v11, v13";
+P 10;
+S "Timing.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["k"];
+CF 296;
+DD 287;
+}
+EXPR 296 {
+O assign;
+V "v15 = v17 + #(1)";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":20,0-20,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":32;
+Z 0;
+LD ["i"];
+LU ["i"];
+CF 297;
+DD 288;
+}
+NORM 297 {
+O compound;
+V "goto 14";
+T "Ljava/lang/Object";
+P 10;
+S "Timing.java":20,0-20,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":35;
+Z 0;
+CF 287;
+}
+CALL 298 {
+O call;
+V "v19 = toString(v16)";
+T "Ljava/lang/String";
+P 10;
+S "Timing.java":28,0-28,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":39;
+Z 0;
+HE 299;
+HE 300;
+HE 301;
+PS 299;
+PS 300;
+PS 301;
+CF 729;
+CE 299;
+CE 300;
+CE 301;
+CE 729;
+CL 509: "virtual";
+}
+ACTI 299 {
+O act-in;
+V "param 1 [v16]";
+T "I";
+P 10;
+S "Timing.java":28,0-28,0;
+B "<param> 1":-2;
+Z 0;
+LU ["k"];
+CF 298;
+SU 300;
+SU 301;
+PI 512;
+}
+ACTO 300 {
+O act-out;
+V "ret 0";
+T "Ljava/lang/String";
+P 10;
+S "Timing.java":28,0-28,0;
+B "<exit>":-2;
+Z 0;
+CF 301: "exc";
+CF 302;
+DD 302;
+}
+ACTO 301 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 10;
+S "Timing.java":28,0-28,0;
+B "<exception>":-2;
+Z 0;
+HE 729;
+CF 280: "exc";
+CE 729;
+DD 280;
+}
+NORM 302 {
+O compound;
+V "return v19";
+T "Ljava/lang/String";
+P 10;
+S "Timing.java":28,0-28,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":42;
+Z 0;
+CF 565;
+DD 279;
+}
+ENTR 323 {
+O entry;
+V "java.lang.String.<init>(java.lang.String)";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.<init>(Ljava/lang/String;)V":-1;
+Z 0;
+C "Primordial";
+HE 324;
+HE 325;
+HE 326;
+HE 327;
+HE 661;
+HE 662;
+HE 699;
+PS 325;
+PS 326;
+PS 327;
+CF 661;
+CE 324;
+CE 325;
+CE 326;
+CE 327;
+CE 661;
+CE 662;
+CE 699;
+}
+EXIT 324 {
+O exit;
+V "java.lang.String.<init>(java.lang.String)";
+T "V";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 712;
+}
+FRMO 325 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 661;
+PS 662;
+CF 662;
+PO 41;
+}
+FRMI 326 {
+O form-in;
+V "this";
+T "Ljava/lang/String";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 661;
+PS 662;
+CF 327;
+DD 699;
+}
+FRMI 327 {
+O form-in;
+V "param 1 $original ";
+T "Ljava/lang/String";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+PS 661;
+PS 662;
+CF 699;
+DD 699;
+}
+ENTR 328 {
+O entry;
+V "java.lang.String.equals(java.lang.Object)";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.equals(Ljava/lang/Object;)Z":-1;
+Z 0;
+C "Primordial";
+HE 329;
+HE 330;
+HE 331;
+HE 332;
+HE 685;
+HE 700;
+PS 329;
+PS 330;
+PS 331;
+PS 332;
+CF 685;
+CE 329;
+CE 330;
+CE 331;
+CE 332;
+CE 685;
+CE 700;
+}
+EXIT 329 {
+O exit;
+V "java.lang.String.equals(java.lang.Object)";
+T "Z";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 713;
+RF 727;
+RF 732;
+PO 45;
+PO 243;
+PO 431;
+}
+FRMO 330 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 329;
+PO 46;
+PO 244;
+PO 432;
+}
+FRMI 331 {
+O form-in;
+V "this";
+T "Ljava/lang/String";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+CF 332;
+DD 700;
+}
+FRMI 332 {
+O form-in;
+V "param 1 $anObject ";
+T "Ljava/lang/Object";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+PS 685;
+CF 329;
+CF 700;
+DD 700;
+}
+ENTR 333 {
+O entry;
+V "java.util.HashMap.<init>()";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.<init>()V":-1;
+Z 0;
+C "Primordial";
+HE 334;
+HE 335;
+HE 336;
+HE 337;
+HE 663;
+HE 664;
+HE 665;
+HE 666;
+HE 667;
+HE 668;
+HE 669;
+PS 335;
+PS 336;
+CF 336;
+CD 337;
+CE 334;
+CE 335;
+CE 336;
+CE 663;
+CE 664;
+CE 665;
+CE 666;
+CE 667;
+CE 668;
+CE 669;
+}
+EXIT 334 {
+O exit;
+V "java.util.HashMap.<init>()";
+T "V";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 717;
+}
+FRMO 335 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 667;
+CF 663: "exc";
+PO 115;
+}
+FRMI 336 {
+O form-in;
+V "this";
+T "Ljava/util/HashMap";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+PS 663;
+PS 664;
+PS 665;
+PS 666;
+PS 667;
+PS 668;
+PS 669;
+CF 338;
+DD 338;
+DD 341;
+DD 344;
+DD 347;
+DD 351;
+DD 354;
+}
+CALL 337 {
+O call;
+V "p0 $this .<init>()";
+T "V";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "java.util.HashMap.<init>()V":1;
+Z 0;
+HE 338;
+HE 339;
+HE 670;
+HE 671;
+HE 672;
+PS 338;
+PS 339;
+CF 730;
+CE 338;
+CE 339;
+CE 670;
+CE 671;
+CE 672;
+CE 730;
+CL 513: "virtual";
+}
+ACTI 338 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/util/AbstractMap";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this"];
+PS 670;
+PS 671;
+PS 672;
+CF 337;
+CD 337;
+SU 339;
+SU 670;
+SU 671;
+SU 672;
+PI 516;
+}
+ACTO 339 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "<exception>":-2;
+Z 0;
+HE 730;
+PS 672;
+CF 335: "exc";
+CE 730;
+DD 335;
+}
+EXPR 340 {
+O modify;
+V "p0 $this .entrySet = #(null)";
+T "Ljava/util/Set";
+P 13;
+S "java/util/HashMap.java":901,0-901,0;
+B "java.util.HashMap.<init>()V":6;
+Z 0;
+LU ["this"];
+HE 342;
+CF 342;
+CE 342;
+DD 342;
+}
+NORM 341 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 13;
+S "java/util/HashMap.java":901,0-901,0;
+B "<base>":-6;
+Z 0;
+HE 340;
+PS 342;
+CF 340;
+CF 344;
+CE 340;
+DD 340;
+}
+NORM 342 {
+O compound;
+V "field entrySet";
+T "Ljava/util/Set";
+P 13;
+S "java/util/HashMap.java":901,0-901,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 341;
+DH 663;
+}
+EXPR 343 {
+O modify;
+V "p0 $this .loadFactor = #(0.75 f)";
+T "F";
+P 13;
+S "java/util/HashMap.java":201,0-201,0;
+B "java.util.HashMap.<init>()V":12;
+Z 0;
+LU ["this"];
+HE 345;
+CF 345;
+CE 345;
+DD 345;
+}
+NORM 344 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 13;
+S "java/util/HashMap.java":201,0-201,0;
+B "<base>":-6;
+Z 0;
+HE 343;
+PS 345;
+CF 343;
+CF 347;
+CE 343;
+DD 343;
+}
+NORM 345 {
+O compound;
+V "field loadFactor";
+T "F";
+P 13;
+S "java/util/HashMap.java":201,0-201,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 344;
+DH 664;
+}
+EXPR 346 {
+O modify;
+V "p0 $this .threshold = #(12)";
+T "I";
+P 13;
+S "java/util/HashMap.java":202,0-202,0;
+B "java.util.HashMap.<init>()V":18;
+Z 0;
+LU ["this"];
+HE 348;
+CF 348;
+CE 348;
+DD 348;
+}
+NORM 347 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 13;
+S "java/util/HashMap.java":202,0-202,0;
+B "<base>":-6;
+Z 0;
+HE 346;
+PS 348;
+CF 346;
+CF 349;
+CE 346;
+DD 346;
+}
+NORM 348 {
+O compound;
+V "field threshold";
+T "I";
+P 13;
+S "java/util/HashMap.java":202,0-202,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 347;
+DH 665;
+}
+NORM 349 {
+O declaration;
+V "v8 = new java.util.HashMap$Entry[]";
+T "[Ljava/util/HashMap$Entry";
+P 13;
+S "java/util/HashMap.java":203,0-203,0;
+B "java.util.HashMap.<init>()V":24;
+Z 0;
+CF 351;
+DD 350;
+}
+EXPR 350 {
+O modify;
+V "p0 $this .table = v8";
+T "[Ljava/util/HashMap$Entry";
+P 13;
+S "java/util/HashMap.java":203,0-203,0;
+B "java.util.HashMap.<init>()V":27;
+Z 0;
+LU ["this"];
+HE 352;
+CF 352;
+CE 352;
+DD 352;
+}
+NORM 351 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 13;
+S "java/util/HashMap.java":203,0-203,0;
+B "<base>":-6;
+Z 0;
+HE 350;
+PS 352;
+CF 350;
+CF 354;
+CE 350;
+DD 350;
+}
+NORM 352 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 13;
+S "java/util/HashMap.java":203,0-203,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 351;
+DH 666;
+}
+CALL 353 {
+O call;
+V "p0 $this .init()";
+T "V";
+P 13;
+S "java/util/HashMap.java":204,0-204,0;
+B "java.util.HashMap.<init>()V":31;
+Z 0;
+HE 354;
+HE 355;
+PS 354;
+PS 355;
+CF 355: "exc";
+CF 731;
+CE 354;
+CE 355;
+CE 731;
+CL 532: "virtual";
+}
+ACTI 354 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/util/HashMap";
+P 13;
+S "java/util/HashMap.java":204,0-204,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this"];
+CF 353;
+CD 353;
+PI 535;
+}
+ACTO 355 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 13;
+S "java/util/HashMap.java":204,0-204,0;
+B "<exception>":-2;
+Z 0;
+HE 731;
+CF 335: "exc";
+CE 731;
+DD 335;
+}
+NORM 356 {
+O compound;
+V "return";
+T "V";
+P 13;
+S "java/util/HashMap.java":205,0-205,0;
+B "java.util.HashMap.<init>()V":34;
+Z 0;
+CF 663;
+}
+ENTR 367 {
+O entry;
+V "java.util.HashMap.maskNull(java.lang.Object)";
+P 14;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.maskNull(Ljava/lang/Object;)Ljava/lang/Object;":-1;
+Z 0;
+C "Primordial";
+HE 368;
+HE 369;
+HE 370;
+HE 371;
+HE 375;
+HE 377;
+PS 368;
+PS 369;
+PS 370;
+PS 377;
+CF 370;
+CD 371;
+CD 375;
+CD 376;
+CE 368;
+CE 369;
+CE 370;
+CE 377;
+}
+EXIT 368 {
+O exit;
+V "java.util.HashMap.maskNull(java.lang.Object)";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 718;
+PO 128;
+}
+FRMO 369 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 14;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+CF 368: "exc";
+PO 129;
+}
+FRMI 370 {
+O form-in;
+V "param 1 $key ";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["key"];
+CF 377;
+DD 371;
+DD 376;
+}
+PRED 371 {
+O IF;
+V "if (p1 $key  != #(null)) goto 4";
+T "Z";
+P 14;
+S "java/util/HashMap.java":243,0-243,0;
+B "java.util.HashMap.maskNull(Ljava/lang/Object;)Ljava/lang/Object;":1;
+Z 0;
+LU ["key"];
+HE 372;
+HE 374;
+HE 376;
+CF 373;
+CF 376;
+CD 372;
+CD 374;
+CD 376;
+}
+EXPR 372 {
+O reference;
+V "v4 = java.util.HashMap.NULL_KEY";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":243,0-243,0;
+B "java.util.HashMap.maskNull(Ljava/lang/Object;)Ljava/lang/Object;":4;
+Z 0;
+HE 373;
+CF 374;
+CE 373;
+DD 376;
+}
+NORM 373 {
+O compound;
+V "field NULL_KEY";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":243,0-243,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+CF 372;
+DD 372;
+}
+NORM 374 {
+O compound;
+V "goto 11";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":243,0-243,0;
+B "java.util.HashMap.maskNull(Ljava/lang/Object;)Ljava/lang/Object;":7;
+Z 0;
+CF 376;
+}
+NORM 375 {
+O compound;
+V "return v5";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":243,0-243,0;
+B "java.util.HashMap.maskNull(Ljava/lang/Object;)Ljava/lang/Object;":11;
+Z 0;
+CF 368;
+DD 368;
+}
+EXPR 376 {
+O assign;
+V "PHI v5 = v4, p1 $key ";
+P 14;
+S "java/util/HashMap.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LU ["key"];
+CF 375;
+DD 375;
+}
+FRMI 377 {
+O form-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 14;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+CF 371;
+DD 373;
+}
+ENTR 381 {
+O entry;
+V "java.lang.String.hashCode()";
+P 15;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.hashCode()I":-1;
+Z 0;
+C "Primordial";
+HE 382;
+HE 383;
+HE 384;
+HE 701;
+PS 382;
+PS 383;
+PS 384;
+CF 384;
+CE 382;
+CE 383;
+CE 384;
+CE 701;
+}
+EXIT 382 {
+O exit;
+V "java.lang.String.hashCode()";
+T "I";
+P 15;
+S "java/lang/String.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 719;
+RF 724;
+PO 132;
+PO 208;
+}
+FRMO 383 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 15;
+S "java/lang/String.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 382;
+PO 133;
+PO 209;
+}
+FRMI 384 {
+O form-in;
+V "this";
+T "Ljava/lang/String";
+P 15;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+CF 382;
+CF 701;
+DD 701;
+}
+ENTR 385 {
+O entry;
+V "java.lang.Object.hashCode()";
+P 16;
+S "java/lang/Object.java":0,0-0,0;
+B "java.lang.Object.hashCode()I":-1;
+Z 0;
+C "Primordial";
+HE 386;
+HE 387;
+HE 388;
+HE 567;
+HE 702;
+PS 386;
+PS 387;
+PS 388;
+CF 567;
+CE 386;
+CE 387;
+CE 388;
+CE 567;
+CE 702;
+}
+EXIT 386 {
+O exit;
+V "java.lang.Object.hashCode()";
+T "I";
+P 16;
+S "java/lang/Object.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 719;
+RF 733;
+PO 132;
+PO 452;
+}
+FRMO 387 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 16;
+S "java/lang/Object.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 386;
+PO 133;
+PO 453;
+}
+FRMI 388 {
+O form-in;
+V "this";
+T "Ljava/lang/Object";
+P 16;
+S "java/lang/Object.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+PS 567;
+CF 386;
+CF 702;
+DD 702;
+}
+ENTR 389 {
+O entry;
+V "java.util.HashMap.hash(int)";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.hash(I)I":-1;
+Z 0;
+C "Primordial";
+HE 390;
+HE 391;
+HE 392;
+HE 393;
+HE 395;
+HE 405;
+HE 407;
+PS 390;
+PS 391;
+PS 392;
+PS 407;
+CF 392;
+CD 393;
+CD 395;
+CD 405;
+CD 406;
+CE 390;
+CE 391;
+CE 392;
+CE 407;
+}
+EXIT 390 {
+O exit;
+V "java.util.HashMap.hash(int)";
+T "I";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 720;
+RF 725;
+RF 734;
+PO 136;
+PO 212;
+PO 456;
+}
+FRMO 391 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+CF 390: "exc";
+PO 137;
+PO 213;
+PO 457;
+}
+FRMI 392 {
+O form-in;
+V "param 1 $h ";
+T "I";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["h"];
+CF 407;
+DD 397;
+DD 402;
+}
+EXPR 393 {
+O reference;
+V "v3 = java.util.HashMap.useNewHash";
+T "Z";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "java.util.HashMap.hash(I)I":0;
+Z 0;
+HE 394;
+CF 395;
+CE 394;
+DD 395;
+}
+NORM 394 {
+O compound;
+V "field useNewHash";
+T "Z";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 393;
+DD 393;
+}
+PRED 395 {
+O IF;
+V "if (v3 == #(0)) goto 7";
+T "Z";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "java.util.HashMap.hash(I)I":3;
+Z 0;
+HE 396;
+HE 400;
+HE 401;
+HE 406;
+CF 397;
+CF 402;
+CD 396;
+CD 400;
+CD 401;
+CD 406;
+}
+CALL 396 {
+O call;
+V "v8 = newHash(p1 $h )";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "java.util.HashMap.hash(I)I":7;
+Z 0;
+U "java.util.HashMap.newHash(I)I";
+HE 397;
+HE 398;
+HE 399;
+HE 703;
+PS 397;
+PS 398;
+PS 399;
+CF 703;
+CE 397;
+CE 398;
+CE 399;
+CE 703;
+}
+ACTI 397 {
+O act-in;
+V "param 1 [p1 $h ]";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "<param> 1":-2;
+Z 0;
+LU ["h"];
+CF 396;
+DD 703;
+}
+ACTO 398 {
+O act-out;
+V "ret 0";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "<exit>":-2;
+Z 0;
+CF 399;
+DD 406;
+}
+ACTO 399 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "<exception>":-2;
+Z 0;
+CF 400;
+}
+NORM 400 {
+O compound;
+V "goto 17";
+T "Ljava/lang/Object";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "java.util.HashMap.hash(I)I":10;
+Z 0;
+CF 406;
+}
+CALL 401 {
+O call;
+V "v6 = oldHash(p1 $h )";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "java.util.HashMap.hash(I)I":14;
+Z 0;
+U "java.util.HashMap.oldHash(I)I";
+HE 402;
+HE 403;
+HE 404;
+HE 704;
+PS 402;
+PS 403;
+PS 404;
+CF 704;
+CE 402;
+CE 403;
+CE 404;
+CE 704;
+}
+ACTI 402 {
+O act-in;
+V "param 1 [p1 $h ]";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "<param> 1":-2;
+Z 0;
+LU ["h"];
+CF 401;
+DD 704;
+}
+ACTO 403 {
+O act-out;
+V "ret 0";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "<exit>":-2;
+Z 0;
+CF 404;
+DD 406;
+}
+ACTO 404 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "<exception>":-2;
+Z 0;
+CF 406;
+}
+NORM 405 {
+O compound;
+V "return v9";
+T "I";
+P 17;
+S "java/util/HashMap.java":288,0-288,0;
+B "java.util.HashMap.hash(I)I":17;
+Z 0;
+CF 390;
+DD 390;
+}
+EXPR 406 {
+O assign;
+V "PHI v9 = v8, v6";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+CF 405;
+DD 405;
+}
+FRMI 407 {
+O form-in;
+V "useNewHash";
+T "Z";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 394;
+DD 394;
+}
+ENTR 411 {
+O entry;
+V "java.util.HashMap.indexFor(int,int)";
+P 18;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.indexFor(II)I":-1;
+Z 0;
+C "Primordial";
+HE 412;
+HE 413;
+HE 414;
+HE 415;
+HE 416;
+HE 417;
+HE 418;
+PS 412;
+PS 413;
+PS 414;
+PS 415;
+CF 414;
+CD 416;
+CD 417;
+CD 418;
+CE 412;
+CE 413;
+CE 414;
+CE 415;
+}
+EXIT 412 {
+O exit;
+V "java.util.HashMap.indexFor(int,int)";
+T "I";
+P 18;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 721;
+RF 726;
+RF 735;
+PO 145;
+PO 224;
+PO 465;
+}
+FRMO 413 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 18;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+CF 412: "exc";
+PO 146;
+PO 225;
+PO 466;
+}
+FRMI 414 {
+O form-in;
+V "param 1 $h ";
+T "I";
+P 18;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["h"];
+CF 415;
+DD 417;
+}
+FRMI 415 {
+O form-in;
+V "param 2 $length ";
+T "I";
+P 18;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["length"];
+CF 416;
+DD 416;
+}
+EXPR 416 {
+O assign;
+V "v5 = p2 $length  - #(1)";
+T "Ljava/lang/Object";
+P 18;
+S "java/util/HashMap.java":306,0-306,0;
+B "java.util.HashMap.indexFor(II)I":3;
+Z 0;
+LU ["length"];
+CF 417;
+DD 417;
+}
+EXPR 417 {
+O assign;
+V "v6 = p1 $h  && v5";
+T "Ljava/lang/Object";
+P 18;
+S "java/util/HashMap.java":306,0-306,0;
+B "java.util.HashMap.indexFor(II)I":4;
+Z 0;
+LU ["h"];
+CF 418;
+DD 418;
+}
+NORM 418 {
+O compound;
+V "return v6";
+T "I";
+P 18;
+S "java/util/HashMap.java":306,0-306,0;
+B "java.util.HashMap.indexFor(II)I":5;
+Z 0;
+CF 412;
+DD 412;
+}
+ENTR 422 {
+O entry;
+V "java.util.HashMap.eq(java.lang.Object,java.lang.Object)";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":-1;
+Z 0;
+C "Primordial";
+HE 423;
+HE 424;
+HE 425;
+HE 426;
+HE 427;
+HE 659;
+PS 423;
+PS 424;
+PS 425;
+PS 426;
+CF 659;
+CD 427;
+CE 423;
+CE 424;
+CE 425;
+CE 426;
+CE 659;
+}
+EXIT 423 {
+O exit;
+V "java.util.HashMap.eq(java.lang.Object,java.lang.Object)";
+T "Z";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 722;
+PO 166;
+}
+FRMO 424 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 423: "exc";
+PO 167;
+}
+FRMI 425 {
+O form-in;
+V "param 1 $x ";
+T "Ljava/lang/Object";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+LD ["x"];
+PS 659;
+CF 426;
+DD 427;
+DD 429;
+}
+FRMI 426 {
+O form-in;
+V "param 2 $y ";
+T "Ljava/lang/Object";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 2":-2;
+Z 0;
+LD ["y"];
+CF 427;
+DD 427;
+DD 430;
+}
+PRED 427 {
+O IF;
+V "if (p1 $x  == p2 $y ) goto 7";
+T "Z";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":2;
+Z 0;
+LU ["x", "y"];
+HE 428;
+CF 429;
+CF 434;
+CD 428;
+CD 434;
+CD 435;
+CD 436;
+}
+CALL 428 {
+O call;
+V "v5 = p1 $x .equals(p2 $y )";
+T "Z";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":7;
+Z 0;
+HE 429;
+HE 430;
+HE 431;
+HE 432;
+HE 660;
+PS 429;
+PS 430;
+PS 431;
+PS 432;
+CF 732;
+CE 429;
+CE 430;
+CE 431;
+CE 432;
+CE 660;
+CE 732;
+CL 328: "virtual";
+}
+ACTI 429 {
+O act-in;
+V "this [p1 $x ]";
+T "Ljava/lang/Object";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "<param> 0":-2;
+Z 0;
+LU ["x"];
+CF 430;
+CD 428;
+SU 431;
+SU 432;
+PI 331;
+}
+ACTI 430 {
+O act-in;
+V "param 1 [p2 $y ]";
+T "Ljava/lang/Object";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "<param> 1":-2;
+Z 0;
+LU ["y"];
+CF 660;
+SU 431;
+SU 432;
+PI 332;
+}
+ACTO 431 {
+O act-out;
+V "ret 0";
+T "Z";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "<exit>":-2;
+Z 0;
+CF 432: "exc";
+CF 433;
+DD 433;
+}
+ACTO 432 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "<exception>":-2;
+Z 0;
+HE 732;
+CF 424: "exc";
+CE 732;
+DD 424;
+}
+PRED 433 {
+O IF;
+V "if (v5 == #(0)) goto 14";
+T "Z";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":10;
+Z 0;
+HE 434;
+HE 436;
+CF 434;
+CF 436;
+CD 434;
+CD 436;
+}
+NORM 434 {
+O compound;
+V "goto 18";
+T "Ljava/lang/Object";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":14;
+Z 0;
+CF 436;
+}
+NORM 435 {
+O compound;
+V "return v8";
+T "Z";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":18;
+Z 0;
+CF 423;
+DD 423;
+}
+EXPR 436 {
+O assign;
+V "PHI v8 = #(1), #(0)";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+CF 435;
+DD 435;
+}
+ENTR 444 {
+O entry;
+V "java.util.HashMap.getForNullKey()";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":-1;
+Z 0;
+C "Primordial";
+HE 445;
+HE 446;
+HE 447;
+HE 448;
+HE 450;
+HE 491;
+HE 548;
+HE 681;
+HE 682;
+HE 683;
+PS 445;
+PS 446;
+PS 447;
+PS 491;
+PS 548;
+CF 681;
+CD 448;
+CD 450;
+CE 445;
+CE 446;
+CE 447;
+CE 491;
+CE 548;
+CE 681;
+CE 682;
+CE 683;
+}
+EXIT 445 {
+O exit;
+V "java.util.HashMap.getForNullKey()";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 723;
+PO 203;
+}
+FRMO 446 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 445: "exc";
+PO 204;
+}
+FRMI 447 {
+O form-in;
+V "this";
+T "Ljava/util/HashMap";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+PS 681;
+CF 491;
+DD 459;
+DD 468;
+}
+EXPR 448 {
+O reference;
+V "v3 = java.util.HashMap.NULL_KEY";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":0;
+Z 0;
+HE 449;
+CF 451;
+CE 449;
+DD 451;
+}
+NORM 449 {
+O compound;
+V "field NULL_KEY";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+CF 448;
+DD 448;
+}
+CALL 450 {
+O call;
+V "v5 = v3.hashCode()";
+T "I";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":3;
+Z 0;
+HE 451;
+HE 452;
+HE 453;
+HE 684;
+PS 451;
+PS 452;
+PS 453;
+CF 733;
+CE 451;
+CE 452;
+CE 453;
+CE 684;
+CE 733;
+CL 385: "virtual";
+}
+ACTI 451 {
+O act-in;
+V "this [v3]";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "<param> 0":-2;
+Z 0;
+PS 684;
+CF 684;
+CD 450;
+SU 452;
+SU 453;
+PI 388;
+}
+ACTO 452 {
+O act-out;
+V "ret 0";
+T "I";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "<exit>":-2;
+Z 0;
+CF 453: "exc";
+CF 455;
+DD 455;
+}
+ACTO 453 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "<exception>":-2;
+Z 0;
+HE 733;
+CF 446: "exc";
+CE 733;
+}
+CALL 454 {
+O call;
+V "v7 = hash(v5)";
+T "I";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":6;
+Z 0;
+HE 455;
+HE 456;
+HE 457;
+HE 563;
+PS 455;
+PS 456;
+PS 457;
+PS 563;
+CF 734;
+CE 455;
+CE 456;
+CE 457;
+CE 563;
+CE 734;
+CL 389: "virtual";
+}
+ACTI 455 {
+O act-in;
+V "param 1 [v5]";
+T "I";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "<param> 1":-2;
+Z 0;
+CF 563;
+SU 456;
+PI 392;
+}
+ACTO 456 {
+O act-out;
+V "ret 0";
+T "I";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "<exit>":-2;
+Z 0;
+LD ["hash"];
+CF 457;
+DD 463;
+}
+ACTO 457 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "<exception>":-2;
+Z 0;
+HE 734;
+CF 459;
+CE 734;
+}
+EXPR 458 {
+O reference;
+V "v8 = p0 $this .table";
+T "[Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":12;
+Z 0;
+LU ["this"];
+HE 460;
+CF 459;
+CE 460;
+DD 461;
+}
+NORM 459 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "<base>":-6;
+Z 0;
+HE 458;
+PS 460;
+CF 460;
+CF 461;
+CE 458;
+DD 458;
+}
+NORM 460 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 458;
+DD 458;
+}
+EXPR 461 {
+O assign;
+V "v9 = v8.length";
+T "I";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":15;
+Z 0;
+HE 462;
+HE 468;
+HE 471;
+CF 446: "exc";
+CF 463;
+CD 446;
+CD 462;
+CD 468;
+CD 471;
+DD 464;
+}
+CALL 462 {
+O call;
+V "v11 = indexFor(v7, v9)";
+T "I";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":16;
+Z 0;
+HE 463;
+HE 464;
+HE 465;
+HE 466;
+PS 463;
+PS 464;
+PS 465;
+PS 466;
+CF 735;
+CE 463;
+CE 464;
+CE 465;
+CE 466;
+CE 735;
+CL 411: "virtual";
+}
+ACTI 463 {
+O act-in;
+V "param 1 [v7]";
+T "I";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "<param> 1":-2;
+Z 0;
+LU ["hash"];
+CF 464;
+SU 465;
+PI 414;
+}
+ACTI 464 {
+O act-in;
+V "param 2 [v9]";
+T "I";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "<param> 2":-2;
+Z 0;
+CF 462;
+SU 465;
+PI 415;
+}
+ACTO 465 {
+O act-out;
+V "ret 0";
+T "I";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "<exit>":-2;
+Z 0;
+LD ["i"];
+CF 466;
+DD 473;
+}
+ACTO 466 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "<exception>":-2;
+Z 0;
+HE 735;
+CF 468;
+CE 735;
+}
+EXPR 467 {
+O reference;
+V "v12 = p0 $this .table";
+T "[Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":21;
+Z 0;
+LU ["this"];
+HE 469;
+CF 468;
+CE 469;
+DD 471;
+}
+NORM 468 {
+O compound;
+V "base";
+T "Ljava/util/HashMap";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "<base>":-6;
+Z 0;
+HE 467;
+PS 469;
+CF 469;
+CF 471;
+CE 467;
+DD 467;
+}
+NORM 469 {
+O compound;
+V "field table";
+T "[Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 467;
+DD 467;
+}
+EXPR 470 {
+O reference;
+V "v13 = v12[v11]";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":25;
+Z 0;
+LD ["e"];
+LU ["i"];
+HE 472;
+CF 471;
+CE 472;
+DD 474;
+}
+NORM 471 {
+O compound;
+V "base";
+T "[Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "<base>":-6;
+Z 0;
+HE 473;
+HE 474;
+HE 475;
+PS 472;
+CF 446: "exc";
+CF 473;
+CF 474;
+CD 446;
+CD 474;
+CD 475;
+CE 473;
+DD 470;
+}
+NORM 472 {
+O compound;
+V "field [java.lang.Object]";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "<[]>":-5;
+Z 0;
+CF 470;
+DD 470;
+}
+NORM 473 {
+O compound;
+V "index";
+T "I";
+P 20;
+S "java/util/HashMap.java":357,0-357,0;
+B "<index>":-7;
+Z 0;
+HE 470;
+CF 472;
+CE 470;
+CE 471;
+DD 470;
+}
+EXPR 474 {
+O assign;
+V "PHI v18 = v17, v13";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "<phi>":-8;
+Z 0;
+LD ["e"];
+CF 475;
+DD 475;
+DD 478;
+DD 484;
+DD 488;
+}
+PRED 475 {
+O IF;
+V "if (v18 != #(null)) goto 32";
+T "Z";
+P 20;
+S "java/util/HashMap.java":359,0-359,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":28;
+Z 0;
+LU ["e"];
+HE 476;
+HE 478;
+HE 480;
+HE 482;
+CF 476;
+CF 478;
+CD 476;
+CD 478;
+CD 480;
+CD 482;
+}
+NORM 476 {
+O compound;
+V "return #(null)";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":360,0-360,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":32;
+Z 0;
+CF 445;
+DD 445;
+}
+EXPR 477 {
+O reference;
+V "v15 = v18.key";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":361,0-361,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":34;
+Z 0;
+LU ["e"];
+HE 479;
+CF 478;
+CE 479;
+DD 482;
+}
+NORM 478 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":361,0-361,0;
+B "<base>":-6;
+Z 0;
+HE 477;
+PS 479;
+CF 479;
+CF 481;
+CE 477;
+DD 477;
+}
+NORM 479 {
+O compound;
+V "field key";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":361,0-361,0;
+B "Ljava/util/HashMap$Entry.key":-4;
+Z 0;
+CF 477;
+DD 477;
+}
+EXPR 480 {
+O reference;
+V "v16 = java.util.HashMap.NULL_KEY";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":361,0-361,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":37;
+Z 0;
+HE 481;
+CF 482;
+CE 481;
+DD 482;
+}
+NORM 481 {
+O compound;
+V "field NULL_KEY";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":361,0-361,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+CF 480;
+DD 480;
+}
+PRED 482 {
+O IF;
+V "if (v15 != v16) goto 44";
+T "Z";
+P 20;
+S "java/util/HashMap.java":361,0-361,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":40;
+Z 0;
+HE 484;
+HE 486;
+HE 488;
+HE 490;
+CF 484;
+CF 488;
+CD 474;
+CD 475;
+CD 484;
+CD 486;
+CD 488;
+CD 490;
+}
+EXPR 483 {
+O reference;
+V "v19 = v18.value";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":362,0-362,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":44;
+Z 0;
+LU ["e"];
+HE 485;
+CF 484;
+CE 485;
+DD 486;
+}
+NORM 484 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":362,0-362,0;
+B "<base>":-6;
+Z 0;
+HE 483;
+PS 485;
+CF 485;
+CF 486;
+CE 483;
+DD 483;
+}
+NORM 485 {
+O compound;
+V "field value";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":362,0-362,0;
+B "Ljava/util/HashMap$Entry.value":-4;
+Z 0;
+CF 483;
+DD 483;
+}
+NORM 486 {
+O compound;
+V "return v19";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":362,0-362,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":47;
+Z 0;
+CF 445;
+DD 445;
+}
+EXPR 487 {
+O reference;
+V "v17 = v18.next";
+T "Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":363,0-363,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":49;
+Z 0;
+LD ["e"];
+LU ["e"];
+HE 489;
+CF 488;
+CE 489;
+DD 474;
+}
+NORM 488 {
+O compound;
+V "base";
+T "Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":363,0-363,0;
+B "<base>":-6;
+Z 0;
+HE 487;
+PS 489;
+CF 489;
+CF 490;
+CE 487;
+DD 487;
+}
+NORM 489 {
+O compound;
+V "field next";
+T "Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":363,0-363,0;
+B "Ljava/util/HashMap$Entry.next":-4;
+Z 0;
+CF 487;
+DD 487;
+}
+NORM 490 {
+O compound;
+V "goto 28";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":363,0-363,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":53;
+Z 0;
+CF 474;
+}
+FRMI 491 {
+O form-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 683;
+CF 449;
+DD 449;
+DD 481;
+}
+ENTR 505 {
+O entry;
+V "java.lang.String.length()";
+P 21;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.length()I":-1;
+Z 0;
+C "Primordial";
+HE 506;
+HE 507;
+HE 508;
+HE 705;
+PS 506;
+PS 507;
+PS 508;
+CF 508;
+CE 506;
+CE 507;
+CE 508;
+CE 705;
+}
+EXIT 506 {
+O exit;
+V "java.lang.String.length()";
+T "I";
+P 21;
+S "java/lang/String.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 728;
+PO 284;
+}
+FRMO 507 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 21;
+S "java/lang/String.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 506;
+PO 285;
+}
+FRMI 508 {
+O form-in;
+V "this";
+T "Ljava/lang/String";
+P 21;
+S "java/lang/String.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+CF 506;
+CF 705;
+DD 705;
+}
+ENTR 509 {
+O entry;
+V "java.lang.Integer.toString(int)";
+P 22;
+S "java/lang/Integer.java":0,0-0,0;
+B "java.lang.Integer.toString(I)Ljava/lang/String;":-1;
+Z 0;
+C "Primordial";
+HE 510;
+HE 511;
+HE 512;
+HE 706;
+PS 510;
+PS 511;
+PS 512;
+CF 512;
+CE 510;
+CE 511;
+CE 512;
+CE 706;
+}
+EXIT 510 {
+O exit;
+V "java.lang.Integer.toString(int)";
+T "Ljava/lang/String";
+P 22;
+S "java/lang/Integer.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 729;
+PO 300;
+}
+FRMO 511 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 22;
+S "java/lang/Integer.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+CF 510;
+PO 301;
+}
+FRMI 512 {
+O form-in;
+V "param 1 $i ";
+T "I";
+P 22;
+S "java/lang/Integer.java":0,0-0,0;
+B "<param> 1":-2;
+Z 0;
+CF 510;
+CF 706;
+DD 706;
+}
+ENTR 513 {
+O entry;
+V "java.util.AbstractMap.<init>()";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "java.util.AbstractMap.<init>()V":-1;
+Z 0;
+C "Primordial";
+HE 514;
+HE 515;
+HE 516;
+HE 517;
+HE 655;
+HE 656;
+HE 657;
+PS 515;
+PS 516;
+CF 516;
+CD 517;
+CE 514;
+CE 515;
+CE 516;
+CE 655;
+CE 656;
+CE 657;
+}
+EXIT 514 {
+O exit;
+V "java.util.AbstractMap.<init>()";
+T "V";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 730;
+}
+FRMO 515 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "<exception>":-2;
+Z 0;
+PS 657;
+CF 655: "exc";
+PO 339;
+}
+FRMI 516 {
+O form-in;
+V "this";
+T "Ljava/util/AbstractMap";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+PS 655;
+PS 656;
+PS 657;
+CF 518;
+DD 518;
+DD 521;
+DD 524;
+}
+CALL 517 {
+O call;
+V "p0 $this .<init>()";
+T "V";
+P 23;
+S "java/util/AbstractMap.java":53,0-53,0;
+B "java.util.AbstractMap.<init>()V":1;
+Z 0;
+U "java.lang.Object.<init>()V";
+HE 518;
+HE 519;
+HE 521;
+HE 524;
+HE 526;
+HE 658;
+HE 689;
+HE 707;
+PS 518;
+PS 519;
+CF 707;
+CD 521;
+CD 524;
+CD 526;
+CE 518;
+CE 519;
+CE 658;
+CE 689;
+CE 707;
+}
+ACTI 518 {
+O act-in;
+V "this [p0 $this ]";
+T "Ljava/lang/Object";
+P 23;
+S "java/util/AbstractMap.java":53,0-53,0;
+B "<param> 0":-2;
+Z 0;
+LU ["this"];
+PS 658;
+CF 517;
+CD 517;
+DD 707;
+}
+ACTO 519 {
+O act-out;
+V "ret _exception_";
+T "Ljava/lang/Exception";
+P 23;
+S "java/util/AbstractMap.java":53,0-53,0;
+B "<exception>":-2;
+Z 0;
+PS 658;
+CF 515: "exc";
+DD 515;
+DD 689;
+}
+EXPR 520 {
+O modify;
+V "p0 $this .keySet = #(null)";
+T "Ljava/util/Set";
+P 23;
+S "java/util/AbstractMap.java":345,0-345,0;
+B "java.util.AbstractMap.<init>()V":6;
+Z 0;
+LU ["this"];
+HE 522;
+CF 522;
+CE 522;
+DD 522;
+}
+NORM 521 {
+O compound;
+V "base";
+T "Ljava/util/AbstractMap";
+P 23;
+S "java/util/AbstractMap.java":345,0-345,0;
+B "<base>":-6;
+Z 0;
+HE 520;
+PS 522;
+CF 520;
+CF 524;
+CE 520;
+DD 520;
+}
+NORM 522 {
+O compound;
+V "field keySet";
+T "Ljava/util/Set";
+P 23;
+S "java/util/AbstractMap.java":345,0-345,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 521;
+DH 655;
+}
+EXPR 523 {
+O modify;
+V "p0 $this .values = #(null)";
+T "Ljava/util/Collection";
+P 23;
+S "java/util/AbstractMap.java":346,0-346,0;
+B "java.util.AbstractMap.<init>()V":11;
+Z 0;
+LU ["this"];
+HE 525;
+CF 525;
+CE 525;
+DD 525;
+}
+NORM 524 {
+O compound;
+V "base";
+T "Ljava/util/AbstractMap";
+P 23;
+S "java/util/AbstractMap.java":346,0-346,0;
+B "<base>":-6;
+Z 0;
+HE 523;
+PS 525;
+CF 523;
+CF 526;
+CE 523;
+DD 523;
+}
+NORM 525 {
+O compound;
+V "field values";
+T "Ljava/util/Collection";
+P 23;
+S "java/util/AbstractMap.java":346,0-346,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 524;
+DH 656;
+}
+NORM 526 {
+O compound;
+V "return";
+T "V";
+P 23;
+S "java/util/AbstractMap.java":54,0-54,0;
+B "java.util.AbstractMap.<init>()V":14;
+Z 0;
+CF 655;
+}
+ENTR 532 {
+O entry;
+V "java.util.HashMap.init()";
+P 24;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.init()V":-1;
+Z 0;
+C "Primordial";
+HE 533;
+HE 534;
+HE 535;
+HE 536;
+PS 534;
+PS 535;
+CF 535;
+CD 536;
+CE 533;
+CE 534;
+CE 535;
+}
+EXIT 533 {
+O exit;
+V "java.util.HashMap.init()";
+T "V";
+P 24;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exit>":-2;
+Z 0;
+RF 731;
+}
+FRMO 534 {
+O form-out;
+V "_exception_";
+T "Ljava/lang/Exception";
+P 24;
+S "java/util/HashMap.java":0,0-0,0;
+B "<exception>":-2;
+CF 533: "exc";
+PO 355;
+}
+FRMI 535 {
+O form-in;
+V "this";
+T "Ljava/util/HashMap";
+P 24;
+S "java/util/HashMap.java":0,0-0,0;
+B "<param> 0":-2;
+Z 0;
+LD ["this"];
+CF 536;
+}
+NORM 536 {
+O compound;
+V "return";
+T "V";
+P 24;
+S "java/util/HashMap.java":232,0-232,0;
+B "java.util.HashMap.init()V":0;
+Z 0;
+CF 533;
+}
+FRMI 537 {
+O form-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 617;
+PS 618;
+CF 4;
+DD 549;
+DD 552;
+}
+FRMI 538 {
+O form-in;
+V "useNewHash";
+T "Z";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 537;
+DD 550;
+DD 551;
+}
+FRMI 539 {
+O form-in;
+V "map";
+T "Ljava/util/HashMap";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 574;
+PS 576;
+PS 577;
+PS 578;
+PS 579;
+PS 580;
+PS 581;
+PS 582;
+PS 583;
+CF 77;
+DD 540;
+DD 554;
+}
+FRMO 540 {
+O form-out;
+V "map";
+T "Ljava/util/HashMap";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 574;
+PS 576;
+PS 577;
+PS 578;
+PS 579;
+PS 580;
+PS 581;
+PS 582;
+PS 583;
+CF 577;
+}
+FRMI 541 {
+O form-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 576;
+PS 583;
+CF 539;
+DD 555;
+}
+FRMI 542 {
+O form-in;
+V "useNewHash";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 541;
+DD 556;
+}
+FRMO 543 {
+O form-out;
+V "map";
+T "Ljava/util/HashMap";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 636;
+PS 637;
+PS 638;
+PS 639;
+PS 640;
+PS 641;
+PS 642;
+CF 636;
+PO 553;
+}
+FRMI 544 {
+O form-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 570;
+CF 124;
+DD 558;
+}
+FRMI 545 {
+O form-in;
+V "useNewHash";
+T "Z";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 544;
+DD 559;
+}
+FRMI 546 {
+O form-in;
+V "useNewHash";
+T "Z";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 198;
+DD 561;
+DD 562;
+}
+FRMI 547 {
+O form-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 675;
+CF 546;
+DD 560;
+}
+FRMI 548 {
+O form-in;
+V "useNewHash";
+T "Z";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 447;
+DD 563;
+}
+ACTI 549 {
+O act-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 621;
+CF 550;
+SU 11;
+SU 12;
+PI 544;
+}
+ACTI 550 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 619;
+SU 11;
+SU 12;
+PI 545;
+}
+ACTI 551 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 552;
+SU 19;
+SU 20;
+PI 546;
+}
+ACTI 552 {
+O act-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 625;
+CF 623;
+SU 19;
+SU 20;
+PI 547;
+}
+ACTO 553 {
+O act-out;
+V "map";
+T "Ljava/util/HashMap";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 584;
+PS 585;
+PS 586;
+PS 587;
+PS 588;
+PS 589;
+PS 590;
+CF 78: "exc";
+CF 79;
+DD 540;
+DD 554;
+}
+ACTI 554 {
+O act-in;
+V "map";
+T "Ljava/util/HashMap";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 594;
+PS 597;
+PS 598;
+CF 555;
+SU 90;
+SU 91;
+SU 598;
+PI 54;
+}
+ACTI 555 {
+O act-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 597;
+PS 598;
+CF 556;
+SU 90;
+SU 91;
+SU 598;
+PI 537;
+}
+ACTI 556 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 593;
+SU 90;
+SU 91;
+SU 598;
+PI 538;
+}
+ACTO 557 {
+O act-out;
+V "map";
+T "Ljava/util/HashMap";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "LTiming.map":-3;
+Z 0;
+PS 644;
+PS 645;
+PS 646;
+PS 647;
+PS 648;
+PS 649;
+PS 650;
+CF 100: "exc";
+CF 101;
+DD 543;
+}
+ACTI 558 {
+O act-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":376,0-376,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+CF 126;
+SU 128;
+PI 377;
+}
+ACTI 559 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 134;
+SU 136;
+PI 407;
+}
+ACTI 560 {
+O act-in;
+V "NULL_KEY";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "Ljava/util/HashMap.NULL_KEY":-3;
+Z 0;
+PS 679;
+CF 561;
+SU 203;
+SU 204;
+PI 491;
+}
+ACTI 561 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 677;
+SU 203;
+SU 204;
+PI 548;
+}
+ACTI 562 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 210;
+SU 212;
+PI 407;
+}
+ACTI 563 {
+O act-in;
+V "useNewHash";
+T "Z";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "Ljava/util/HashMap.useNewHash":-3;
+Z 0;
+CF 454;
+SU 456;
+PI 407;
+}
+FRMI 564 {
+O form-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 10;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 281;
+}
+FRMO 565 {
+O form-out;
+V "[M] |0|UNIQ(data)";
+T "I";
+P 10;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 566;
+PO 628;
+PO 631;
+}
+FRMO 566 {
+O form-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 10;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 279;
+PO 629;
+PO 632;
+}
+FRMI 567 {
+O form-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 16;
+S "java/lang/Object.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 388;
+DD 702;
+}
+FRMI 568 {
+O form-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 569;
+CF 569;
+DH 140;
+DH 149;
+}
+FRMI 569 {
+O form-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "<[]>":-5;
+Z 0;
+CF 570;
+DH 152;
+}
+FRMI 570 {
+O form-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 571;
+DH 572;
+}
+FRMI 571 {
+O form-in;
+V "[R] |4|MERGE data";
+T "I";
+P 8;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 545;
+DH 573;
+}
+ACTI 572 {
+O act-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 130;
+SU 132;
+SU 133;
+PI 567;
+}
+ACTI 573 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 163;
+PI 659;
+}
+FRMI 574 {
+O form-in;
+V "[MR] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 575;
+PE 580;
+CF 575;
+DH 580;
+DH 594;
+}
+FRMI 575 {
+O form-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<[]>":-5;
+Z 0;
+CF 576;
+DH 595;
+}
+FRMI 576 {
+O form-in;
+V "[MR] |4|MERGE code";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+PE 583;
+CF 542;
+DH 583;
+DH 597;
+}
+FRMO 577 {
+O form-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 578;
+}
+FRMO 578 {
+O form-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 579;
+}
+FRMO 579 {
+O form-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 580;
+}
+FRMO 580 {
+O form-out;
+V "[MR] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 575;
+PE 574;
+CF 581;
+}
+FRMO 581 {
+O form-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 582;
+}
+FRMO 582 {
+O form-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 583;
+}
+FRMO 583 {
+O form-out;
+V "[MR] |4|MERGE code";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+PE 576;
+CF 75;
+}
+ACTO 584 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 585;
+DH 583;
+DH 597;
+}
+ACTO 585 {
+O act-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 586;
+DH 577;
+}
+ACTO 586 {
+O act-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 587;
+DH 578;
+}
+ACTO 587 {
+O act-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 588;
+DH 579;
+}
+ACTO 588 {
+O act-out;
+V "[M] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 589;
+DH 580;
+DH 594;
+}
+ACTO 589 {
+O act-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 590;
+DH 581;
+}
+ACTO 590 {
+O act-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 553;
+DH 582;
+}
+ACTO 591 {
+O act-out;
+V "[M] |8|MERGE *";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 82: "exc";
+CF 83;
+DD 687;
+DH 583;
+DH 593;
+DH 596;
+DH 597;
+}
+ACTO 592 {
+O act-out;
+V "[M] |8|MERGE *";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 86: "exc";
+CF 88;
+DD 688;
+DH 583;
+DH 593;
+DH 596;
+DH 597;
+}
+ACTI 593 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 594;
+PI 613;
+}
+ACTI 594 {
+O act-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 595;
+CF 595;
+SU 90;
+SU 91;
+SU 598;
+PI 614;
+}
+ACTI 595 {
+O act-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<[]>":-5;
+Z 0;
+CF 596;
+SU 90;
+SU 91;
+SU 598;
+PI 615;
+}
+ACTI 596 {
+O act-in;
+V "[R] |4|MERGE data";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 597;
+SU 90;
+SU 91;
+SU 598;
+PI 616;
+}
+ACTI 597 {
+O act-in;
+V "[MR] |4|MERGE code";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+PE 598;
+CF 87;
+SU 90;
+SU 91;
+SU 598;
+PI 617;
+}
+ACTO 598 {
+O act-out;
+V "[MR] |4|MERGE code";
+T "I";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+PE 597;
+CF 90;
+DH 583;
+}
+FRMO 599 {
+O form-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 600;
+PO 644;
+}
+FRMO 600 {
+O form-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 601;
+PO 645;
+}
+FRMO 601 {
+O form-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 602;
+PO 646;
+}
+FRMO 602 {
+O form-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 603;
+PO 647;
+}
+FRMO 603 {
+O form-out;
+V "[M] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 604;
+PO 648;
+}
+FRMO 604 {
+O form-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 605;
+PO 649;
+}
+FRMO 605 {
+O form-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 7;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 110;
+PO 650;
+}
+ACTO 606 {
+O act-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 607;
+DH 600;
+}
+ACTO 607 {
+O act-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 608;
+DH 601;
+}
+ACTO 608 {
+O act-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 609;
+DH 602;
+}
+ACTO 609 {
+O act-out;
+V "[M] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 610;
+DH 603;
+}
+ACTO 610 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 611;
+DH 599;
+}
+ACTO 611 {
+O act-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 612;
+DH 604;
+}
+ACTO 612 {
+O act-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 115: "exc";
+CF 116;
+DH 605;
+}
+FRMI 613 {
+O form-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 614;
+DH 627;
+DH 630;
+}
+FRMI 614 {
+O form-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 615;
+CF 615;
+DH 619;
+DH 623;
+}
+FRMI 615 {
+O form-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":0,0-0,0;
+B "<[]>":-5;
+Z 0;
+CF 616;
+DH 620;
+DH 624;
+}
+FRMI 616 {
+O form-in;
+V "[R] |4|MERGE data";
+T "I";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 617;
+DH 622;
+DH 626;
+DH 633;
+}
+FRMI 617 {
+O form-in;
+V "[MR] |4|MERGE code";
+T "I";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+PE 618;
+CF 538;
+DH 618;
+DH 621;
+DH 625;
+DH 633;
+}
+FRMO 618 {
+O form-out;
+V "[MR] |4|MERGE code";
+T "I";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+PE 617;
+CF 2;
+PO 598;
+}
+ACTI 619 {
+O act-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 620;
+CF 620;
+SU 11;
+SU 12;
+PI 568;
+}
+ACTI 620 {
+O act-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":47,0-47,0;
+B "<[]>":-5;
+Z 0;
+CF 621;
+SU 11;
+SU 12;
+PI 569;
+}
+ACTI 621 {
+O act-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 622;
+SU 11;
+SU 12;
+PI 570;
+}
+ACTI 622 {
+O act-in;
+V "[R] |4|MERGE data";
+T "I";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 8;
+PI 571;
+}
+ACTI 623 {
+O act-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 624;
+CF 624;
+SU 19;
+SU 20;
+PI 673;
+}
+ACTI 624 {
+O act-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 4;
+S "Timing.java":48,0-48,0;
+B "<[]>":-5;
+Z 0;
+CF 625;
+SU 19;
+SU 20;
+PI 674;
+}
+ACTI 625 {
+O act-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 626;
+SU 19;
+SU 20;
+PI 675;
+}
+ACTI 626 {
+O act-in;
+V "[R] |4|MERGE data";
+T "I";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 16;
+PI 676;
+}
+ACTI 627 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 22;
+PI 564;
+}
+ACTO 628 {
+O act-out;
+V "[M] |0|UNIQ(data)";
+T "I";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 629;
+}
+ACTO 629 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 24;
+DH 618;
+}
+ACTI 630 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 4;
+S "Timing.java":56,0-56,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 33;
+PI 564;
+}
+ACTO 631 {
+O act-out;
+V "[M] |0|UNIQ(data)";
+T "I";
+P 4;
+S "Timing.java":56,0-56,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 632;
+DH 633;
+}
+ACTO 632 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 4;
+S "Timing.java":56,0-56,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 35;
+DH 618;
+DH 633;
+}
+ACTI 633 {
+O act-in;
+V "[MR] |2|MERGE *";
+T "I";
+P 4;
+S "Timing.java":57,0-57,0;
+B "<???>":-4;
+Z 0;
+PE 634;
+CF 38;
+SU 41;
+SU 634;
+PI 661;
+}
+ACTO 634 {
+O act-out;
+V "[MR] |2|MERGE *";
+T "I";
+P 4;
+S "Timing.java":57,0-57,0;
+B "<???>":-4;
+Z 0;
+PE 633;
+CF 41: "exc";
+CF 43;
+DD 686;
+DH 618;
+DH 635;
+}
+ACTI 635 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 4;
+S "Timing.java":58,0-58,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 42;
+SU 45;
+SU 46;
+PI 685;
+}
+FRMO 636 {
+O form-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 637;
+PO 584;
+}
+FRMO 637 {
+O form-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 638;
+PO 585;
+}
+FRMO 638 {
+O form-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 639;
+PO 586;
+}
+FRMO 639 {
+O form-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 640;
+PO 587;
+}
+FRMO 640 {
+O form-out;
+V "[M] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 641;
+PO 588;
+}
+FRMO 641 {
+O form-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 642;
+PO 589;
+}
+FRMO 642 {
+O form-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 93;
+PO 590;
+}
+ACTO 643 {
+O act-out;
+V "[M] |8|MERGE code";
+T "I";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 96: "exc";
+CF 97;
+DH 636;
+DH 652;
+}
+ACTO 644 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 645;
+DH 636;
+DH 652;
+}
+ACTO 645 {
+O act-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 646;
+DH 637;
+}
+ACTO 646 {
+O act-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 647;
+DH 638;
+}
+ACTO 647 {
+O act-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 648;
+DH 639;
+}
+ACTO 648 {
+O act-out;
+V "[M] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 649;
+DH 640;
+}
+ACTO 649 {
+O act-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 650;
+DH 641;
+}
+ACTO 650 {
+O act-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 557;
+DH 642;
+}
+ACTO 651 {
+O act-out;
+V "[M] |8|MERGE code";
+T "I";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 102: "exc";
+CF 652;
+DH 636;
+DH 652;
+}
+ACTI 652 {
+O act-in;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 653;
+PE 653;
+CF 103;
+DD 696;
+}
+ACTO 653 {
+O act-out;
+V "[MR] |136|MERGE *";
+T "?unknown?";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PS 652;
+PE 652;
+CF 104: "exc";
+CF 105;
+DH 636;
+}
+ACTO 654 {
+O act-out;
+V "[M] |136|MERGE *";
+T "?unknown?";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+CF 108: "exc";
+CF 543;
+DH 636;
+}
+FRMO 655 {
+O form-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 656;
+PO 670;
+}
+FRMO 656 {
+O form-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 657;
+PO 671;
+}
+FRMO 657 {
+O form-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 514;
+PO 672;
+}
+ACTO 658 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 23;
+S "java/util/AbstractMap.java":53,0-53,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 519: "exc";
+CF 521;
+DD 689;
+DH 657;
+}
+FRMI 659 {
+O form-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 19;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 425;
+}
+ACTI 660 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 428;
+SU 431;
+SU 432;
+PI 685;
+}
+FRMI 661 {
+O form-in;
+V "[MR] |2|MERGE *";
+T "I";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PE 662;
+CF 326;
+DD 699;
+DH 662;
+}
+FRMO 662 {
+O form-out;
+V "[MR] |2|MERGE *";
+T "I";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "<???>":-4;
+Z 0;
+PE 661;
+CF 324;
+PO 634;
+}
+FRMO 663 {
+O form-out;
+V "[M] |0|UNIQ(entrySet)";
+T "Ljava/util/Set";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.entrySet":-4;
+Z 0;
+CF 664;
+PO 606;
+}
+FRMO 664 {
+O form-out;
+V "[M] |0|UNIQ(loadFactor)";
+T "F";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.loadFactor":-4;
+Z 0;
+CF 665;
+PO 607;
+}
+FRMO 665 {
+O form-out;
+V "[M] |0|UNIQ(threshold)";
+T "I";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.threshold":-4;
+Z 0;
+CF 666;
+PO 608;
+}
+FRMO 666 {
+O form-out;
+V "[M] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+CF 667;
+PO 609;
+}
+FRMO 667 {
+O form-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 668;
+PO 610;
+}
+FRMO 668 {
+O form-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 669;
+PO 611;
+}
+FRMO 669 {
+O form-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 13;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 334;
+PO 612;
+}
+ACTO 670 {
+O act-out;
+V "[M] |0|UNIQ(keySet)";
+T "Ljava/util/Set";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "Ljava/util/AbstractMap.keySet":-4;
+Z 0;
+CF 671;
+DH 668;
+}
+ACTO 671 {
+O act-out;
+V "[M] |0|UNIQ(values)";
+T "Ljava/util/Collection";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "Ljava/util/AbstractMap.values":-4;
+Z 0;
+CF 672;
+DH 669;
+}
+ACTO 672 {
+O act-out;
+V "[M] |0|UNIQ(code)";
+T "I";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 339: "exc";
+CF 341;
+DH 667;
+}
+FRMI 673 {
+O form-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 674;
+CF 674;
+DH 216;
+DH 219;
+DH 677;
+}
+FRMI 674 {
+O form-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "<[]>":-5;
+Z 0;
+CF 675;
+DH 228;
+DH 678;
+}
+FRMI 675 {
+O form-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 676;
+DH 679;
+}
+FRMI 676 {
+O form-in;
+V "[R] |4|MERGE data";
+T "I";
+P 9;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 547;
+}
+ACTI 677 {
+O act-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 678;
+CF 678;
+SU 203;
+SU 204;
+PI 681;
+}
+ACTI 678 {
+O act-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "<[]>":-5;
+Z 0;
+CF 679;
+SU 203;
+PI 682;
+}
+ACTI 679 {
+O act-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 201;
+SU 203;
+SU 204;
+PI 683;
+}
+ACTI 680 {
+O act-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 240;
+SU 243;
+SU 244;
+PI 685;
+}
+FRMI 681 {
+O form-in;
+V "[R] |0|UNIQ(table)";
+T "[Ljava/util/HashMap$Entry";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/util/HashMap.table":-4;
+Z 0;
+PS 682;
+CF 682;
+DH 460;
+DH 469;
+}
+FRMI 682 {
+O form-in;
+V "[R] |0|UNIQ([])";
+T "Ljava/lang/Object";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "<[]>":-5;
+Z 0;
+CF 683;
+DH 472;
+}
+FRMI 683 {
+O form-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 20;
+S "java/util/HashMap.java":0,0-0,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 548;
+DH 684;
+}
+ACTI 684 {
+O act-in;
+V "[R] |0|UNIQ(code)";
+T "I";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "Ljava/lang/Object.code":-4;
+Z 0;
+CF 450;
+SU 452;
+SU 453;
+PI 567;
+}
+FRMI 685 {
+O form-in;
+V "[R] |0|UNIQ(data)";
+T "I";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "Ljava/lang/String.data":-4;
+Z 0;
+CF 331;
+DD 700;
+}
+NORM 686 {
+O compound;
+V "immutable";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-1;
+Z 0;
+CF 634;
+DD 37;
+}
+NORM 687 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 591;
+DD 79;
+}
+NORM 688 {
+O compound;
+V "immutable";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 592;
+DD 83;
+}
+NORM 689 {
+O compound;
+V "immutable";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "java.util.AbstractMap.<init>()V":-1;
+Z 0;
+CF 658;
+}
+NORM 690 {
+O compound;
+V "many2many";
+P 4;
+S "Timing.java":0,0-0,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-1;
+Z 0;
+CF 29;
+DD 29;
+DD 30;
+}
+NORM 691 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 687;
+DD 82;
+DD 591;
+}
+NORM 692 {
+O compound;
+V "many2many";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-1;
+Z 0;
+CF 688;
+DD 86;
+DD 592;
+}
+NORM 693 {
+O compound;
+V "many2many";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+CF 643;
+DD 96;
+DD 643;
+}
+NORM 694 {
+O compound;
+V "many2many";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+CF 99;
+DD 98;
+}
+NORM 695 {
+O compound;
+V "many2many";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+CF 651;
+DD 102;
+DD 651;
+}
+NORM 696 {
+O compound;
+V "many2many";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+CF 653;
+DD 104;
+DD 653;
+}
+NORM 697 {
+O compound;
+V "many2many";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+CF 107;
+DD 106;
+}
+NORM 698 {
+O compound;
+V "many2many";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-1;
+Z 0;
+CF 654;
+DD 108;
+DD 654;
+}
+NORM 699 {
+O compound;
+V "many2many";
+P 11;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.<init>(Ljava/lang/String;)V":-1;
+Z 0;
+CF 325;
+CF 662;
+DD 325;
+DD 662;
+}
+NORM 700 {
+O compound;
+V "many2many";
+P 12;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.equals(Ljava/lang/Object;)Z":-1;
+Z 0;
+CF 330;
+DD 329;
+DD 330;
+}
+NORM 701 {
+O compound;
+V "many2many";
+P 15;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.hashCode()I":-1;
+Z 0;
+CF 383;
+DD 382;
+DD 383;
+}
+NORM 702 {
+O compound;
+V "many2many";
+P 16;
+S "java/lang/Object.java":0,0-0,0;
+B "java.lang.Object.hashCode()I":-1;
+Z 0;
+CF 387;
+DD 386;
+DD 387;
+}
+NORM 703 {
+O compound;
+V "many2many";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.hash(I)I":-1;
+Z 0;
+CF 398;
+DD 398;
+DD 399;
+}
+NORM 704 {
+O compound;
+V "many2many";
+P 17;
+S "java/util/HashMap.java":0,0-0,0;
+B "java.util.HashMap.hash(I)I":-1;
+Z 0;
+CF 403;
+DD 403;
+DD 404;
+}
+NORM 705 {
+O compound;
+V "many2many";
+P 21;
+S "java/lang/String.java":0,0-0,0;
+B "java.lang.String.length()I":-1;
+Z 0;
+CF 507;
+DD 506;
+DD 507;
+}
+NORM 706 {
+O compound;
+V "many2many";
+P 22;
+S "java/lang/Integer.java":0,0-0,0;
+B "java.lang.Integer.toString(I)Ljava/lang/String;":-1;
+Z 0;
+CF 511;
+DD 510;
+DD 511;
+}
+NORM 707 {
+O compound;
+V "many2many";
+P 23;
+S "java/util/AbstractMap.java":0,0-0,0;
+B "java.util.AbstractMap.<init>()V":-1;
+Z 0;
+CF 689;
+DD 519;
+DD 658;
+}
+NORM 708 {
+O compound;
+V "CALL_RET";
+P 4;
+S "Timing.java":47,0-47,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 13;
+CF 11;
+CD 13;
+}
+NORM 709 {
+O compound;
+V "CALL_RET";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 21;
+CF 19;
+CD 21;
+}
+NORM 710 {
+O compound;
+V "CALL_RET";
+P 4;
+S "Timing.java":48,0-48,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 26;
+CF 628;
+CD 26;
+}
+NORM 711 {
+O compound;
+V "CALL_RET";
+P 4;
+S "Timing.java":56,0-56,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 37;
+HE 38;
+CF 631;
+CD 37;
+CD 38;
+}
+NORM 712 {
+O compound;
+V "CALL_RET";
+P 4;
+S "Timing.java":57,0-57,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 42;
+CF 686;
+CD 42;
+}
+NORM 713 {
+O compound;
+V "CALL_RET";
+P 4;
+S "Timing.java":58,0-58,0;
+B "Timing.login_safe(Ljava/lang/String;Ljava/lang/String;)Z":-9;
+Z 0;
+HE 47;
+HE 53;
+CF 45;
+CD 47;
+CD 49;
+CD 50;
+CD 53;
+}
+NORM 714 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+HE 79;
+HE 80;
+CF 584;
+CD 79;
+CD 80;
+}
+NORM 715 {
+O compound;
+V "CALL_RET";
+P 5;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeRootMethod()V":-9;
+Z 0;
+CF 598;
+}
+NORM 716 {
+O compound;
+V "CALL_RET";
+P 6;
+S "com/ibm/wala/FakeRootClass.java":0,0-0,0;
+B "com.ibm.wala.FakeRootClass.fakeWorldClinit()V":-9;
+Z 0;
+HE 101;
+CF 644;
+CD 101;
+}
+NORM 717 {
+O compound;
+V "CALL_RET";
+P 7;
+S "Timing.java":7,0-7,0;
+B "Timing.<clinit>()V":-9;
+Z 0;
+HE 116;
+HE 118;
+CF 606;
+CD 116;
+CD 118;
+}
+NORM 718 {
+O compound;
+V "CALL_RET";
+P 8;
+S "java/util/HashMap.java":376,0-376,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":-9;
+Z 0;
+CF 128;
+}
+NORM 719 {
+O compound;
+V "CALL_RET";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":-9;
+Z 0;
+HE 134;
+HE 139;
+HE 141;
+CF 132;
+CD 134;
+CD 139;
+CD 141;
+}
+NORM 720 {
+O compound;
+V "CALL_RET";
+P 8;
+S "java/util/HashMap.java":377,0-377,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":-9;
+Z 0;
+CF 136;
+}
+NORM 721 {
+O compound;
+V "CALL_RET";
+P 8;
+S "java/util/HashMap.java":378,0-378,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":-9;
+Z 0;
+CF 145;
+}
+NORM 722 {
+O compound;
+V "CALL_RET";
+P 8;
+S "java/util/HashMap.java":381,0-381,0;
+B "java.util.HashMap.containsKey(Ljava/lang/Object;)Z":-9;
+Z 0;
+HE 168;
+CF 166;
+CD 168;
+}
+NORM 723 {
+O compound;
+V "CALL_RET";
+P 9;
+S "java/util/HashMap.java":342,0-342,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":-9;
+Z 0;
+HE 205;
+CF 203;
+CD 205;
+}
+NORM 724 {
+O compound;
+V "CALL_RET";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":-9;
+Z 0;
+CF 208;
+}
+NORM 725 {
+O compound;
+V "CALL_RET";
+P 9;
+S "java/util/HashMap.java":343,0-343,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":-9;
+Z 0;
+CF 212;
+}
+NORM 726 {
+O compound;
+V "CALL_RET";
+P 9;
+S "java/util/HashMap.java":344,0-344,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":-9;
+Z 0;
+CF 224;
+}
+NORM 727 {
+O compound;
+V "CALL_RET";
+P 9;
+S "java/util/HashMap.java":348,0-348,0;
+B "java.util.HashMap.get(Ljava/lang/Object;)Ljava/lang/Object;":-9;
+Z 0;
+HE 245;
+CF 243;
+CD 245;
+}
+NORM 728 {
+O compound;
+V "CALL_RET";
+P 10;
+S "Timing.java":16,0-16,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":-9;
+Z 0;
+CF 284;
+}
+NORM 729 {
+O compound;
+V "CALL_RET";
+P 10;
+S "Timing.java":28,0-28,0;
+B "Timing.md5(Ljava/lang/String;)Ljava/lang/String;":-9;
+Z 0;
+HE 302;
+CF 300;
+CD 302;
+}
+NORM 730 {
+O compound;
+V "CALL_RET";
+P 13;
+S "java/util/HashMap.java":200,0-200,0;
+B "java.util.HashMap.<init>()V":-9;
+Z 0;
+HE 341;
+HE 344;
+HE 347;
+HE 349;
+HE 351;
+HE 353;
+CF 670;
+CD 341;
+CD 344;
+CD 347;
+CD 349;
+CD 351;
+CD 353;
+}
+NORM 731 {
+O compound;
+V "CALL_RET";
+P 13;
+S "java/util/HashMap.java":204,0-204,0;
+B "java.util.HashMap.<init>()V":-9;
+Z 0;
+HE 356;
+CF 356;
+CD 356;
+}
+NORM 732 {
+O compound;
+V "CALL_RET";
+P 19;
+S "java/util/HashMap.java":299,0-299,0;
+B "java.util.HashMap.eq(Ljava/lang/Object;Ljava/lang/Object;)Z":-9;
+Z 0;
+HE 433;
+HE 435;
+CF 431;
+CD 433;
+CD 435;
+CD 436;
+}
+NORM 733 {
+O compound;
+V "CALL_RET";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":-9;
+Z 0;
+HE 454;
+HE 459;
+HE 461;
+CF 452;
+CD 454;
+CD 459;
+CD 461;
+}
+NORM 734 {
+O compound;
+V "CALL_RET";
+P 20;
+S "java/util/HashMap.java":355,0-355,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":-9;
+Z 0;
+CF 456;
+}
+NORM 735 {
+O compound;
+V "CALL_RET";
+P 20;
+S "java/util/HashMap.java":356,0-356,0;
+B "java.util.HashMap.getForNullKey()Ljava/lang/Object;":-9;
+Z 0;
+CF 465;
+}
+Thread 0 {
+Entry 74;
+Exit 75;
+Fork 0;
+Join 0;
+Context null;
+Dynamic false;
+}
+}

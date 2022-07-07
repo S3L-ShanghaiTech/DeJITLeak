@@ -1,0 +1,2 @@
+exclude User.passwordsEqual_safe, (Ljava/lang/String;Ljava/lang/String;)Z
+exclude java/lang/Math.min, (II)I

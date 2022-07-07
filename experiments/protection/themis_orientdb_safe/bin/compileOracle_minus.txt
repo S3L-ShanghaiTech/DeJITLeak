@@ -1,0 +1,69 @@
+dontinline java/lang/String.getBytes
+dontinline java/security/MessageDigest.digest
+dontinline java/lang/String.<init>
+dontinline java/lang/StringBuilder.<init>
+dontinline java/lang/StringBuilder.append
+dontinline java/util/Arrays.toString
+dontinline java/lang/StringBuilder.append
+dontinline java/lang/StringBuilder.toString
+dontinline java/lang/String.toCharArray
+dontinline java/util/Collections$SynchronizedMap.put
+dontinline java/lang/AbstractStringBuilder.expandCapacity
+dontinline java/lang/String.getChars
+dontinline java/lang/StringBuilder.append
+dontinline java/lang/Object.clone
+dontinline java/lang/NullPointerException.<init>
+dontinline java/lang/IllegalArgumentException.<init>
+dontinline javax/crypto/SecretKeyFactory.class$
+dontinline javax/crypto/SunJCE_b.a
+dontinline javax/crypto/SecretKeyFactorySpi.engineGenerateSecret
+dontinline java/security/spec/InvalidKeySpecException.<init>
+dontinline java/lang/AbstractStringBuilder.append
+dontinline java/lang/AbstractStringBuilder.stringSizeOfInt
+dontinline java/lang/Integer.getChars
+dontinline java/util/Iterator.next
+dontinline java/lang/StringBuffer.<init>
+dontinline java/lang/StringBuffer.append
+dontinline java/lang/StringBuffer.toString
+dontinline java/security/NoSuchAlgorithmException.<init>
+dontinline java/util/Iterator.hasNext
+dontinline sun/security/jca/GetInstance.getInstance
+dontinline java/security/Provider$Service.newInstance
+dontinline java/lang/String.substring
+dontinline java/lang/Integer.parseInt
+dontinline java/lang/AbstractStringBuilder.<init>
+dontinline java/lang/String.<init>
+dontinline java/lang/RuntimeException.<init>
+dontinline java/security/MessageDigest.update
+dontinline java/security/MessageDigest.digest
+dontinline java/lang/Object.<init>
+dontinline java/lang/String.length
+dontinline java/lang/Exception.<init>
+dontinline java/lang/AbstractStringBuilder.append
+dontinline java/util/Map.put
+dontinline java/security/MessageDigest.engineUpdate
+dontinline java/security/MessageDigest.engineDigest
+dontinline java/lang/AbstractStringBuilder.append
+dontinline java/lang/Class.forName
+dontinline java/lang/NoClassDefFoundError.<init>
+dontinline java/lang/NoClassDefFoundError.initCause
+dontinline sun/security/jca/GetInstance.getServices
+dontinline java/util/List.iterator
+dontinline java/security/Provider$Service.getProvider
+dontinline javax/crypto/SunJCE_b.b
+dontinline java/security/GeneralSecurityException.<init>
+dontprune OSecurityManager.digestSHA256, (Ljava/lang/String;)[B
+dontprune OSecurityManager.isEqual_inline, ([B[B)Z
+dontprune OSecurityManager.byteArrayToHexStr, ([B)Ljava/lang/String;
+dontprune OSecurityManager.getPbkdf2, (Ljava/lang/String;[BIILjava/lang/String;)[B
+dontprune java/security/MessageDigest.isEqual, ([B[B)Z
+dontprune java/lang/AbstractStringBuilder.append, (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+dontprune java/util/Arrays.toString, ([B)Ljava/lang/String;
+dontprune javax/crypto/spec/PBEKeySpec.<init>, ([C[BII)V
+dontprune javax/crypto/SecretKeyFactory.getInstance, (Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;
+dontprune javax/crypto/SecretKeyFactory.generateSecret, (Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;
+dontprune java/lang/AbstractStringBuilder.append, (I)Ljava/lang/AbstractStringBuilder;
+dontprune javax/crypto/SunJCE_b.a, (Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;)Lsun/security/jca/GetInstance$Instance;
+dontprune javax/crypto/SecretKeyFactory.a, (Ljavax/crypto/SecretKeyFactorySpi;)Ljavax/crypto/SecretKeyFactorySpi;
+dontprune OSecurityManager.checkPasswordWithSalt, (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+dontprune OSecurityManager.hexToByteArray, (Ljava/lang/String;)[B

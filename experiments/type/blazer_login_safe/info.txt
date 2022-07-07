@@ -1,0 +1,22 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/blazer_login_safe/blazer_login.jar'...
+	found 'PWCheck.<init>()V'
+	found 'PWCheck.pwcheck1_unsafe([B[B)Z'
+	found 'PWCheck.pwcheck2_unsafe([B[B)Z'
+	found 'PWCheck.pwcheck3_safe([B[B)Z'
+done.
+Methods found: 4
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint PWCheck.pwcheck3_safe([B[B)Z... done.
+Building system dependence graph... 
+	callgraph: 2 nodes and 1 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 955ms - Memory: 165M used.
+
+######################################################
+
+Taint analysis takes: 16 ms.

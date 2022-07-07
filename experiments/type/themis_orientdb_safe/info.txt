@@ -1,0 +1,36 @@
+Searching for methods in '/tmp/DeJITLeak/dejitleak/type/benchmarks/themis_orientdb_safe/orientdb.jar'...
+	found 'OSecurityManager.<init>()V'
+	found 'OSecurityManager.createHash(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+	found 'OSecurityManager.instance()LOSecurityManager;'
+	found 'OSecurityManager.isEqual_inline([B[B)Z'
+	found 'OSecurityManager.equals_inline(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'OSecurityManager.checkPassword_safe(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'OSecurityManager.checkPassword_unsafe(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'OSecurityManager.createSHA256(Ljava/lang/String;)Ljava/lang/String;'
+	found 'OSecurityManager.createHash(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;'
+	found 'OSecurityManager.digestSHA256(Ljava/lang/String;)[B'
+	found 'OSecurityManager.createHashWithSalt(Ljava/lang/String;)Ljava/lang/String;'
+	found 'OSecurityManager.createHashWithSalt(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;'
+	found 'OSecurityManager.checkPasswordWithSalt(Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'OSecurityManager.checkPasswordWithSalt(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z'
+	found 'OSecurityManager.getPbkdf2(Ljava/lang/String;[BIILjava/lang/String;)[B'
+	found 'OSecurityManager.byteArrayToHexStr([B)Ljava/lang/String;'
+	found 'OSecurityManager.hexToByteArray(Ljava/lang/String;)[B'
+	found 'OSecurityManager.<clinit>()V'
+done.
+Methods found: 18
+
+######################################################
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint OSecurityManager.checkPassword_safe(Ljava/lang/String;Ljava/lang/String;)Z... done.
+Building system dependence graph... 
+	callgraph: 61 nodes and 97 edges
+	interproc exception analysis... 	intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 5436ms - Memory: 455M used.
+
+######################################################
+
+Taint analysis takes: 35 ms.
