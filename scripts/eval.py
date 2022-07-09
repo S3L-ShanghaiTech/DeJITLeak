@@ -13,6 +13,8 @@ BENCHMARK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../exp
 RESULTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../experiments/results")
 ALL_FLAG = "-cp .:../lib/* -Xbatch -XX:-BackgroundCompilation -XX:CICompilerCount=2"
 
+N = 1000
+
 BENCHMARKS = [
     'apache_ftpserver_clear_safe',
     'apache_ftpserver_md5_safe',
@@ -41,8 +43,11 @@ BENCHMARKS = [
     'themis_spring-security_safe'
 ]
 
+is_demo = False
 if sys.argv[1] == 'demo':
     BENCHMARKS = ['blazer_array_safe', 'blazer_login_safe', 'blazer_straightline_safe']
+    N = 100
+    is_demo = True
 
 for benchmark in BENCHMARKS:
     os.chdir(f'{BENCHMARK_DIR}/{benchmark}/bin')
@@ -59,8 +64,6 @@ for benchmark in BENCHMARKS:
     nojit_true = []
     mexclude_false = []
     mexclude_true = []
-
-    N = 1000
 
     for _ in tqdm(range(N), desc=f'{benchmark:40s}'):
 
@@ -127,5 +130,7 @@ for benchmark in BENCHMARKS:
         'True w/ mexclude': mexclude_true,
         'False w/ mexclude': mexclude_false}
     df = pd.DataFrame(data)
-    # print(df)
-    pickle.dump(df, open(f'{RESULTS_DIR}/{benchmark}.pkl', 'wb'))
+    if is_demo:
+        pickle.dump(df, open(f'{RESULTS_DIR}/demo_{benchmark}.pkl', 'wb'))
+    else:
+        pickle.dump(df, open(f'{RESULTS_DIR}/{benchmark}.pkl', 'wb'))

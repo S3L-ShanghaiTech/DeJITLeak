@@ -38,6 +38,9 @@ BENCHMARKS = [
     'themis_spring-security_safe'
 ]
 
+if len(sys.argv) > 2 and sys.argv[2] == 'demo':
+    BENCHMARKS = ['demo_blazer_array_safe', 'demo_blazer_login_safe', 'demo_blazer_straightline_safe']
+
 def measure_leakage(data):
     data.rename(columns={data.columns[0]: True,
                          data.columns[1]: False}, inplace=True)
