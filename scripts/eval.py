@@ -1,4 +1,5 @@
 import os
+import sys
 import string
 import random
 import re
@@ -6,7 +7,6 @@ from tqdm import tqdm
 import numpy as np
 import pandas as pd
 import pickle
-import IPython
 
 JAVA_PATH =  os.path.join(os.path.dirname(os.path.abspath(__file__)), "../src/jvm/jdk/bin") 
 BENCHMARK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../experiments/protection")
@@ -40,6 +40,9 @@ BENCHMARKS = [
     'themis_picketbox_safe',
     'themis_spring-security_safe'
 ]
+
+if sys.argv[1] == 'demo':
+    BENCHMARKS = ['blazer_array_safe', 'blazer_login_safe', 'blazer_straightline_safe']
 
 for benchmark in BENCHMARKS:
     os.chdir(f'{BENCHMARK_DIR}/{benchmark}/bin')
