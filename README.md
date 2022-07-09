@@ -7,7 +7,7 @@ Table of Contents
 * [Structure](#structure)
 * [Getting Started Instructions](#getting-started-instructions)
   * [Docker Setup](#docker-setup)
-  * [Build from Sketch](#build-from-sketch)
+  * [Build from Scratch](#build-from-scratch)
 * [Publication](#publication)
 
 ## Requirements
@@ -51,7 +51,7 @@ cd /DeJITLeak/scripts
 
 Then you can follow [Run DeJITLeak](#3-Run-DeJITLeak) for running DeJITLeak.
 
-### Build from Sketch
+### Build from Scratch
 
 #### **0. Install dependencies**
 
