@@ -62,6 +62,7 @@ sudo apt-get install maven ant
 sudo apt-get install octave
 sudo apt-get install python3 python3-pip
 pip install pandas
+sudo update-alternatives --config java # select java-8-openjdk
 ```
 
 #### **1. Clone the DeJITLeak repository**
