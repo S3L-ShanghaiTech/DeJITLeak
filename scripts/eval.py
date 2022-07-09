@@ -45,7 +45,7 @@ BENCHMARKS = [
 
 is_demo = False
 if sys.argv[1] == 'demo':
-    BENCHMARKS = ['blazer_array_safe', 'blazer_login_safe', 'blazer_straightline_safe']
+    BENCHMARKS = ['blazer_array_safe', 'blazer_straightline_safe', 'themis_jdk_safe']
     N = 100
     is_demo = True
 
