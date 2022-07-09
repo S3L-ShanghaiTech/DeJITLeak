@@ -1,8 +1,10 @@
 import pickle
 import os
+import sys
 
-# MEASURE = 'time'
 MEASURE = 'leakage'
+if sys.argv[1] == 'time':
+    MEASURE = 'time'
 
 CWD = os.getcwd()
 ANALYSER_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../src/side-channel-analyser')
