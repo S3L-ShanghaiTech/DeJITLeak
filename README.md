@@ -1,5 +1,5 @@
 # DeJITLeak
-This repository provides the tool for the paer "DeJITLeak: Eliminating JIT-Induced Timing Side-Channel Leaks" accepted at ECSE/FSE 2022.
+This repository provides the tool for the paper "DeJITLeak: Eliminating JIT-Induced Timing Side-Channel Leaks" accepted at ECSE/FSE 2022.
 
 Table of Contents
 =================
