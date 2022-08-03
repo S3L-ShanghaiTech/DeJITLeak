@@ -12,7 +12,7 @@ Table of Contents
 
 ## Requirements
 
-* DeJITLeak is developed and tested under Ubuntu 20.04 and JDK 8.
+* DeJITLeak is developed and tested under Ubuntu 20.04 x86_64 and JDK 8.
 * Git (>= 2.16.2, version control)
 * Apache Maven (>= 3.6.3, for Joana compilation)
 * Apache Ant (>= 1.9.6, for Joana compilation)
@@ -103,7 +103,7 @@ python3 eval.py # full benchmark, will take several days
 python3 eval.py demo # demo benchmark (a subset), will take ~8 minutes
 ```
 
-Analyse experiment results, columns of the output file represent `normal`, `NOJIT`, `DisableC2`, `MExclude`, `DeJITLeak`, `DeJITLeak_Light` respectively.
+Analyse experiment results, columns of the output file represent `normal`, `NOJIT`, `DisableC2`, `MExclude`, `DeJITLeak`, `DeJITLeak_Light` respectively (Table 2 in the paper).
 ```bash
 python3 analysis.py leakage 2>/dev/null # measure leakage
 python3 analysis.py time 2>/dev/null # measure overhead
@@ -114,6 +114,9 @@ python3 analysis.py time demo 2>/dev/null # measure overhead for demo
 Note that for the demo benchmark, the results are not reliable. The reason is that the demo benchmark only executes each program 100 times while the full benchmark executes each program 1000 times to reduce the impact of the noise.
 
 ## Publication
+
+If you find this repository useful, please consider citing our paper.
+
 ```
 @inproceedings{Qi2022dejitleak,
   title={DeJITLeak: Eliminating JIT-Induced Timing Side-Channel Leaks},

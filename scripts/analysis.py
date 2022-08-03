@@ -76,6 +76,7 @@ def measure_time(data):
     cnt = 0
     s1 = 0
     s2 = 0
+    # remove outliers
     for t, f in zip(data[True], data[False]):
         if 0.75*m1 < t < 1.25*m1 and 0.75*m2 < f < 1.25*m2:
             s1 += t

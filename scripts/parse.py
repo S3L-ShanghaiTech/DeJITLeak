@@ -10,7 +10,6 @@ BENCHMARK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '
 TYPE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'experiments', 'type')
 
 defense_logger = logging.getLogger('DefenseGenerator')
-# validate_logger = logging.getLogger('DefenseValidator')
 
 coloredlogs.DEFAULT_FIELD_STYLES = {'asctime': {'color': 'green'}, 'hostname': {'color': 'magenta'},
                                         'levelname': {'bold': True, 'color': 'black'},
@@ -54,9 +53,12 @@ for testcase in testcases:
     if not os.path.exists(call_file):
         defense_logger.error(f'TypeInference failed for {testcase}')
         continue
+
     compiler_oracle = ''
     compiler_oracle_minus = ''
     compiler_oracle_mexclude = ''
+
+    # parse call.txt to get all the functions called inside secret-related branches
     with open(call_file, 'r') as f:
         content = f.readlines()
 
@@ -73,11 +75,8 @@ for testcase in testcases:
         compiler_oracle += f'dontinline {method_name}, {sig}\n'
         compiler_oracle_minus += f'dontinline {method_name}\n'
         compiler_oracle += f'exclude {method_name}, {sig}\n'
-        
-        # compiler_oracle += f'dontinline {method_name}\n'
-        # compiler_oracle += f'exclude {method_name}\n'
 
-
+    # parse if_branch.txt to get all the secret-related branches
     branch_file = os.path.join(joana_path, 'if_branch.txt')
     with open(branch_file, 'r') as f:
         content1 = f.readlines()
@@ -122,15 +121,3 @@ for testcase in testcases:
 defense_logger.info(f'Successfully generated compiler oracle for {len(success)} benchmarks')
 
 os.chdir(CWD)
-
-# JAVA_PATH = "../../../dejitleak/jvm/jdk/bin"
-# ALL_FLAG = "-cp .:../lib/* -Xbatch -XX:-BackgroundCompilation -XX:CICompilerCount=2"
-
-# for test in testcases:
-#     os.chdir(f'{test}/bin')
-#     res = os.popen(f'{JAVA_PATH}/java {ALL_FLAG} -XX:CompileCommandFile=compileOracle.txt Attack -1').read()
-#     if 'cost: ' in res and 'answer: ' in res:
-#         validate_logger.info(f'Compiler oracle for {test} passed the validation')
-#     else:
-#         validate_logger.error(f'Wrong compiler oracle for {test}!')
-#     os.chdir('../..')
