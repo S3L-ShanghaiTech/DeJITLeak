@@ -1,0 +1,27 @@
+{
+    "description": "DeJITLeak: Eliminating JIT-Induced Timing Side-Channel Leaks", 
+    "license": "Apache-2.0", 
+    "title": "LeoQ7/DeJITLeak: v1.0", 
+    "version": "v1.0", 
+    "upload_type": "software", 
+    "publication_date": "2022-08-30", 
+    "creators": [
+        {
+            "affiliation": "ShanghaiTech University", 
+            "name": "Qi Qin"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/LeoQ7/DeJITLeak/tree/v1.0", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.7034133", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
