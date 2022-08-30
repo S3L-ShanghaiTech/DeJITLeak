@@ -1,4 +1,4 @@
-# DeJITLeak
+# DeJITLeak [![DOI](https://zenodo.org/badge/508498768.svg)](https://zenodo.org/badge/latestdoi/508498768)
 This repository provides the tool for the paper "DeJITLeak: Eliminating JIT-Induced Timing Side-Channel Leaks" accepted at ECSE/FSE 2022.
 
 Table of Contents
