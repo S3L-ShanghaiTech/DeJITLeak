@@ -12,16 +12,22 @@ Table of Contents
 
 ## Requirements
 
-* DeJITLeak is developed and tested under Ubuntu 20.04 x86_64 and JDK 8.
+* OS: 
+  - DeJITLeak is developed and tested under Ubuntu 20.04 x86_64. 
+  - Other Debian or Debian-based Linux systems may also work. We tested it on Ubuntu 18.04 and Ubuntu 22.04.
 * Git (>= 2.16.2, version control)
 * Apache Maven (>= 3.6.3, for Joana compilation)
 * Apache Ant (>= 1.9.6, for Joana compilation)
 * JDK8 (openjdk recommended)
+* Python3 (>= 3.7, with pandas and tqdm installed, for running the evaluation scripts)
+* Octave (>= 6.2.0, for measuring leakage)
+* Docker (optional, for [Docker Setup](#docker-setup) only)
+* gdown (optional, for downloading JVM from Google Drive in command line)
 
 ## Structure
 
 * src: contains both part of DeJITLeak
-  - flow: flow analyser based on Joana
+  - type: type inference based on Joana
   - jvm: patched openjdk for fine-grained JIT control
   - side-channel-analyser: script for quantifying leakage
 
@@ -49,7 +55,7 @@ docker exec -it dejitleak /bin/bash
 cd /DeJITLeak/scripts
 ```
 
-Then you can follow [Run DeJITLeak](#3-Run-DeJITLeak) for running DeJITLeak.
+Then you can follow [Run the Evaluation](#4-Run-the-Evaluation) for running the evaluation.
 
 ### Build from Scratch
 
@@ -61,7 +67,8 @@ sudo apt-get install git openjdk-8-jdk
 sudo apt-get install maven ant
 sudo apt-get install octave
 sudo apt-get install python3 python3-pip
-pip install pandas
+pip3 install pandas tqdm
+pip3 install gdown # optional
 sudo update-alternatives --config java # select java-8-openjdk
 ```
 
@@ -73,7 +80,7 @@ Currently, there are some issue with Joana's Git server, we need to disable the 
 GIT_SSL_NO_VERIFY=1 git clone --recurse-submodules https://github.com/LeoQ7/DeJITLeak
 ```
 
-Download patched JVM from `https://drive.google.com/file/d/1vbXbooqhZtVSI_kQXidBogr0NnuJKerR/view?usp=sharing`, decompress and put it in `src` folder.
+Download patched JVM from `https://drive.google.com/file/d/1vbXbooqhZtVSI_kQXidBogr0NnuJKerR/view?usp=sharing`, decompress and put it in `DeJITLeak/src` folder.
 
 ```bash
 gdown 1vbXbooqhZtVSI_kQXidBogr0NnuJKerR # you can also download the file directly
@@ -88,7 +95,60 @@ GIT_SSL_NO_VERIFY=1 ./setup_deps # ~5 min
 ant # ~3 min
 ```
 
-#### **3. Run DeJITLeak**
+#### **3. Test DeJITLeak**
+
+The following operations will all be running at the `DeJITLeak/scripts` directory.
+
+Test type inference
+```bash
+./TypeInference.sh blazer_array_safe
+```
+The output should be similar to the following:
+```
+Searching for methods in '/DeJITLeak/experiments/type/blazer_array_safe/blazer_array.jar'...
+        found 'MoreSanity.<init>()V'
+        found 'MoreSanity.array_safe([II)Z'
+        found 'MoreSanity.array_unsafe([II)Z'
+done.
+
+Setting up analysis scope... (from jar stream stubs/jdk-1.5-with-stubs.jar) done.
+Creating class hierarchy... (5027 classes) done.
+Setting up entrypoint MoreSanity.array_safe([II)Z... done.
+Building system dependence graph...
+        callgraph: 2 nodes and 1 edges
+        interproc exception analysis...         intraproc: calls.mergeable..clinit.statics.heap(if,adj,df,reg).misc.killdef.interference.convert.summary..
+done.
+Time needed: 1071ms - Memory: 124M used.
+
+Taint analysis takes: 16 ms.
+Illicit Flow From SDGNode 5 At SDGNode 6, visible for low
+Illicit Flow From SDGNode 5 At SDGNode 10, visible for low
+Illicit Flow From SDGNode 5 At SDGNode 20, visible for low
+Illegal Flow from parameter <param> 2 of method boolean MoreSanity.array_safe(int[], int) to (boolean MoreSanity.array_safe(int[], int):31) if (v11 >= v5) goto 36, visible for low
+Illegal Flow from parameter <param> 2 of method boolean MoreSanity.array_safe(int[], int) to (boolean MoreSanity.array_safe(int[], int):10) if (v17 < #(0)) goto 23, visible for low
+Illegal Flow from parameter <param> 2 of method boolean MoreSanity.array_safe(int[], int) to (boolean MoreSanity.array_safe(int[], int):1) if (p2 $taint  >= #(0)) goto 5, visible for low
+```
+At first, it will search for all the methods in the given jar file. Then it will set up the analysis by setting up the entrypoint according to the `config.txt` file. Then it will build the system dependence graph and output the time and memory usage. Finally, it will perform the taint analysis and output some illicit flows if any. Each illicit flow represents a potential leaky branch that need to be protected. These branches are also logged in `if_branch.txt`. And the method invoked in these branches are logged in `call.txt`.
+
+Test effectiveness of DeJITLeak
+```bash
+cd ../experiments/protection/blazer_array_safe/bin
+../../../../src/jvm/jdk/bin/java -cp .:../lib/* -Xbatch -XX:-BackgroundCompilation -XX:CICompilerCount=2 Attack -1
+../../../../src/jvm/jdk/bin/java -cp .:../lib/* -Xbatch -XX:-BackgroundCompilation -XX:CICompilerCount=2 Attack 1
+../../../../src/jvm/jdk/bin/java -cp .:../lib/* -Xbatch -XX:-BackgroundCompilation -XX:CICompilerCount=2 -XX:CompileCommandFile=compileOracle.txt Attack -1
+../../../../src/jvm/jdk/bin/java -cp .:../lib/* -Xbatch -XX:-BackgroundCompilation -XX:CICompilerCount=2 -XX:CompileCommandFile=compileOracle.txt Attack 1
+```
+The `1` and `-1` in the arguments are the input to the program, which will be used to decide which branch to execute.
+
+For each run, the output should be two lines, the first line is the execution time of the evaluated method in nanoseconds, and the second line is the output of the evaluated method.
+
+The second and third commands tested JVM without our mitigation, the cost should be ~200 ns and >10000 ns respectively, indicating that there is a large timing side-channel.
+
+The fourth and fifth commands tested JVM with our mitigation, both cost should be ~200 ns, indicating that our mitigation is effective. 
+
+As mentioned in the paper, our mitigation leverages three compile commands `exclude`, `dontinline` and `dontprune` to enforce constant time execution. For more details, please refer to Section 5 in the paper. A prototype implementation of `dontprune` is provided in `src/jvm_impl/dontprune.diff`.
+
+#### **4. Run the Evalution**
 
 The following operations will all be running at the `DeJITLeak/scripts` directory.
 
@@ -112,6 +172,14 @@ python3 analysis.py time demo 2>/dev/null # measure overhead for demo
 ```
 
 Note that for the demo benchmark, the results are not reliable. The reason is that the demo benchmark only executes each program 100 times while the full benchmark executes each program 1000 times to reduce the impact of the noise.
+
+## Troubleshooting
+
+1. If you encounter an error like `/bin/javah: not found` installing Joana, please run `sudo update-alternatives --config javah` and select a `javah` executable.
+
+2. `Command 'gdown' not found`. This may occur if the path to `gdown` is not in your `PATH` environment variable. You can fix this by running `export PATH=$PATH:~/.local/bin` or adding this line to your `~/.bashrc` file. You can also downloaded the file directly using a browser instead of `gdown`.
+
+3. If you have any other problems, feel free to open an issue on GitHub or email me directly.
 
 ## Publication
 

@@ -7,8 +7,10 @@ if sys.argv[1] == 'time':
     MEASURE = 'time'
 
 CWD = os.getcwd()
-ANALYSER_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../src/side-channel-analyser')
-RESULTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../experiments/results')
+ANALYSER_DIR = os.path.join(os.path.dirname(
+    os.path.abspath(__file__)), '../src/side-channel-analyser')
+RESULTS_DIR = os.path.join(os.path.dirname(
+    os.path.abspath(__file__)), '../experiments/results')
 
 BENCHMARKS = [
     'apache_ftpserver_clear_safe',
@@ -39,7 +41,9 @@ BENCHMARKS = [
 ]
 
 if len(sys.argv) > 2 and sys.argv[2] == 'demo':
-    BENCHMARKS = ['demo_blazer_array_safe', 'demo_blazer_straightline_safe', 'demo_themis_jdk_safe']
+    BENCHMARKS = ['demo_blazer_array_safe',
+                  'demo_blazer_straightline_safe', 'demo_themis_jdk_safe']
+
 
 def measure_leakage(data):
     data.rename(columns={data.columns[0]: True,
@@ -68,10 +72,10 @@ def measure_leakage(data):
         f'octave --quiet leakage /tmp/octave.data').read().split('=')[1].strip()
     return float(leakage)
 
+
 def measure_time(data):
     data.rename(columns={data.columns[0]: True,
                          data.columns[1]: False}, inplace=True)
-    
     m1, m2 = data.median()
     cnt = 0
     s1 = 0
@@ -82,8 +86,9 @@ def measure_time(data):
             s1 += t
             s2 += f
             cnt += 1
-    
+
     return int(round(min(s1/cnt, s2/cnt)))
+
 
 if MEASURE == 'leakage':
     measure = measure_leakage
@@ -92,6 +97,9 @@ elif MEASURE == 'time':
 else:
     raise ValueError(f'Unknown measure metric: {MEASURE}')
 
+print('{:35} | {:^6} | {:^6} | {:^6} | {:^6} | {:^6} | {:^6}'.format(
+    'benchmark', 'noDef', 'noJIT', 'noC2', 'Mexclu', 'DeJIT', 'DeJIT-'))
+print('-'*90)
 for benchmark in BENCHMARKS:
     if not os.path.exists(f'{RESULTS_DIR}/{benchmark}.pkl'):
         print(benchmark, 'not found')
@@ -111,6 +119,11 @@ for benchmark in BENCHMARKS:
     df_defense1 = df[['True w/ Defense1', 'False w/ Defense1']]
     leakage_defense1 = measure(df_defense1)
 
-    print(benchmark, leakage_nodefense, leakage_noJIT, leakage_noC2, leakage_mexclude, leakage_defense, leakage_defense1)
+    if MEASURE == 'time':
+        print('{:35} | {:6} | {:6} | {:6} | {:6} | {:6} | {:6}'.format(benchmark, leakage_nodefense,
+              leakage_noJIT, leakage_noC2, leakage_mexclude, leakage_defense, leakage_defense1))
+    else:
+        print('{:35} | {:^6.2f} | {:^6.2f} | {:^6.2f} | {:^6.2f} | {:^6.2f} | {:>6.2f}'.format(benchmark, round(leakage_nodefense, 2), round(
+            leakage_noJIT, 2), round(leakage_noC2, 2), round(leakage_mexclude, 2), round(leakage_defense, 2), round(leakage_defense1, 2)))
 
 os.chdir(CWD)

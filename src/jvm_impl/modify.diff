@@ -1,0 +1,181 @@
+diff '--color=auto' -ur origin/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.cpp my/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.cpp
+--- origin/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.cpp	2021-04-20 13:36:58.000000000 -0500
++++ my/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.cpp	2021-07-05 08:59:43.000000000 -0500
+@@ -88,6 +88,7 @@
+   _balanced_monitors  = !_uses_monitors || h_m()->access_flags().is_monitor_matching();
+   _is_c1_compilable   = !h_m()->is_not_c1_compilable();
+   _is_c2_compilable   = !h_m()->is_not_c2_compilable();
++  _is_not_prune_bci_updated = false;
+   // Lazy fields, filled in on demand.  Require allocation.
+   _code               = NULL;
+   _exception_handlers = NULL;
+@@ -1083,6 +1084,59 @@
+ }
+ 
+ // ------------------------------------------------------------------
++// ciMethod::should_not_prune
++//
++// Should this method be disallowed from pruning during compilation?
++bool ciMethod::should_not_prune() {
++    check_is_loaded();
++    VM_ENTRY_MARK;
++    methodHandle mh(THREAD, get_Method());
++    bool res = CompilerOracle::should_not_prune(mh);
++    if (res){
++        if (!this->_is_not_prune_bci_updated){
++            _not_prune_bcis = new GrowableArray<int>(256, 0, false);
++            _not_prune_bcis->clear();
++            char bci_file_path[200];
++            FILE *bci_file;
++            int tmp_bci_number;
++            sprintf(bci_file_path, "noprune_%s_%s%s", this->holder()->name()->get_symbol()->as_quoted_ascii(), this->name()->get_symbol()->as_quoted_ascii(), this->signature()->get_symbol()->as_quoted_ascii());
++            for (int i = 0; i < 200; i++)
++            {
++                if (bci_file_path[i] == '/') bci_file_path[i] = '_';
++            }
++            if (PrintOpto) {
++              tty->print_cr("Load bci file from %s\n", bci_file_path);
++            }
++            bci_file = fopen(bci_file_path, "r");
++            while(fscanf(bci_file, "%d", &tmp_bci_number)>0) {
++                if (!this->_not_prune_bcis->contains(tmp_bci_number)){
++                  if (PrintOpto) {
++                    tty->print_cr("Load bci: %d\n", tmp_bci_number);
++                  }
++                  this->_not_prune_bcis->push(tmp_bci_number);
++                }
++            }
++            fclose(bci_file);
++            if (PrintOpto) {
++              tty->print_cr("Loaded %d bcis\n", _not_prune_bcis->length());
++            }
++            this->_is_not_prune_bci_updated = true;
++        }
++        return true;
++    }
++    else
++        return false;
++}
++
++// ------------------------------------------------------------------
++// ciMethod::should_not_prune_bci
++//
++// Should this method be disallowed from pruning given bci during compilation?
++bool ciMethod::should_not_prune_bci(int bci) {
++    return this->_not_prune_bcis->contains(bci);
++}
++
++// ------------------------------------------------------------------
+ // ciMethod::should_print_assembly
+ //
+ // Should the compiler print the generated code for this method?
+diff '--color=auto' -ur origin/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.hpp my/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.hpp
+--- origin/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.hpp	2021-04-20 13:36:58.000000000 -0500
++++ my/jdk8u292-ga/hotspot/src/share/vm/ci/ciMethod.hpp	2021-07-05 06:33:46.000000000 -0500
+@@ -32,6 +32,7 @@
+ #include "compiler/methodLiveness.hpp"
+ #include "prims/methodHandles.hpp"
+ #include "utilities/bitMap.hpp"
++#include "utilities/growableArray.hpp"
+ 
+ class ciMethodBlocks;
+ class MethodLiveness;
+@@ -78,6 +79,8 @@
+   bool _is_c1_compilable;
+   bool _is_c2_compilable;
+   bool _can_be_statically_bound;
++  bool _is_not_prune_bci_updated;
++  GrowableArray<int> *_not_prune_bcis;
+ 
+   // Lazy fields, filled in on demand
+   address              _code;
+@@ -276,6 +279,8 @@
+   bool should_exclude();
+   bool should_inline();
+   bool should_not_inline();
++  bool should_not_prune();
++  bool should_not_prune_bci(int bci);
+   bool should_print_assembly();
+   bool break_at_execute();
+   bool has_option(const char *option);
+diff '--color=auto' -ur origin/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.cpp my/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.cpp
+--- origin/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.cpp	2021-04-20 13:36:58.000000000 -0500
++++ my/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.cpp	2021-06-22 06:01:28.000000000 -0500
+@@ -305,6 +305,7 @@
+   ExcludeCommand,
+   InlineCommand,
+   DontInlineCommand,
++  DontPruneCommand,
+   CompileOnlyCommand,
+   LogCommand,
+   OptionCommand,
+@@ -320,6 +321,7 @@
+   "exclude",
+   "inline",
+   "dontinline",
++  "dontprune",
+   "compileonly",
+   "log",
+   "option",
+@@ -416,6 +418,11 @@
+ }
+ 
+ 
++bool CompilerOracle::should_not_prune(methodHandle method) {
++    return (check_predicate(DontPruneCommand, method));
++}
++
++
+ bool CompilerOracle::should_print(methodHandle method) {
+   return (check_predicate(PrintCommand, method));
+ }
+diff '--color=auto' -ur origin/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.hpp my/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.hpp
+--- origin/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.hpp	2021-04-20 13:36:58.000000000 -0500
++++ my/jdk8u292-ga/hotspot/src/share/vm/compiler/compilerOracle.hpp	2021-06-22 06:02:01.000000000 -0500
+@@ -52,6 +52,9 @@
+   // Tells whether we want to disallow inlining of this method
+   static bool should_not_inline(methodHandle method);
+ 
++  // Tells whether we want to disallow pruning of this method
++  static bool should_not_prune(methodHandle method);
++
+   // Tells whether we should print the assembly for this method
+   static bool should_print(methodHandle method);
+ 
+diff '--color=auto' -ur origin/jdk8u292-ga/hotspot/src/share/vm/opto/parse2.cpp my/jdk8u292-ga/hotspot/src/share/vm/opto/parse2.cpp
+--- origin/jdk8u292-ga/hotspot/src/share/vm/opto/parse2.cpp	2021-04-20 13:36:58.000000000 -0500
++++ my/jdk8u292-ga/hotspot/src/share/vm/opto/parse2.cpp	2021-06-22 06:12:32.000000000 -0500
+@@ -1054,6 +1054,15 @@
+ 
+   float cnt;
+   float prob = branch_prediction(cnt, btest, target_bci, c);
++
++  if (method()->should_not_prune() && method()->should_not_prune_bci(bci())) {
++      if (PrintOpto) {
++        method()->print_name();
++        tty->print_cr(" prob changed to 0.5 at bci: %d", bci());
++      }
++      prob = 0.5;
++  }
++
+   float untaken_prob = 1.0 - prob;
+ 
+   if (prob == PROB_UNKNOWN) {
+@@ -1185,10 +1194,15 @@
+                                 Block* path, Block* other_path) {
+   if (stopped() || !c->is_Cmp() || btest == BoolTest::illegal)
+     return;                             // nothing to do
+-
+   bool is_fallthrough = (path == successor_for_bci(iter().next_bci()));
+ 
+-  if (path_is_suitable_for_uncommon_trap(prob)) {
++  if (method()->should_not_prune() && method()->should_not_prune_bci(bci())) {
++    if (PrintOpto) {
++      method()->print_name();
++      tty->print_cr(" prune banned bci: %d", bci());
++    }
++  }
++  else if (path_is_suitable_for_uncommon_trap(prob)) {
+     repush_if_args();
+     uncommon_trap(Deoptimization::Reason_unstable_if,
+                   Deoptimization::Action_reinterpret,
