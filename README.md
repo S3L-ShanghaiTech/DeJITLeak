@@ -167,12 +167,12 @@ python3 eval.py single blazer_array_safe # run single benchmark (blazer_array_sa
 Analyse experiment results, columns of the output file represent `normal`, `NOJIT`, `DisableC2`, `MExclude`, `DeJITLeak`, `DeJITLeak_Light` respectively (Table 2 in the paper).
 Different from in Table 2, the time output from `analysis.py` is the execution time in nanosecond for each benchmark.
 ```bash
-python3 analysis.py leakage 2>/dev/null # measure leakage
-python3 analysis.py time 2>/dev/null # measure overhead
-python3 analysis.py leakage demo 2>/dev/null # measure leakage for demo subset
-python3 analysis.py time demo 2>/dev/null # measure overhead for demo subset
-python3 analysis.py leakage single blazer_array_safe 2>/dev/null # measure leakage for single benchmark (blazer_array_safe)
-python3 analysis.py time single blazer_array_safe 2>/dev/null # measure overhead for single benchmark (blazer_array_safe)
+python3 analysis.py leakage # measure leakage
+python3 analysis.py time # measure overhead
+python3 analysis.py leakage demo # measure leakage for demo subset
+python3 analysis.py time demo # measure overhead for demo subset
+python3 analysis.py leakage single blazer_array_safe # measure leakage for single benchmark (blazer_array_safe)
+python3 analysis.py time single blazer_array_safe # measure overhead for single benchmark (blazer_array_safe)
 ```
 
 Note that for the demo benchmark, the results are not reliable. The reason is that the demo benchmark only executes each program 100 times while the full benchmark executes each program 1000 times to reduce the impact of the noise.

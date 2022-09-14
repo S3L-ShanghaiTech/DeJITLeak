@@ -47,8 +47,8 @@ elif len(sys.argv) > 3 and sys.argv[2] == 'single':
     BENCHMARKS = [sys.argv[3]]
 
 def measure_leakage(data):
-    data.rename(columns={data.columns[0]: True,
-                         data.columns[1]: False}, inplace=True)
+    data = data.rename(columns={data.columns[0]: True,
+                         data.columns[1]: False})
 
     header = '''# name: data
 # type: matrix
@@ -75,8 +75,8 @@ def measure_leakage(data):
 
 
 def measure_time(data):
-    data.rename(columns={data.columns[0]: True,
-                         data.columns[1]: False}, inplace=True)
+    data = data.rename(columns={data.columns[0]: True,
+                         data.columns[1]: False})
     m1, m2 = data.median()
     cnt = 0
     s1 = 0
