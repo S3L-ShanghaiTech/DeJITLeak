@@ -44,10 +44,13 @@ BENCHMARKS = [
 ]
 
 is_demo = False
-if sys.argv[1] == 'demo':
+if len(sys.argv) > 1 and sys.argv[1] == 'demo':
     BENCHMARKS = ['blazer_array_safe', 'blazer_straightline_safe', 'themis_jdk_safe']
     N = 100
     is_demo = True
+elif len(sys.argv) > 2 and sys.argv[1] == 'single':
+    BENCHMARKS = [sys.argv[2]]
+
 
 for benchmark in BENCHMARKS:
     os.chdir(f'{BENCHMARK_DIR}/{benchmark}/bin')

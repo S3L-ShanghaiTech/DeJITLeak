@@ -43,7 +43,8 @@ BENCHMARKS = [
 if len(sys.argv) > 2 and sys.argv[2] == 'demo':
     BENCHMARKS = ['demo_blazer_array_safe',
                   'demo_blazer_straightline_safe', 'demo_themis_jdk_safe']
-
+elif len(sys.argv) > 3 and sys.argv[2] == 'single':
+    BENCHMARKS = [sys.argv[3]]
 
 def measure_leakage(data):
     data.rename(columns={data.columns[0]: True,
