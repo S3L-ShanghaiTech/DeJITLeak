@@ -1,4 +1,4 @@
-# DeJITLeak [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7034134.svg)](https://doi.org/10.5281/zenodo.7034134)
+# DeJITLeak [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7080369.svg)](https://doi.org/10.5281/zenodo.7080369)
 This repository provides the tool for the paper "DeJITLeak: Eliminating JIT-Induced Timing Side-Channel Leaks" accepted at ECSE/FSE 2022.
 
 Table of Contents
@@ -80,7 +80,7 @@ Currently, there are some issue with Joana's Git server, we need to disable the 
 GIT_SSL_NO_VERIFY=1 git clone --recurse-submodules https://github.com/LeoQ7/DeJITLeak
 ```
 
-Download patched JVM from `https://drive.google.com/file/d/1vbXbooqhZtVSI_kQXidBogr0NnuJKerR/view?usp=sharing`, decompress and put it in `DeJITLeak/src` folder.
+Download patched JVM from `https://drive.google.com/file/d/1vbXbooqhZtVSI_kQXidBogr0NnuJKerR/view?usp=sharing` or `https://zenodo.org/record/7080369/files/jvm.tar.gz?download=1`, decompress and put it in `DeJITLeak/src` folder.
 
 ```bash
 gdown 1vbXbooqhZtVSI_kQXidBogr0NnuJKerR # you can also download the file directly
