@@ -128,7 +128,10 @@ Illegal Flow from parameter <param> 2 of method boolean MoreSanity.array_safe(in
 Illegal Flow from parameter <param> 2 of method boolean MoreSanity.array_safe(int[], int) to (boolean MoreSanity.array_safe(int[], int):10) if (v17 < #(0)) goto 23, visible for low
 Illegal Flow from parameter <param> 2 of method boolean MoreSanity.array_safe(int[], int) to (boolean MoreSanity.array_safe(int[], int):1) if (p2 $taint  >= #(0)) goto 5, visible for low
 ```
-At first, it will search for all the methods in the given jar file. Then it will set up the analysis by setting up the entrypoint according to the `config.txt` file. Then it will build the system dependence graph and output the time and memory usage. Finally, it will perform the taint analysis and output some illicit flows if any. Each illicit flow represents a potential leaky branch that need to be protected. These branches are also logged in `if_branch.txt`. And the method invoked in these branches are logged in `call.txt`.
+
+At first, it will search for all the methods in the given jar file. Then it will set up the analysis by setting up the entry point according to the `config.txt` file. Then it will build the system dependence graph and output the time and memory usage. Finally, it will perform the taint analysis and output some illicit flows if any. Each illicit flow represents a potential leaky branch that needs to be protected. These branches are also logged in `if_branch.txt`. Moreover, the methods invoked in these branches are logged in `call.txt`. 
+
+For each branch, its pseudocode, the method it is in, and its byte code index are recorded.Branches in `if_branch.txt` all have high security level H and need to be protected, while branches contained in `if_branch_prev.txt` but not in `if_branch.txt` all have low security level L. If one wants to understand `if_branch.txt` in detail, one can use [the visualisation tool](https://pp.ipd.kit.edu/projects/joana/joana.ui.ifc.sdg.graphviewer.jar) provided by Joana to visualise the generated `SDGFile.pdg` and cross-reference it with `if_branch.txt`.
 
 Test effectiveness of DeJITLeak
 ```bash
@@ -179,7 +182,7 @@ Note that for the demo benchmark, the results are not reliable. The reason is th
 
 ## Troubleshooting
 
-1. If you encounter an error like `/bin/javah: not found` installing Joana, please run `sudo update-alternatives --config javah` and select a `javah` executable.
+1. If you encounter an error like `/bin/javah: not found` installing Joana, please run `sudo update-alternatives --install /usr/bin/javah javah <path to javah> 1`.
 
 2. `Command 'gdown' not found`. This may occur if the path to `gdown` is not in your `PATH` environment variable. You can fix this by running `export PATH=$PATH:~/.local/bin` or adding this line to your `~/.bashrc` file. You can also downloaded the file directly using a browser instead of `gdown`.
 
